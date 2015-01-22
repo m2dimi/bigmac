@@ -1,1 +1,39 @@
-<strong>Hello Word</strong>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Playground</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body ng-app="playground">
+  
+  <div id="layout" ng-controller="LayoutCtrl">
+	  <p>Hello</p>
+    <div id="playground">
+
+
+    </div>
+  </div>
+
+  <!-- loading d3 and jquery from remote server  -->
+  <script type="text/javascript" src="js/source/d3.min.js"></script>
+  <script type="text/javascript" src="js/source/angular.min.js"></script>
+  <script type="text/javascript" src="js/source/angular-route.min.js"></script>
+  <script type="text/javascript" src="js/source/ui-bootstrap-tpls-0.12.0.min.js"></script>
+
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript">
+    /*
+      Test angular
+    */
+    angular
+      .module('playground', [
+      ])
+      .controller('LayoutCtrl', function($scope, $log) {
+        $log.debug('angular is ready');
+      });
+  </script>
+</body>
+</html>
