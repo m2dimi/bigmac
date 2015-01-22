@@ -1,75 +1,75 @@
  [
     {
         "country" : "France",
-        "worktime": "00"
+        "worktime": "13"
     },
     {
         "country" : "Brésil",
-        "worktime": "00"
+        "worktime": "120"
     },
     {
         "country" : "Mexique",
-        "worktime": "00"
+        "worktime": "31"
     },
     {
         "country" : "Australie",
-        "worktime": "00"
+        "worktime": "09"
     },
         {
         "country" : "Azerbajan",
-        "worktime": "00"
+        "worktime": "368"
     },
     {
         "country" : "Amerique",
-        "worktime": "00"
+        "worktime": "10"
     },
     {
         "country" : "Russie",
-        "worktime": "00"
+        "worktime": "30"
     },
     {
         "country" : "Argentine",
-        "worktime": "00"
+        "worktime": "71"
     },
         {
         "country" : "Egypte",
-        "worktime": "00"
+        "worktime": "21.16"
     },
     {
         "country" : "Emirates",
-        "worktime": "00"
+        "worktime": "13"
     },
     {
         "country" : "Japon",
-        "worktime": "00"
+        "worktime": "08"
     },
     {
         "country" : "Chine",
-        "worktime": "00"
+        "worktime": "35"
     },
     {
         "country" : "Afrique du sud",
-        "worktime": "00"
+        "worktime": "49"
     },
         {
         "country" : "Inde",
-        "worktime": "00"
+        "worktime": "339"
     },
         {
         "country" : "Uk",
-        "worktime": "00"
+        "worktime": "15"
     },
     {
         "country" : "Roumanie",
-        "url": "00"
+        "worktime": "52"
     },
     {
         "country" : "Grèce",
-        "url": "00"
+        "worktime": "32"
     },
     {
         "country" : "Maroc",
-        "url": "00"
+        "worktime": "345"
     }
 
 ]
