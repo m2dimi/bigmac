@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: "jaapokkisubtract";
+    src: url('fonts/jaapokkisubtract-regular.ttf') format('truetype');
+}
+
 body{
     background: #FEDC85;
 }
