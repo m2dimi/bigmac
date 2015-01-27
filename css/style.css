@@ -16,3 +16,8 @@ font-family : jaapokkisubtract;
 .orange {
 color: #E25B5A;
 }
+
+#perso_choisi
+{
+    display: none;
+}
