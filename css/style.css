@@ -1,9 +1,18 @@
 
 @font-face {
     font-family: "jaapokkisubtract";
-    src: url('fonts/jaapokkisubtract-regular.ttf') format('truetype');
+    src: url('../fonts/jaapokkisubtract-regular.ttf') format('truetype');
 }
 
 body{
     background: #FEDC85;
+}
+
+.font_jaap
+{
+font-family : jaapokkisubtract;
+}
+
+.orange {
+color: #E25B5A;
 }
