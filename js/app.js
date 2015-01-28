@@ -40,11 +40,9 @@
         $log.debug('angular is ready');
             $log.debug('test', $routeParams);
             $scope.countries = [1,2,3];
-            $.getJSON('data.json', function (data) {
-                $.each(data, function (i) {
-                    $scope.countries = data[i].id;
-                })
-            });
+            $routeParams.countryA = 'france';
+            $routeParams.countryB = 'belgique';
+            
 
 
 
