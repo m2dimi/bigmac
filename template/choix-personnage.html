@@ -5,11 +5,11 @@
         <table>
             <tr>
                 <td><input id="1" class="perso" type="image"  src="ressources/caractere/test.png" value="1"></td>
-                <td><input id="1" class="perso" type="image"  src="ressources/caractere/test.png" value="1"></td>
-                <td><input id="1" class="perso" type="image"  src="ressources/caractere/test.png" value="1"></td>
-                <td><input id="1" class="perso" type="image"  src="ressources/caractere/test.png" value="1"></td>
-                <td><input id="1" class="perso" type="image"  src="ressources/caractere/test.png" value="1"></td>
-                <td><input id="1" class="perso" type="image"  src="ressources/caractere/test.png" value="1"></td>
+                <td><input id="1" class="perso" type="image"  src="ressources/caractere/test.png" value="2"></td>
+                <td><input id="1" class="perso" type="image"  src="ressources/caractere/test.png" value="3"></td>
+                <td><input id="1" class="perso" type="image"  src="ressources/caractere/test.png" value="4"></td>
+                <td><input id="1" class="perso" type="image"  src="ressources/caractere/test.png" value="5"></td>
+                <td><input id="1" class="perso" type="image"  src="ressources/caractere/test.png" value="6"></td>
             </tr>
             <tr>
                 <td></td>
@@ -37,12 +37,12 @@
 
 <script>
     $(".perso").click(function() {
-            var backgrounds = new Array();
+        var perso_choisi = this.value
             $.getJSON('data.json', function (data) {
                 $.each(data, function (i) {
-                    alert(data[i].id);
-                    if (data.id == $(".perso").value) {
-                        $("#perso_choisi").innerHTML = '<img src="'+data.url_img+'" >';
+                    if (data[i].id == perso_choisi) {
+
+                        $("#perso_choisi").innerHTML = '<img class="grand_perso" src="'+data.url_img+'" >';
                         $("#perso_choisi").fadeIn();
                     }
                 })

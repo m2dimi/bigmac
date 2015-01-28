@@ -5,4 +5,6 @@
         </div>
     </div>
     <p>la page d'accueil de notre site</p>
+    {{countries}}
+    <div ng-repeat="country in countries" ng-click="choose(country)">{{country}}</div>
 </div>

@@ -6,6 +6,10 @@
 	                    templateUrl: 'template/home.html',
 	                    controller: 'homeCtrl'
 	                    })
+                .when('/compare/:countryA/:countryB', {
+                    templateUrl: 'template/home.html',
+                    controller: 'homeCtrl'
+                })
                     .when('/carte', {
 	                    templateUrl: 'template/carte.html',
 	                    controller: 'carteCtrl'
@@ -32,8 +36,21 @@
 //création des controller
 
 	//controller home
-        app.controller('homeCtrl', function($scope, $log) {
+        app.controller('homeCtrl', function($scope, $log, $routeParams) {
         $log.debug('angular is ready');
+            $log.debug('test', $routeParams);
+            $scope.countries = [1,2,3];
+            $.getJSON('data.json', function (data) {
+                $.each(data, function (i) {
+                    $scope.countries = data[i].id;
+                })
+            });
+
+
+
+            $scope.choose = function(country){
+                $scope.countries=[1,3,54]
+            }
       });
     
     //controller carte
