@@ -201,6 +201,7 @@ $http.get('data/data.json').success(function(data){
 			$scope.choose = function(country){
                  
             }
+            
       });
     
     //controller carte
@@ -212,7 +213,19 @@ $http.get('data/data.json').success(function(data){
         app.controller('personnageCtrl', function($scope, $log, dataFactory) {
         $log.debug('angular is ready');
         $scope.countries = dataFactory;
-        
+        var choix = false;
+        $scope.characterDisplayClick = function(obj) {
+			    alert(obj);
+			    choix = true;
+			}
+		$log.debug(choix);	
+        $scope.characterDisplayOver = function(obj) {
+			    // alert(obj.target.attributes.data.value);
+			    // $log.debug(obj);
+			    $scope.persochoix = obj ;
+			    
+			}
+		
       });
       
     //controller temps travail
