@@ -30,13 +30,14 @@
             </tr>
         </table>
         
--->		<figure ng-repeat="country in countries" class="col-xs-2" data="{{country.id}}" ng-mouseover="characterDisplayOver(country.id)" ng-click="characterDisplayClick(country.id)">
+-->		<figure ng-repeat="country in countries" class="col-xs-2" ng-mouseover="characterDisplayOver(country.url_img)" ng-click="characterDisplayClick(country.url_img)">
 			<img  src="{{country.thumb}}" /> 
 		</figure>
 		
     </div>
     <div class="col-xs-6">
-        <div id="perso_choisi">{{persochoix}}</div>
+        <div id="perso_choisi">
+	       <img src="{{persochoix}}" /></div>
         <div class="vs">vs</div>
     </div>
 </div>
