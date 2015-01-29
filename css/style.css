@@ -21,3 +21,10 @@ color: #E25B5A;
 {
     display: none;
 }
+figure{
+	float:left;
+}
+figure img{
+	height: 100%;
+	width: auto;
+}

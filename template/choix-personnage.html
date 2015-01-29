@@ -1,7 +1,8 @@
 <p>La page pour choisir son personnage</p>
 
 <div class="row">
-    <div class="col-xs-6">
+    <div class="col-xs-6"  >
+<!--
         <table>
             <tr>
                 <td><input id="1" class="perso" type="image"  src="ressources/caractere/test.png" value="1"></td>
@@ -28,6 +29,11 @@
                 <td></td>
             </tr>
         </table>
+        
+-->		<figure ng-repeat="country in countries" class="col-xs-2">
+			<img  src="{{country.thumb}}" /> 
+		</figure>
+		
     </div>
     <div class="col-xs-6">
         <div id="perso_choisi"></div>
@@ -35,6 +41,7 @@
     </div>
 </div>
 
+<!--
 <script>
     $(".perso").click(function() {
         var perso_choisi = this.value
@@ -49,3 +56,4 @@
             });
     });//fin get Json
 </script>
+-->
