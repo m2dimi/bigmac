@@ -16,7 +16,7 @@ var app = angular.module('playground', ['ngRoute']);
 	                    templateUrl: 'template/home.html',
 	                    controller: 'homeCtrl'
 	                })
-                    .when('/carte/:countryA', {
+                    .when('/carte/:countryA/:countryB', {
 	                    templateUrl: 'template/carte.html',
 	                    controller: 'carteCtrl'
 	                    })
@@ -220,7 +220,8 @@ $http.get('data/data.json').success(function(data){
             $log.debug('test', $routeParams);
         $scope.model = {
 	        dataurl :
-	        	$routeParams.countryA
+	        	$routeParams.countryA + " " +
+	        	$routeParams.countryB
         }
         $scope.countries = dataFactory;
 
@@ -230,15 +231,26 @@ $http.get('data/data.json').success(function(data){
     app.controller('personnageCtrl', function($scope, $log,  $routeParams, dataFactory) {
         $log.debug('angular is ready');
         $scope.countries = dataFactory;
-        var choix = false;
+        var choix =  false;
         $scope.characterDisplayClick = function(obj, name) {
-			    choix = true;
-	            $scope.persochoix = obj ;
-	            $scope.persochoixname = name ;
-	            $routeParams.countryA = name;
+			if (!choix) {
+                $scope.persochoix = obj ;
+                $scope.persochoixname = name ;
+                $routeParams.countryA = name; 
+                choix = true;    
+            }else if (choix) {
+                $scope.persochoix2 = obj ;
+                $scope.persochoixname2 = name ;
+                $routeParams.countryB = name;
+            };
+            
+	            
+
+				           
 	            $log.debug('test', $routeParams);
-			}
-		$log.debug(choix);	
+	            $log.debug('choix', choix);
+		}
+			
        /*
  $scope.characterDisplayOver = function(obj) {
 			    // alert(obj.target.attributes.data.value);
