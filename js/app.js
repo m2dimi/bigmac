@@ -65,35 +65,35 @@ var factory =  [
 		"id" : "2",
         "country" : "Brésil",
         "worktime": "120",
-        "thumb" : "ressources/character/test.jpg",
+        "thumb" : "ressources/character/thumb/france_thumb.png",
 		"url_img" : "ressources/character/test.jpg"
     },
     {
 		"id" : "3",
         "country" : "Mexique",
         "worktime": "31",
-        "thumb" : "ressources/character/test.jpg",
+        "thumb" : "ressources/character/thumb/france_thumb.png",
 		"url_img" : "ressources/character/test.jpg"
     },
     {
 		"id" : "4",
         "country" : "Australie",
         "worktime": "09",
-        "thumb" : "ressources/character/test.jpg",
+        "thumb" : "ressources/character/thumb/france_thumb.png",
 		"url_img" : "ressources/character/test.jpg"
     },
     {
 		"id" : "5",
         "country" : "Azerbajan",
         "worktime": "368",
-        "thumb" : "ressources/character/test.jpg",
+        "thumb" : "ressources/character/thumb/france_thumb.png",
 		"url_img" : "ressources/character/test.jpg"
     },
     {
 		"id" : "6",
         "country" : "Amerique",
         "worktime": "10",
-        "thumb" : "ressources/character/thumb/amerique_thumb",
+        "thumb" : "ressources/character/thumb/amerique_thumb.png",
 		"url_img" : "ressources/character/test.jpg"
     },
     {
@@ -101,7 +101,7 @@ var factory =  [
         "country" : "Russie",
         "worktime": "30",
         "thumb" : "ressources/character/thumb/russie_thumb.png",
-		"url_img" : "ressources/character/test.jpg"
+		"url_img" : "ressources/character/big/russie_big.png"
     },
     {
 		"id" : "8",
@@ -121,63 +121,63 @@ var factory =  [
 		"id" : "10",
         "country" : "Emirates",
         "worktime": "13",
-        "thumb" : "ressources/character/test.jpg",
+        "thumb" : "ressources/character/thumb/france_thumb.png",
 		"url_img" : "ressources/character/test.jpg"
     },
     {
 		"id" : "11",
         "country" : "Japon",
         "worktime": "08",
-        "thumb" : "ressources/character/test.jpg",
+        "thumb" : "ressources/character/thumb/france_thumb.png",
 		"url_img" : "ressources/character/test.jpg"
     },
     {
 		"id" : "12",
         "country" : "Chine",
         "worktime": "35",
-        "thumb" : "ressources/character/test.jpg",
+        "thumb" : "ressources/character/thumb/france_thumb.png",
 		"url_img" : "ressources/character/test.jpg"
     },
     {
 		"id" : "13",
         "country" : "Afrique du sud",
         "worktime": "49",
-        "thumb" : "ressources/character/test.jpg",
+        "thumb" : "ressources/character/thumb/france_thumb.png",
 		"url_img" : "ressources/character/test.jpg"
     },
     {
 		"id" : "14",
         "country" : "Inde",
         "worktime": "339",
-        "thumb" : "ressources/character/test.jpg",
+        "thumb" : "ressources/character/thumb/france_thumb.png",
 		"url_img" : "ressources/character/test.jpg"
     },
     {
 		"id" : "15",
         "country" : "Uk",
         "worktime": "15",
-        "thumb" : "ressources/character/test.jpg",
+        "thumb" : "ressources/character/thumb/france_thumb.png",
 		"url_img" : "ressources/character/test.jpg"
     },
     {
 		"id" : "16",
         "country" : "Roumanie",
         "worktime": "52",
-        "thumb" : "ressources/character/test.jpg",
+        "thumb" : "ressources/character/thumb/france_thumb.png",
 		"url_img" : "ressources/character/test.jpg"
     },
     {
 		"id" : "17",
         "country" : "Grèce",
         "worktime": "32",
-        "thumb" : "ressources/character/test.jpg",
+        "thumb" : "ressources/character/thumb/france_thumb.png",
 		"url_img" : "ressources/character/test.jpg"
     },
     {
 		"id" : "18",
         "country" : "Maroc",
         "worktime": "345",
-        "thumb" : "ressources/character/test.jpg",
+        "thumb" : "ressources/character/thumb/france_thumb.png",
 		"url_img" : "ressources/character/test.jpg"
     }
 
