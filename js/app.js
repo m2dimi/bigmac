@@ -58,7 +58,7 @@ var factory =  [
 		"id" : "1",
         "country" : "France",
         "worktime": "13",
-        "thumb" : "ressources/character/test.jpg",
+        "thumb" : "ressources/character/thumb/france_thumb.png",
 		"url_img" : "ressources/character/test.jpg"
     },
     {
@@ -93,28 +93,28 @@ var factory =  [
 		"id" : "6",
         "country" : "Amerique",
         "worktime": "10",
-        "thumb" : "ressources/character/test.jpg",
+        "thumb" : "ressources/character/thumb/amerique_thumb",
 		"url_img" : "ressources/character/test.jpg"
     },
     {
 		"id" : "7",
         "country" : "Russie",
         "worktime": "30",
-        "thumb" : "ressources/character/test.jpg",
+        "thumb" : "ressources/character/thumb/russie_thumb.png",
 		"url_img" : "ressources/character/test.jpg"
     },
     {
 		"id" : "8",
         "country" : "Argentine",
         "worktime": "71",
-        "thumb" : "ressources/character/test.jpg",
+        "thumb" : "ressources/character/thumb/argentine_thumb.png",
 		"url_img" : "ressources/character/test.jpg"
     },
     {
 		"id" : "9",
         "country" : "Egypte",
         "worktime": "21.16",
-        "thumb" : "ressources/character/test.jpg",
+        "thumb" : "ressources/character/thumb/egypte_thumb.png",
 		"url_img" : "ressources/character/test.jpg"
     },
     {
