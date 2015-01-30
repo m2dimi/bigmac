@@ -35,7 +35,7 @@
             </tr>
         </table>
         
--->		<figure ng-repeat="country in countries" class="col-xs-2" ng-mouseover="characterDisplayOver(country.url_img)" ng-click="characterDisplayClick(country.url_img, country.country)">
+-->		<figure ng-repeat="country in countries" ng-mouseover="characterDisplayOver(country.url_img)" ng-click="characterDisplayClick(country.url_img, country.country)">
 			<img  src="{{country.thumb}}" />
 		</figure>
 		
