@@ -50,3 +50,12 @@ figure img{
 {
     display: inline-block;
 }
+.testmap01{
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 10px;
+}
+.testmap01:hover{
+    background: green;
+}

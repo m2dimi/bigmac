@@ -37,6 +37,14 @@
         </div>
     </div>
 </div>
+
+<div id="play"></div>
+<svg height="100" width="300">
+ <g > <circle ng-repeat="id in compt" data-id='$index' ng-click="countryreveal(1, $event)" class="testmap01" cx="50" cy="50" r="40" stroke="black" stroke-width="3" ng-attr-fill="{{colour || colourAll}}" /></g>
+  <circle ng-click="countryreveal(2)" class="testmap01" cx="150" cy="50" r="40" stroke="black" stroke-width="3" fill="blue" />
+  <circle ng-click="countryreveal(1)" class="testmap01" cx="250" cy="50" r="40" stroke="black" stroke-width="3" fill="blue" />
+</svg>
+    
 <script>
 
 window.onload
