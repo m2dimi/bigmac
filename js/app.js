@@ -215,13 +215,15 @@ $http.get('data/data.json').success(function(data){
       });
     
     //controller carte
-        app.controller('carteCtrl', function($scope, $log , $routeParams) {
+        app.controller('carteCtrl', function($scope, $log , $routeParams, dataFactory) {
         $log.debug('angular is ready');
             $log.debug('test', $routeParams);
         $scope.model = {
 	        dataurl :
 	        	$routeParams.countryA
         }
+        $scope.countries = dataFactory;
+
       });
       
     //controller choix personnage
