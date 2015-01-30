@@ -16,7 +16,7 @@ var app = angular.module('playground', ['ngRoute']);
 	                    templateUrl: 'template/home.html',
 	                    controller: 'homeCtrl'
 	                })
-                    .when('/carte', {
+                    .when('/carte/:countryA', {
 	                    templateUrl: 'template/carte.html',
 	                    controller: 'carteCtrl'
 	                    })
@@ -218,20 +218,23 @@ $http.get('data/data.json').success(function(data){
         app.controller('carteCtrl', function($scope, $log , $routeParams) {
         $log.debug('angular is ready');
             $log.debug('test', $routeParams);
-        $scope.persochoix
+        $scope.model = {
+	        dataurl :
+	        	$routeParams.countryA
+        }
       });
       
     //controller choix personnage
-        app.controller('personnageCtrl', function($scope, $log,  $routeParams, dataFactory) {
+    app.controller('personnageCtrl', function($scope, $log,  $routeParams, dataFactory) {
         $log.debug('angular is ready');
         $scope.countries = dataFactory;
         var choix = false;
         $scope.characterDisplayClick = function(obj, name) {
 			    choix = true;
-            $scope.persochoix = obj ;
-            $scope.persochoixname = name ;
-            $routeParams.countryA = name;
-            $log.debug('test', $routeParams);
+	            $scope.persochoix = obj ;
+	            $scope.persochoixname = name ;
+	            $routeParams.countryA = name;
+	            $log.debug('test', $routeParams);
 			}
 		$log.debug(choix);	
        /*
@@ -243,7 +246,7 @@ $http.get('data/data.json').success(function(data){
 			}
 */
 		
-      });
+    });
       
     //controller temps travail
         app.controller('tempstravailCtrl', function($scope, $log) {
