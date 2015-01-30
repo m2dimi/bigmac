@@ -24,6 +24,7 @@ var app = angular.module('playground', ['ngRoute']);
 	                    templateUrl: 'template/choix-personnage.html',
 	                    controller: 'personnageCtrl'
 	                    })
+
                     .when('/temps-travail', {
 	                    templateUrl: 'template/temps-travail.html',
 	                    controller: 'tempstravailCtrl'
@@ -190,10 +191,11 @@ var factory =  [
 	//controller for the homepage
         app.controller('homeCtrl', function($scope, $log, $routeParams, dataFactory) {
         $log.debug('angular is ready');
-            $log.debug('test', $routeParams);
-            $scope.countries = [1,2,3];
             $routeParams.countryA = 'france';
             $routeParams.countryB = 'belgique';
+            $log.debug('test', $routeParams);
+            $scope.countries = [1,2,3];
+
             /*
 $http.get('data/data.json').success(function(data){
 		$log.debug('fichier chargé');
@@ -213,18 +215,23 @@ $http.get('data/data.json').success(function(data){
       });
     
     //controller carte
-        app.controller('carteCtrl', function($scope, $log) {
+        app.controller('carteCtrl', function($scope, $log , $routeParams) {
         $log.debug('angular is ready');
+            $log.debug('test', $routeParams);
+        $scope.persochoix
       });
       
     //controller choix personnage
-        app.controller('personnageCtrl', function($scope, $log, dataFactory) {
+        app.controller('personnageCtrl', function($scope, $log,  $routeParams, dataFactory) {
         $log.debug('angular is ready');
         $scope.countries = dataFactory;
         var choix = false;
-        $scope.characterDisplayClick = function(obj) {
+        $scope.characterDisplayClick = function(obj, name) {
 			    choix = true;
-			    $scope.persochoix = obj ;
+            $scope.persochoix = obj ;
+            $scope.persochoixname = name ;
+            $routeParams.countryA = name;
+            $log.debug('test', $routeParams);
 			}
 		$log.debug(choix);	
        /*
