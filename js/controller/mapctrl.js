@@ -11,56 +11,49 @@
 	        	$routeParams.countryB
         }
         // $scope.countries = dataFactory;
-        $scope.colourAll = 'red';
-        var mysvg = d3.select("#play").append("svg");
-
-        var data = ["http://www.mcdonalds.com.br/", "Brasil",   "Red",  1,  494,    40, 26, 817];
-
-        var liste = [128, 2,13,45,65,78];
-        var minvaleur = d3.min(liste);
-        var maxvaleur = d3.max(liste);
-        var size = d3.scale.linear()
-            .domain([minvaleur, maxvaleur]).range([5,50])
-
-        var selection = mysvg.selectAll("circle")
-        .data(liste)
-        .enter()
-            .append("circle")
-            .attr({
-            r: function(d,i){ return size(d)},
-            cy: 60,
-            cx: function(d,i){ console.log("----",d,i); return i * 40;},
-            fill: "yellow"
-          })
-        mysvg.selectAll("circle")
-            .on("click", function(){
-                // Determine if current line is visible
-                var active   = redLine.active ? false : true ,
-                  newOpacity = active ? 0 : 1;
-                // Hide or show the elements
-                d3.select("#redLine").style("opacity", newOpacity);
-                d3.select("#redAxis").style("opacity", newOpacity);
-                // Update whether or not the elements are active
-                redLine.active = active;
-            })
-                
+        $scope.colourAll = '#9DD3CA';        
 
         $scope.countryreveal = function(number, event){
-            if (number==1) {
+            // if (number==1) {
                 // var idcurrent = event.target.id;
-                 $scope.colour = $scope.colour === "green" ? "blue" : "green";
-                
-               
-
+                 // $scope.colour = $scope.colour === "green" ? "blue" : "green";
                 var id = $(event.target).data('id');
-                var col = "colour"+id;
-                console.log(col);
-                 $scope.col = "green";
+                // var col = "colour"+id;
                 // console.log(id);
-                $scope.$apply;
-            }else if (number==2) {
-                alert('bien joué');
-            };    
+                switch(id) {
+                    case 102:
+                        $scope.colour102 = "green";
+                        break;
+                    case 103:
+                        $scope.colour103 = "blue";
+                        // alert('perdu');
+                        break;
+                    case 104:
+                        $scope.colour104 = "green";
+                        break;
+                    
+                    case 105:
+                        $scope.colour105 = "green";
+                        break;
+                    case 106:
+                        $scope.colour106 = "green";
+                        break;
+                    case 107:
+                        $scope.colour107 = "green";
+                        break;
+                    case 108:
+                        $scope.colour108 = "green";
+                        break;
+                    case 109:
+                        $scope.colour109 = "green";
+                        break;                        
+                }
+                 
+                // console.log(id);
+            //     $scope.$apply;
+            // }else if (number==2) {
+            //     alert('bien joué');
+            // };    
             
         }
 

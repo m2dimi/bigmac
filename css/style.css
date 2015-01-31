@@ -127,3 +127,6 @@ figure img{
 .testmap01:hover{
     background: green;
 }
+#france:hover{
+    background: red;
+}
