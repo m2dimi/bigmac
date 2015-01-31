@@ -13,8 +13,8 @@ var app = angular.module('playground', ['ngRoute']);
 	                    controller: 'homeCtrl'
 	                    })
 	                .when('/compare/:countryA/:countryB', {
-	                    templateUrl: 'template/home.html',
-	                    controller: 'homeCtrl'
+	                    templateUrl: 'template/comparatif.html',
+                        controller: 'comparatifCtrl'
 	                })
                     .when('/carte/:countryA/:countryB', {
 	                    templateUrl: 'template/carte.html',
@@ -25,13 +25,9 @@ var app = angular.module('playground', ['ngRoute']);
 	                    controller: 'personnageCtrl'
 	                    })
 
-                    .when('/temps-travail', {
+                    .when('/temps-travail/:countryA/:countryB', {
 	                    templateUrl: 'template/temps-travail.html',
 	                    controller: 'tempstravailCtrl'
-	                    })
-                    .when('/comparatif', {
-	                    templateUrl: 'template/comparatif.html',
-	                    controller: 'comparatifCtrl'
 	                    })
                     .when('/about', {
 	                    templateUrl: 'template/about.html',

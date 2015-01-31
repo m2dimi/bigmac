@@ -10,6 +10,8 @@
 	        	$routeParams.countryA + " " +
 	        	$routeParams.countryB
         }
+        $scope.countryA = $routeParams.countryA;
+        $scope.countryB = $routeParams.countryB;
         // $scope.countries = dataFactory;
         $scope.colourAll = '#9DD3CA';        
 
