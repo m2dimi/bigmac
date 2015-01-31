@@ -46,7 +46,75 @@ figure img{
     padding-top: 20px;
 }
 
+.img_perso_1
+{
+    display: inline-block;
+    -webkit-clip-path: polygon(61% 0, 0 0, 0 100%, 40% 100%);
+    clip-path: polygon(61% 0, 0 0, 0 100%, 40% 100%);;
+}
+
+.img_perso_2
+{
+    display: inline-block;
+    -webkit-clip-path: polygon(100% 0, 60% 0, 40% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 60% 0, 40% 100%, 100% 100%);
+}
+
 .perso_choisi
 {
     display: inline-block;
+    position: absolute;
 }
+
+#vs
+{
+    top: 98px;
+    left: 221px;
+    z-index: 1;
+}
+
+#text_vs {
+    z-index: 3;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    position: absolute;
+    padding-right: 10px;
+    margin: 0;
+    line-height: 0.7;
+    color: #E25B5A;
+    font-size: 100px;
+    top: 35px;
+    left: -14px;
+}
+
+.line_diagonal {
+    width: 185px;
+    top: -93px;
+    left: -2px;
+    color: #E25B5A;
+    border: 2px solid;
+    border-color: #E25B5A;
+    background: #E25B5A;
+    transform: rotate(45deg);
+    -o-transform: rotate(-73deg);
+    -moz-transform: rotate(-73deg);
+    -webkit-transform: rotate(-73deg);
+    position: absolute;
+}
+.line_diagonal2 {
+    width: 185px;
+    top: 205px;
+    left: -93px;
+    color: #E25B5A;
+    border: 2px solid;
+    border-color: #E25B5A;
+    background: #E25B5A;
+    transform: rotate(45deg);
+    -o-transform: rotate(-73deg);
+    -moz-transform: rotate(-73deg);
+    -webkit-transform: rotate(-73deg);
+    position: absolute;
+}
+
+
+
