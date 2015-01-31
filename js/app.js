@@ -115,7 +115,7 @@ var factory =  [
         "country" : "Egypte",
         "worktime": "21.16",
         "thumb" : "ressources/character/thumb/egypte_thumb.png",
-		"url_img" : "ressources/character/test.jpg"
+		"url_img" : "ressources/character/big/egypte_big.png"
     },
     {
 		"id" : "10",
