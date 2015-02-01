@@ -6,9 +6,8 @@
         $log.debug('angular is ready');
             $log.debug('test', $routeParams);
         $scope.model = {
-	        dataurl :
-	        	$routeParams.countryA + " " +
-	        	$routeParams.countryB
+            dataurl1: $routeParams.countryA,
+            dataurl2 : $routeParams.countryB
         }
         $scope.countryA = $routeParams.countryA;
         $scope.countryB = $routeParams.countryB;
