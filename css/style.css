@@ -4,6 +4,11 @@
     src: url('../fonts/jaapokkisubtract-regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: "rustslabblackshadow";
+    src: url('../fonts/rustslabblackshadow.ttf') format('truetype');
+}
+
 body{
     background: #FEDC85;
 }
@@ -74,6 +79,7 @@ figure img{
 }
 
 #text_vs {
+    font-family: rustslabblackshadow;
     z-index: 3;
     padding-bottom: 15px;
     padding-left: 10px;
@@ -82,9 +88,9 @@ figure img{
     margin: 0;
     line-height: 0.7;
     color: #E25B5A;
-    font-size: 100px;
-    top: 35px;
-    left: -14px;
+    font-size: 84px;
+    top: 50px;
+    left: -34px;
 }
 
 .line_diagonal {
