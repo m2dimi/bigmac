@@ -2,15 +2,20 @@
 //Each page have his controller. We need to write the code in each controllers
 
  //controller temps travail
-        app.controller('tempstravailCtrl', function($scope, $log, $routeParams) {
-	        
-	        $scope.model = {
-		        dataurl :
-		        	$routeParams.countryA + " " +
-		        	$routeParams.countryB
-	        }
-	        $scope.countryA = $routeParams.countryA;
-	        $scope.countryB = $routeParams.countryB;
+        app.controller('tempstravailCtrl', function($scope, $log, $routeParams, dataFactory, $filter) {
+
+            //Display the name of the selected countries
+            $scope.model = {
+                dataurl1: $routeParams.countryA,
+                dataurl2 : $routeParams.countryB
+            }
+
+            dataFactory.GetDataCountry(function(data){
+                var countrySelect = $routeParams.countryA;
+                var idcountry = $filter('filter')(data, countrySelect);
+                $scope.countryselection = idcountry[0].worktime;
+            })
+
 
       });
     
