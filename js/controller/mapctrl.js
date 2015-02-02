@@ -1,17 +1,25 @@
 //CONTROLLERS
 //Each page have his controller. We need to write the code in each controllers
 //controller carte
-        app.controller('carteCtrl', function($scope, $log , $routeParams, dataFactory) {
-            $scope.compt=[1,2,3,4,5]
-        $log.debug('angular is ready');
-            $log.debug('test', $routeParams);
+        app.controller('carteCtrl', function($scope, $log , $routeParams, dataFactory, $filter) {
+           
+        
+        //Display the name of the selected countries   
         $scope.model = {
             dataurl1: $routeParams.countryA,
             dataurl2 : $routeParams.countryB
         }
         $scope.countryA = $routeParams.countryA;
         $scope.countryB = $routeParams.countryB;
-        // $scope.countries = dataFactory;
+
+        //Display the thumb image of selected country on the start lightbox
+        dataFactory.GetDataCountry(function(data){
+            var countrySelect = $routeParams.countryA;
+            var idcountry = $filter('filter')(data, countrySelect);
+            $scope.countryselection = idcountry[0].thumb;
+        })
+
+        //Code for the map game
         $scope.colourAll = '#9DD3CA';        
 
         $scope.countryreveal = function(number, event){
