@@ -16,7 +16,7 @@
         dataFactory.GetDataCountry(function(data){
             var countrySelect = $routeParams.countryA;
             var idcountry = $filter('filter')(data, countrySelect);
-            $scope.countryselection = idcountry[0].thumb;
+            $scope.countryselection = idcountry[0].perso;
         })
 
         //Code for the map game
@@ -31,30 +31,62 @@
                 // console.log(id);
                 switch(id) {
                     case 102:
+                        var count = 1;
+                        var win = true;
+                        find(count, win);
                         $scope.colour102 = "green";
+                        $scope.countotale = countotale;
                         break;
                     case 103:
                         $scope.colour103 = "blue";
+                        var count = 1;
+                        var win = false;
+                        find(count, win);
+                        $scope.countotale = countotale;
                         // alert('perdu');
                         break;
                     case 104:
+                        var count = 1;
+                        var win = true;
+                        find(count, win);
                         $scope.colour104 = "green";
+                        $scope.countotale = countotale;
                         break;
                     
                     case 105:
+                        var count = 1;
+                        var win = true;
+                        find(count, win);
                         $scope.colour105 = "green";
+                        $scope.countotale = countotale;
                         break;
                     case 106:
+                        var count = 1;
+                        var win = true;
+                        find(count, win);
                         $scope.colour106 = "green";
+                        $scope.countotale = countotale;
                         break;
                     case 107:
+                        var count = 1;
+                        var win = true;
+                        find(count, win);
                         $scope.colour107 = "green";
+                        $scope.countotale = countotale;
                         break;
                     case 108:
+                        var count = 1;
+                        var win = true;
+                        find(count, win);
                         $scope.colour108 = "green";
+                        $scope.countotale = countotale;
                         break;
                     case 109:
+                        var count = 1;
+                        var win = true;
+                        find(count, win);
                         $scope.colour109 = "green";
+                        $scope.countotale = countotale;
                         break;                        
                 }
                  
@@ -67,4 +99,19 @@
         }
 
       });
-      
+      var countotale = 0;
+      function find (count, win)
+      {
+          if(win == false)
+          {
+              $('#lose').modal('show');
+          }
+          else
+          {
+              countotale = countotale + count;
+              if(countotale == 7)
+              {
+                  $('#win').modal('show');
+              }
+          }
+      }

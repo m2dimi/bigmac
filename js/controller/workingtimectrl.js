@@ -7,7 +7,7 @@
             //Display the name of the selected countries
             $scope.model = {
                 dataurl1: $routeParams.countryA,
-                dataurl2 : $routeParams.countryB
+                dataurl2: $routeParams.countryB
             }
 
             dataFactory.GetDataCountry(function(data){

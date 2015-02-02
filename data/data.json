@@ -46,7 +46,8 @@
         "country" : "Russie",
         "worktime": "30",
         "thumb" : "ressources/character/thumb/russie_thumb.png",
-        "url_img" : "ressources/character/big/russie_big.png"
+        "url_img" : "ressources/character/big/russie_big.png",
+		"perso" : "ressources/character/perso/perso_russie.png"
     },
     {
         "id" : "8",
