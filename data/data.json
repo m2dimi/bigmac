@@ -1,6 +1,7 @@
 [
     {
         "id" : "1",
+		"prenom" : "François le français",
         "country" : "France",
         "worktime": "13",
         "thumb" : "ressources/character/thumb/france_thumb.png",
@@ -8,6 +9,7 @@
     },
     {
         "id" : "2",
+		"prenom" : "Ronaldinho le brésilien",
         "country" : "Brésil",
         "worktime": "120",
         "thumb" : "ressources/character/thumb/france_thumb.png",
@@ -15,6 +17,7 @@
     },
     {
         "id" : "3",
+		"prenom" : "Fransesca le mexicain",
         "country" : "Mexique",
         "worktime": "31",
         "thumb" : "ressources/character/thumb/france_thumb.png",
@@ -22,6 +25,7 @@
     },
     {
         "id" : "4",
+		"prenom" : "Bungaree l'australien",
         "country" : "Australie",
         "worktime": "09",
         "thumb" : "ressources/character/thumb/france_thumb.png",
@@ -29,6 +33,7 @@
     },
     {
         "id" : "5",
+		"prenom" : "Rashad l'azerbajanais",
         "country" : "Azerbajan",
         "worktime": "368",
         "thumb" : "ressources/character/thumb/france_thumb.png",
@@ -36,6 +41,7 @@
     },
     {
         "id" : "6",
+		"prenom" : "John le l'américain",
         "country" : "Amerique",
         "worktime": "10",
         "thumb" : "ressources/character/thumb/amerique_thumb.png",
@@ -43,6 +49,7 @@
     },
     {
         "id" : "7",
+		"prenom" : "Sveltala la russe",
         "country" : "Russie",
         "worktime": "30",
         "thumb" : "ressources/character/thumb/russie_thumb.png",
@@ -51,6 +58,7 @@
     },
     {
         "id" : "8",
+		"prenom" : "Gonzalo l'argentin",
         "country" : "Argentine",
         "worktime": "71",
         "thumb" : "ressources/character/thumb/argentine_thumb.png",
@@ -58,6 +66,7 @@
     },
     {
         "id" : "9",
+		"prenom" : "Sutekh l'egyptien",
         "country" : "Egypte",
         "worktime": "21.16",
         "thumb" : "ressources/character/thumb/egypte_thumb.png",
@@ -65,6 +74,7 @@
     },
     {
         "id" : "10",
+		"prenom" : "Mohammed l'emirat",
         "country" : "Emirates",
         "worktime": "13",
         "thumb" : "ressources/character/thumb/france_thumb.png",
@@ -72,6 +82,7 @@
     },
     {
         "id" : "11",
+		"prenom" : "Sakura la japonnaise",
         "country" : "Japon",
         "worktime": "08",
         "thumb" : "ressources/character/thumb/france_thumb.png",
@@ -79,6 +90,7 @@
     },
     {
         "id" : "12",
+		"prenom" : "Loa-ming le chinois",
         "country" : "Chine",
         "worktime": "35",
         "thumb" : "ressources/character/thumb/france_thumb.png",
@@ -86,6 +98,7 @@
     },
     {
         "id" : "13",
+		"prenom" : "Nelson le sud africain",
         "country" : "Afrique du sud",
         "worktime": "49",
         "thumb" : "ressources/character/thumb/france_thumb.png",
@@ -93,6 +106,7 @@
     },
     {
         "id" : "14",
+		"prenom" : "Loa-ming la chinoise",
         "country" : "Inde",
         "worktime": "339",
         "thumb" : "ressources/character/thumb/france_thumb.png",
@@ -100,13 +114,15 @@
     },
     {
         "id" : "15",
-        "country" : "Uk",
+		"prenom" : "Charles l'anglais",
+        "country" : "Angleterre",
         "worktime": "15",
         "thumb" : "ressources/character/thumb/france_thumb.png",
         "url_img" : "ressources/character/test.jpg"
     },
     {
         "id" : "16",
+		"prenom" : "Ania la roumaine",
         "country" : "Roumanie",
         "worktime": "52",
         "thumb" : "ressources/character/thumb/france_thumb.png",
@@ -114,17 +130,26 @@
     },
     {
         "id" : "17",
+		"prenom" : "Nikos le grecque",
         "country" : "Grèce",
         "worktime": "32",
         "thumb" : "ressources/character/thumb/france_thumb.png",
         "url_img" : "ressources/character/test.jpg"
     },
     {
-        "id" : "18",
-        "country" : "Maroc",
-        "worktime": "345",
+        "id" : "19",
+		"prenom" : "Almut le suèdois",
+        "country" : "Suède",
+        "worktime": "15.75",
+        "thumb" : "ressources/character/thumb/france_thumb.png",
+        "url_img" : "ressources/character/test.jpg"
+    },
+    {
+        "id" : "20",
+		"prenom" : "Marta la chilienne",
+        "country" : "chili",
+        "worktime": "49",
         "thumb" : "ressources/character/thumb/france_thumb.png",
         "url_img" : "ressources/character/test.jpg"
     }
-
 ]
