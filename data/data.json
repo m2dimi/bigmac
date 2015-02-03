@@ -15,7 +15,7 @@
         "id" : "2",
 		"prenom" : "Ronaldinho le brésilien",
         "country" : "Brésil",
-		"m_color" :,
+
         "worktime": "120",
 		"calorie": "494",
 		"sodium" : "817",
@@ -46,7 +46,8 @@
 		"meet_origin" : "Australia",
 		"price" : "3.59",
         "thumb" : "ressources/character/thumb/france_thumb.png",
-        "url_img" : "ressources/character/test.jpg"
+        "url_img" : "ressources/character/test.jpg",
+		"perso" : "ressources/character/perso/perso_australie.png"
     },
     {
         "id" : "5",
@@ -128,7 +129,7 @@
         "worktime": "08",
 		"calorie": "557",
 		"sodium" : "2800",
-		"meet_origin" : "Australia \ New Zealand",
+		"meet_origin" : "Australia / New Zealand",
 		"price" : "2.71",
         "thumb" : "ressources/character/thumb/france_thumb.png",
         "url_img" : "ressources/character/test.jpg"
@@ -143,7 +144,8 @@
 		"meet_origin" : "Chine",
 		"price" : "2.03",
         "thumb" : "ressources/character/thumb/france_thumb.png",
-        "url_img" : "ressources/character/test.jpg"
+        "url_img" : "ressources/character/test.jpg",
+		"perso" : "ressources/character/perso/perso_chine.png"
     },
     {
         "id" : "13",
@@ -215,18 +217,20 @@
 		"meet_origin" : "Unknown",
 		"price" : "2.76",
         "thumb" : "ressources/character/thumb/france_thumb.png",
-        "url_img" : "ressources/character/test.jpg"
+        "url_img" : "ressources/character/test.jpg",
+		"perso" : "ressources/character/perso/perso_suede.png"
     },
     {
         "id" : "20",
 		"prenom" : "Marta la chilienne",
-        "country" : "chili",
+        "country" : "Chili",
         "worktime": "49",
 		"calorie": "508",
 		"sodium" : "2300",
 		"meet_origin" : "UK / Ireland",
 		"price" : "3.78",
         "thumb" : "ressources/character/thumb/france_thumb.png",
-        "url_img" : "ressources/character/test.jpg"
+        "url_img" : "ressources/character/test.jpg",
+		"perso" : "ressources/character/perso/perso_chili.png"
     }
 ]
