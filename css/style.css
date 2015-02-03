@@ -13,6 +13,13 @@ body{
     background: #FEDC85;
 }
 
+a:hover{
+    color: #8BC9D8;
+    text-decoration: none;
+}
+
+
+
 .font_jaap
 {
 font-family : jaapokkisubtract;

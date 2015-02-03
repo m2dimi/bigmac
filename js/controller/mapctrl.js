@@ -15,8 +15,7 @@
         //Display the thumb image of selected country on the start lightbox
         dataFactory.GetDataCountry(function(data){
             var countrySelect = $routeParams.countryA;
-            var idcountry = $filter('filter')(data, countrySelect);
-            $scope.countryselection = idcountry[0].perso;
+            $scope.countryselection = $filter('filter')(data, countrySelect, true)[0].perso;
         })
 
         //Code for the map game
