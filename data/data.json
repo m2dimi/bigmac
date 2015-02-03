@@ -9,7 +9,8 @@
 		"meet_origin" : "France / Ireland / Netherlands / Italy",
 		"price" : "3.90",
         "thumb" : "ressources/character/thumb/france_thumb.png",
-        "url_img" : "ressources/character/test.jpg"
+        "url_img" : "ressources/character/test.jpg",
+		"perso" : "ressources/character/perso/perso_france.png"
     },
     {
         "id" : "2",
@@ -21,7 +22,7 @@
 		"sodium" : "817",
 		"meet_origin" : "Unknown",
 		"price" : "4.35",
-        "thumb" : "ressources/character/thumb/france_thumb.png",
+        "thumb" : "ressources/character/thumb/bresile_thumb.png",
         "url_img" : "ressources/character/test.jpg"
     },
     {
@@ -33,7 +34,7 @@
 		"sodium" : "891",
 		"meet_origin" : "Unknown",
 		"price" : "2.41",
-        "thumb" : "ressources/character/thumb/france_thumb.png",
+        "thumb" : "ressources/character/thumb/mexique_thumb.png",
         "url_img" : "ressources/character/test.jpg"
     },
     {
@@ -45,7 +46,7 @@
 		"sodium" : "859",
 		"meet_origin" : "Australia",
 		"price" : "3.59",
-        "thumb" : "ressources/character/thumb/france_thumb.png",
+        "thumb" : "ressources/character/thumb/australie_thumb.png",
         "url_img" : "ressources/character/test.jpg",
 		"perso" : "ressources/character/perso/perso_australie.png"
     },
@@ -58,7 +59,7 @@
 		"sodium" : "2200",
 		"meet_origin" : "Unknown",
 		"price" : "3.80",
-        "thumb" : "ressources/character/thumb/france_thumb.png",
+        "thumb" : "ressources/character/thumb/azerbajan_thumb.png",
         "url_img" : "ressources/character/test.jpg"
     },
     {
@@ -119,7 +120,7 @@
 		"sodium" : "1080",
 		"meet_origin" : "Unknown",
 		"price" : "2.67",
-        "thumb" : "ressources/character/thumb/france_thumb.png",
+        "thumb" : "ressources/character/thumb/emirates_thumb.png",
         "url_img" : "ressources/character/test.jpg"
     },
     {
@@ -131,7 +132,7 @@
 		"sodium" : "2800",
 		"meet_origin" : "Australia / New Zealand",
 		"price" : "2.71",
-        "thumb" : "ressources/character/thumb/france_thumb.png",
+        "thumb" : "ressources/character/thumb/japon_thumb.png",
         "url_img" : "ressources/character/test.jpg"
     },
     {
@@ -143,7 +144,7 @@
 		"sodium" : "1024",
 		"meet_origin" : "Chine",
 		"price" : "2.03",
-        "thumb" : "ressources/character/thumb/france_thumb.png",
+        "thumb" : "ressources/character/thumb/chine_thumb.png",
         "url_img" : "ressources/character/test.jpg",
 		"perso" : "ressources/character/perso/perso_chine.png"
     },
@@ -156,7 +157,7 @@
 		"sodium" : "988",
 		"meet_origin" : "Unknown",
 		"price" : "1.73",
-        "thumb" : "ressources/character/thumb/france_thumb.png",
+        "thumb" : "ressources/character/thumb/sud_afrique_thumb.png",
         "url_img" : "ressources/character/test.jpg"
     },
     {
@@ -168,7 +169,7 @@
 		"sodium" : "2100",
 		"meet_origin" : "Unknown",
 		"price" : "1.33",
-        "thumb" : "ressources/character/thumb/france_thumb.png",
+        "thumb" : "ressources/character/thumb/inde_thumb.png",
         "url_img" : "ressources/character/test.jpg"
     },
     {
@@ -180,7 +181,7 @@
 		"sodium" : "2300",
 		"meet_origin" : "UK / Ireland",
 		"price" : "3.78",
-        "thumb" : "ressources/character/thumb/france_thumb.png",
+        "thumb" : "ressources/character/thumb/uk_thumb.png",
         "url_img" : "ressources/character/test.jpg"
     },
     {
@@ -192,7 +193,7 @@
 		"sodium" : "2300",
 		"meet_origin" : "UK / Ireland",
 		"price" : "3.78",
-        "thumb" : "ressources/character/thumb/france_thumb.png",
+        "thumb" : "ressources/character/thumb/roumanie_thumb.png",
         "url_img" : "ressources/character/test.jpg"
     },
     {
@@ -204,7 +205,7 @@
 		"sodium" : "2300",
 		"meet_origin" : "Europe",
 		"price" : "2.60",
-        "thumb" : "ressources/character/thumb/france_thumb.png",
+        "thumb" : "ressources/character/thumb/grece_thumb.png",
         "url_img" : "ressources/character/test.jpg"
     },
     {
@@ -216,7 +217,7 @@
 		"sodium" : "853",
 		"meet_origin" : "Unknown",
 		"price" : "2.76",
-        "thumb" : "ressources/character/thumb/france_thumb.png",
+        "thumb" : "ressources/character/thumb/suede_thumb.png",
         "url_img" : "ressources/character/test.jpg",
 		"perso" : "ressources/character/perso/perso_suede.png"
     },
@@ -229,7 +230,7 @@
 		"sodium" : "2300",
 		"meet_origin" : "UK / Ireland",
 		"price" : "3.78",
-        "thumb" : "ressources/character/thumb/france_thumb.png",
+        "thumb" : "ressources/character/thumb/chili_thumb.png",
         "url_img" : "ressources/character/test.jpg",
 		"perso" : "ressources/character/perso/perso_chili.png"
     }
