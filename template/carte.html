@@ -1,17 +1,14 @@
-<div class="row">
+<div class="row header">
     <div class="col-xs-3">
         <a href="#/home"><img class="logo_mini" src="ressources/logo_min.png"></a>
     </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12">
-            <p>Ici le mini jeu avec la carte</p>
-            <p>{{model.dataurl1}}</p>
-            <p>{{countotale}}</p>
-        </div>
+    <div class="col-xs-9">
+        <h1 class="font_nexar title">Où est mcdonald ?</h1>
     </div>
 </div>
+<div class="container">
+
+
 
 <div class="modal fade" id="start">
     <div class="modal-dialog">
@@ -19,7 +16,7 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h2 class="orange">{{model.dataurl1}}</h2>
+                        <h2 class="orange">{{prenomselection}}</h2>
                         <p class="orange">Trouvez le maximum de pays où il n'y  a <strong>PAS</strong> de mcdonald.</p>
                     </div>
                 </div>
@@ -226,6 +223,7 @@
         L206.7,248.1z"/>
 </g>
 </svg>
+</div>
 <script>
 
 window.onload

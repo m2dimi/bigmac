@@ -10,20 +10,21 @@
 		"price" : "3.90",
         "thumb" : "ressources/character/thumb/france_thumb.png",
         "url_img" : "ressources/character/test.jpg",
-		"perso" : "ressources/character/perso/perso_france.png"
+		"perso" : "ressources/character/perso/perso_france.png",
+		"flag" : "ressources/character/flag/france.png"
     },
     {
         "id" : "2",
 		"prenom" : "Ronaldinho le brésilien",
         "country" : "Brésil",
-
         "worktime": "120",
 		"calorie": "494",
 		"sodium" : "817",
 		"meet_origin" : "Unknown",
 		"price" : "4.35",
         "thumb" : "ressources/character/thumb/bresile_thumb.png",
-        "url_img" : "ressources/character/test.jpg"
+        "url_img" : "ressources/character/test.jpg",
+		"flag" : "ressources/character/flag/bresil.png"
     },
     {
         "id" : "3",
@@ -36,7 +37,8 @@
 		"price" : "2.41",
         "thumb" : "ressources/character/thumb/mexique_thumb.png",
         "url_img" : "ressources/character/test.jpg",
-		"perso" : "ressources/character/perso/perso_azer.png"
+		"perso" : "ressources/character/perso/perso_azer.png",
+		"flag" : "ressources/character/flag/mexique.png"
     },
     {
         "id" : "4",
@@ -48,8 +50,9 @@
 		"meet_origin" : "Australia",
 		"price" : "3.59",
         "thumb" : "ressources/character/thumb/australie_thumb.png",
-        "url_img" : "ressources/character/test.jpg",
-		"perso" : "ressources/character/perso/perso_australie.png"
+        "url_img" : "ressources/character/big/australie_big.png",
+		"perso" : "ressources/character/perso/perso_australie.png",
+		"flag" : "ressources/character/flag/australie.png"
     },
     {
         "id" : "5",
@@ -62,11 +65,12 @@
 		"price" : "3.80",
         "thumb" : "ressources/character/thumb/azerbajan_thumb.png",
         "url_img" : "ressources/character/test.jpg",
-		"perso" : "ressources/character/perso/perso_azer.png"
+		"perso" : "ressources/character/perso/perso_azer.png",
+		"flag" : "ressources/character/flag/azerbadjan.png"
 	},
     {
         "id" : "6",
-		"prenom" : "John le l'américain",
+		"prenom" : "John l'américain",
         "country" : "Amerique",
         "worktime": "10",
 		"calorie": "530",
@@ -74,7 +78,9 @@
 		"meet_origin" : "USA",
 		"price" : "3.56",
         "thumb" : "ressources/character/thumb/amerique_thumb.png",
-        "url_img" : "ressources/character/test.jpg"
+        "url_img" : "ressources/character/test.jpg",
+		"perso" : "ressources/character/perso/perso_americain.png",
+		"flag" : "ressources/character/flag/usa.png"
     },
     {
         "id" : "7",
@@ -87,7 +93,8 @@
 		"price" : "1.79",
         "thumb" : "ressources/character/thumb/russie_thumb.png",
         "url_img" : "ressources/character/big/russie_big.png",
-		"perso" : "ressources/character/perso/perso_russie.png"
+		"perso" : "ressources/character/perso/perso_russie.png",
+		"flag" : "ressources/character/flag/russie.png"
     },
     {
         "id" : "8",
@@ -99,7 +106,9 @@
 		"meet_origin" : "Unknown",
 		"price" : "1.91",
         "thumb" : "ressources/character/thumb/argentine_thumb.png",
-        "url_img" : "ressources/character/test.jpg"
+        "url_img" : "ressources/character/test.jpg",
+		"perso" : "ressources/character/perso/perso_argentin.png",
+		"flag" : "ressources/character/flag/argentine.png"
     },
     {
         "id" : "9",
@@ -111,11 +120,13 @@
 		"meet_origin" : "Unknown",
 		"price" : "1.76",
         "thumb" : "ressources/character/thumb/egypte_thumb.png",
-        "url_img" : "ressources/character/big/egypte_big.png"
+        "url_img" : "ressources/character/big/egypte_big.png",
+		"perso" : "ressources/character/perso/perso_egypte.png",
+		"flag" : "ressources/character/flag/egypte.png"
     },
     {
         "id" : "10",
-		"prenom" : "Mohammed l'emirat",
+		"prenom" : "Mohammed l'emirien",
         "country" : "Emirates",
         "worktime": "13",
 		"calorie": "527",
@@ -123,7 +134,8 @@
 		"meet_origin" : "Unknown",
 		"price" : "2.67",
         "thumb" : "ressources/character/thumb/emirates_thumb.png",
-        "url_img" : "ressources/character/test.jpg"
+        "url_img" : "ressources/character/test.jpg",
+		"flag" : "ressources/character/flag/emirate.png"
     },
     {
         "id" : "11",
@@ -135,7 +147,8 @@
 		"meet_origin" : "Australia / New Zealand",
 		"price" : "2.71",
         "thumb" : "ressources/character/thumb/japon_thumb.png",
-        "url_img" : "ressources/character/test.jpg"
+        "url_img" : "ressources/character/test.jpg",
+		"flag" : "ressources/character/flag/japon.png"
     },
     {
         "id" : "12",
@@ -148,7 +161,8 @@
 		"price" : "2.03",
         "thumb" : "ressources/character/thumb/chine_thumb.png",
         "url_img" : "ressources/character/test.jpg",
-		"perso" : "ressources/character/perso/perso_chine.png"
+		"perso" : "ressources/character/perso/perso_chine.png",
+		"flag" : "ressources/character/flag/chine.png"
     },
     {
         "id" : "13",
@@ -160,7 +174,8 @@
 		"meet_origin" : "Unknown",
 		"price" : "1.73",
         "thumb" : "ressources/character/thumb/sud_afrique_thumb.png",
-        "url_img" : "ressources/character/test.jpg"
+        "url_img" : "ressources/character/test.jpg",
+		"flag" : "ressources/character/flag/afrique_du_sud.png"
     },
     {
         "id" : "14",
@@ -172,7 +187,8 @@
 		"meet_origin" : "Unknown",
 		"price" : "1.33",
         "thumb" : "ressources/character/thumb/inde_thumb.png",
-        "url_img" : "ressources/character/test.jpg"
+        "url_img" : "ressources/character/test.jpg",
+		"flag" : "ressources/character/flag/inde.png"
     },
     {
         "id" : "15",
@@ -184,7 +200,8 @@
 		"meet_origin" : "UK / Ireland",
 		"price" : "3.78",
         "thumb" : "ressources/character/thumb/uk_thumb.png",
-        "url_img" : "ressources/character/test.jpg"
+        "url_img" : "ressources/character/test.jpg",
+		"flag" : "ressources/character/flag/royaume_uni.png"
     },
     {
         "id" : "16",
@@ -196,7 +213,8 @@
 		"meet_origin" : "UK / Ireland",
 		"price" : "3.78",
         "thumb" : "ressources/character/thumb/roumanie_thumb.png",
-        "url_img" : "ressources/character/test.jpg"
+        "url_img" : "ressources/character/test.jpg",
+		"flag" : "ressources/character/flag/roumanie.png"
     },
     {
         "id" : "17",
@@ -208,7 +226,22 @@
 		"meet_origin" : "Europe",
 		"price" : "2.60",
         "thumb" : "ressources/character/thumb/grece_thumb.png",
-        "url_img" : "ressources/character/test.jpg"
+        "url_img" : "ressources/character/test.jpg",
+		"flag" : "ressources/character/flag/grece.png"
+    },
+	    {
+        "id" : "18",
+		"prenom" : "Farid le marocain",
+        "country" : "Maroc",
+        "worktime": "15.75",
+		"calorie": "510",
+		"sodium" : "2200",
+		"meet_origin" : "Spain principaly / Argentina secondly",
+		"price" : "4.26",
+        "thumb" : "ressources/character/thumb/maroc_thumb.png",
+        "url_img" : "ressources/character/test.jpg",
+		"perso" : "ressources/character/perso/perso_maroc.png",
+		"flag" : "ressources/character/flag/maroc.png"
     },
     {
         "id" : "19",
@@ -221,7 +254,8 @@
 		"price" : "2.76",
         "thumb" : "ressources/character/thumb/suede_thumb.png",
         "url_img" : "ressources/character/test.jpg",
-		"perso" : "ressources/character/perso/perso_suede.png"
+		"perso" : "ressources/character/perso/perso_suede.png",
+		"flag" : "ressources/character/flag/suede.png"
     },
     {
         "id" : "20",
@@ -234,6 +268,7 @@
 		"price" : "3.78",
         "thumb" : "ressources/character/thumb/chili_thumb.png",
         "url_img" : "ressources/character/test.jpg",
-		"perso" : "ressources/character/perso/perso_chili.png"
+		"perso" : "ressources/character/perso/perso_chili.png",
+		"flag" : "ressources/character/flag/chili.png"
     }
 ]

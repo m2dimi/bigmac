@@ -9,8 +9,16 @@
     src: url('../fonts/rustslabblackshadow.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: "nexar";
+    src: url('../fonts/nexarustscriptl0.ttf') format('truetype');
+}
+
 body{
-    background: #FEDC85;
+    background : url("../ressources/site/fond.png") no-repeat;
+    background-size: contain;
+    background-position:  center 100px;
+    background-color: #FBC05C;
 }
 
 a:hover{
@@ -18,11 +26,18 @@ a:hover{
     text-decoration: none;
 }
 
-
-
+.font_nexar
+{
+    font-family: nexar;
+}
 .font_jaap
 {
 font-family : jaapokkisubtract;
+}
+
+.font_rustsla
+{
+    font-family: rustslabblackshadow;
 }
 
 .orange {
@@ -53,29 +68,27 @@ figure img{
     padding-top: 50px;
 }
 
-.logo_mini
+.header
 {
     padding-top: 20px;
+    color: #fff;
 }
 
-.img_perso_1
+.title
 {
-    display: inline-block;
-    -webkit-clip-path: polygon(61% 0, 0 0, 0 100%, 40% 100%);
-    clip-path: polygon(61% 0, 0 0, 0 100%, 40% 100%);;
+    font-size: 52px;
 }
 
-.img_perso_2
+.img_perso
 {
     display: inline-block;
-    -webkit-clip-path: polygon(100% 0, 60% 0, 40% 100%, 100% 100%);
-    clip-path: polygon(100% 0, 60% 0, 40% 100%, 100% 100%);
 }
+
+
 
 .perso_choisi
 {
-    display: inline-block;
-    position: absolute;
+    width: 100%;
 }
 
 #vs

@@ -11,16 +11,16 @@
             console.log(data);
         })
         var choix =  0;
-        $scope.characterDisplayClick = function(obj, name) {
+        $scope.characterDisplayClick = function(obj, name, country) {
 			if (choix == 0) {
                 $scope.persochoix = obj ;
-                $scope.persochoixname = name ;
-                $routeParams.countryA = name; 
+                $scope.persochoixname = name;
+                $scope.countryA = country;
                 choix = 1;    
             }else if (choix == 1) {
                 $scope.persochoix2 = obj ;
-                $scope.persochoixname2 = name ;
-                $routeParams.countryB = name;
+                $scope.persochoixname2 = name;
+                $scope.countryB = country;
                 choix = 2;
             };
 

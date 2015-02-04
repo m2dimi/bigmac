@@ -16,6 +16,7 @@
         dataFactory.GetDataCountry(function(data){
             var countrySelect = $routeParams.countryA;
             $scope.countryselection = $filter('filter')(data, countrySelect, true)[0].perso;
+            $scope.prenomselection = $filter('filter')(data, countrySelect, true)[0].prenom;
         })
 
         //Code for the map game
