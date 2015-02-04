@@ -156,3 +156,19 @@ figure img{
 #france:hover{
     background: red;
 }
+.characterchoice figure{
+    margin: 0px 25px;
+}
+.characterchoice figure:nth-child(0n+4),
+.characterchoice figure:nth-child(0n+9),
+.characterchoice figure:nth-child(0n+14),
+.characterchoice figure:nth-child(0n+19){
+    margin-left: 90px;
+    border-radius: 0 !important;
+}
+
+.characterchoice figure:nth-child(0n+5),
+.characterchoice figure:nth-child(0n+10),
+.characterchoice figure:nth-child(0n+15){
+    margin-right: 50px;
+}
