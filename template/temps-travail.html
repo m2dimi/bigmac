@@ -10,6 +10,59 @@
             <p>{{model.dataurl1}} vs {{model.dataurl2}}</p>
             <span>{{countryselection }}"</span>
             <a href="#/compare/{{countryA}}/{{countryB}}">jeu suivant</a>
+            <br/>
+            <br/>
+            <br/>
+
+            <div>
+                <input type="text" name="round" class="round" data-min="0" data-max="50" value="30" />
+            </div>
+            <script>
+                (function($){
+                    $('input.round').wrap('<div class="round" />').each(function(){
+                        var $input = $(this);
+                        var $div = $input.parent();
+                        var min = $input.data('min');
+                        var max = $input.data('max');
+                        var ratio = ($input.val() - min) / (max - min);
+
+                        var $circle = $('<canvas width="200px" height="200px"/>' );
+                        var $color = $('<canvas width="200px" height="200px"/>' );
+                        $div.append($circle);
+                        $div.append($color);
+                        var ctx = $circle[0].getContext('2d');
+
+                        ctx.beginPath();
+                        ctx.arc(100,100,85,0,2*Math.PI);
+                        ctx.lineWidth = 20;
+                        ctx.strokeStyle = "#FFF"
+                        ctx.stroke();
+
+                        var ctx = $color[0].getContext('2d');
+                        ctx.beginPath();
+                        ctx.arc(100,100,85,-1/2*Math.PI,ratio*2*Math.PI);
+                        ctx.lineWidth = 20;
+                        ctx.strokeStyle = "#91c2ff"
+                        ctx.stroke();
+
+                        $div.click(function(event){
+                            event.preventDefault();
+                            var x = event.pageX - $div.offset().left - $div.width()/2;
+                            var y = event.pageY - $div.offset().top - $div.height()/2;
+                            var a = Math.atan2(x,-y) / (2*Math.PI);
+                            if (a < 0) { a+=1; };
+                            ctx.clearRect(0,0,200,200);
+                            ctx.beginPath();
+                            ctx.arc(100,100,85,-1/2*Math.PI,a*2*Math.PI -1/2*Math.PI);
+                            ctx.lineWidth = 20;
+                            ctx.strokeStyle = "#91c2ff"
+                            ctx.stroke();
+                        })
+                    })
+                })(jQuery)
+
+            </script>
+
         </div>
     </div>
 </div>

@@ -172,3 +172,29 @@ figure img{
 .characterchoice figure:nth-child(0n+15){
     margin-right: 50px;
 }
+/*////input round///*/
+div.round{
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border: 1px solid #999;
+}
+div.round input{
+    position: absolute;
+    top: 55px;
+    left: 50px;
+    font-size: 60px;
+    text-align: center;
+    width: 100px;
+    border: none;
+    background: none;
+    outline: none;
+}
+div.round canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
