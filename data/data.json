@@ -84,7 +84,7 @@
     },
     {
         "id" : "7",
-		"prenom" : "Sveltala la russe",
+		"prenom" : "Sveltala\n la russe",
         "country" : "Russie",
         "worktime": "30",
 		"calorie": "510",

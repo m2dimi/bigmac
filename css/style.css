@@ -93,17 +93,20 @@ figure img{
     display: inline-block;
 }
 
-
+.perso_name
+{
+    font-size: 24px;
+}
 
 .perso_choisi
 {
     width: 100%;
 }
 
-#btn_valid
+.btn_valid
 {
     background: #A9D4CE;
-    box-shadow: 5px 5px 0px #B3AB96;
+    box-shadow: 5px 5px 0px #C9C8C8;
     color: #fff;
     padding: 7px 30px 7px 30px;
     position: absolute;
@@ -119,16 +122,16 @@ figure img{
 
 .btn_anul
 {
-    background: #A9D4CE;
-    box-shadow: 5px 5px 0px #B3AB96;
+    background: #E25B5A;
+    box-shadow: 5px 5px 0px #E1AC52;
     color: #fff;
-    padding: 7px 30px 7px 30px;
+    padding: 10px;
     display: none;
 }
 
 .btn_anul:hover
 {
-    color: #E25B5A;
+    color: #FBC05C;
 }
 
 #btn_valid:hover
@@ -187,7 +190,11 @@ figure img{
     position: absolute;
 }
 
-
+.choice_country
+{
+    width: 70px;
+    height: 70px;
+}
 
 .testmap01{
     width: 100px;
@@ -246,14 +253,26 @@ div.round canvas{
 
 
 @media (max-width: 767px) {
+
+    .btn_valid
+    {
+        top: -184px;
+        left: 0px;
+    }
+
     .title
     {
         font-size: 22px;
     }
 
+    .choice_country
+    {
+        width: 50px;
+        height: 50px;
+    }
 
     .characterchoice figure{
-        margin: 5px;
+        margin: 7px;
     }
     .characterchoice figure:nth-child(0n+4),
     .characterchoice figure:nth-child(0n+9),
@@ -267,6 +286,22 @@ div.round canvas{
     .characterchoice figure:nth-child(0n+10),
     .characterchoice figure:nth-child(0n+15){
         margin-right: 0;
+    }
+
+    .btn_anul
+    {
+        padding: 5px;
+    }
+
+    .perso_name
+    {
+    font-size: 14px;
+    }
+
+    .logo_mini
+    {
+        width: 70px;
+        height: 70px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
