@@ -26,6 +26,7 @@ body{
     background : url("../ressources/site/fond_perso.png") no-repeat;
     background-size: contain;
     background-position:  center;
+    padding-bottom: 50px ;
 }
 
 a:hover{
@@ -48,7 +49,7 @@ font-family : jaapokkisubtract;
 }
 
 .orange {
-color: #E25B5A;
+    color: #E25B5A;
 }
 
 .modal-content
@@ -68,6 +69,7 @@ figure{
 figure img{
 	height: 100%;
 	width: auto;
+    cursor: pointer;
 }
 
 #logo_big_indice
@@ -96,6 +98,27 @@ figure img{
 .perso_choisi
 {
     width: 100%;
+}
+
+#btn_valid
+{
+    background: #A9D4CE;
+    box-shadow: 5px 5px 0px #B3AB96;
+    color: #fff;
+    padding: 7px 30px 7px 30px;
+    position: absolute;
+    top: 235px;
+    left: 46px;
+    transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
+    display: none;
+}
+
+#btn_valid:hover
+{
+    color: #E25B5A;
 }
 
 #vs

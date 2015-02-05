@@ -22,6 +22,7 @@
                 $scope.persochoixname2 = name;
                 $scope.countryB = country;
                 choix = 2;
+                $("#btn_valid").fadeIn();
             };
 
 		}
