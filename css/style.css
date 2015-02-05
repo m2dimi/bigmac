@@ -23,7 +23,7 @@ body{
 
 .body_perso
 {
-    background : url("../ressources/site/fond_perso.png") no-repeat;
+    background : url("../ressources/site/fond_perso.png") repeat-y;
     background-size: contain;
     background-position:  center;
     padding-bottom: 50px ;
@@ -228,3 +228,37 @@ div.round canvas{
     right: 0;
     bottom: 0;
 }
+
+
+@media (max-width: 767px) {
+    .title
+    {
+        font-size: 22px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .title
+    {
+        font-size: 42px;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media (min-width: 1200px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

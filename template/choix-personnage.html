@@ -1,9 +1,9 @@
 <div class="body_perso">
     <div class="row header">
-        <div class="col-xs-3">
+        <div class="col-xs-12 col-sm-3">
             <a href="#/home"><img class="logo_mini" src="ressources/logo_min.png"></a>
         </div>
-        <div class="col-xs-9">
+        <div class="col-xs-12 col-sm-9">
             <h1  class="font_nexar title">Quels pays veut tu comparer ?</h1>
         </div>
     </div>
@@ -17,7 +17,7 @@
         </div>
         <div  class="col-xs-12 col-sm-4 characterchoice" >
             <figure ng-repeat="country in countries" ng-mouseover="characterDisplayOver(country.url_img)" ng-click="characterDisplayClick(country.url_img, country.prenom, country.country)">
-                <img class="img-circle" src="{{country.flag}}" style="width: 70px; height: 70px" />
+                <img class="img-circle img-responsive" src="{{country.flag}}" style="width: 70px; height: 70px" />
             </figure>
             <h2 class="text-center"><a id="btn_valid" class="font_rustsla" href="#/carte/{{countryA}}/{{countryB}}">Commencer</a></h2>
         </div>
