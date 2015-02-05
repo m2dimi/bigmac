@@ -126,6 +126,11 @@ figure img{
     display: none;
 }
 
+.btn_anul:hover
+{
+    color: #E25B5A;
+}
+
 #btn_valid:hover
 {
     color: #E25B5A;
