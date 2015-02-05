@@ -1,38 +1,39 @@
-<div class="row header">
-    <div class="col-xs-3">
-        <a href="#/home"><img class="logo_mini" src="ressources/logo_min.png"></a>
-    </div>
-    <div class="col-xs-9">
-        <h1  class="font_nexar title">Quels pays veut tu comparer ?</h1>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-xs-4">
-        <div class="perso_choisi">
-            <h3 class="text-center font_rustsla orange">{{persochoixname}}</h3>
-            <img class="img_perso img-responsive" src="{{persochoix}}" />
+<div class="body_perso">
+    <div class="row header">
+        <div class="col-xs-3">
+            <a href="#/home"><img class="logo_mini" src="ressources/logo_min.png"></a>
+        </div>
+        <div class="col-xs-9">
+            <h1  class="font_nexar title">Quels pays veut tu comparer ?</h1>
         </div>
     </div>
-    <div  class="col-xs-12 col-sm-4 characterchoice" >
-	    <figure ng-repeat="country in countries" ng-mouseover="characterDisplayOver(country.url_img)" ng-click="characterDisplayClick(country.url_img, country.prenom, country.country)">
-			<img class="img-circle" src="{{country.flag}}" style="width: 70px; height: 70px" />
-		</figure>
+
+    <div class="row">
+        <div class="col-xs-4">
+            <div class="perso_choisi">
+                <h3 class="text-center font_rustsla orange">{{persochoixname}}</h3>
+                <img class="img_perso img-responsive" src="{{persochoix}}" />
+            </div>
+        </div>
+        <div  class="col-xs-12 col-sm-4 characterchoice" >
+            <figure ng-repeat="country in countries" ng-mouseover="characterDisplayOver(country.url_img)" ng-click="characterDisplayClick(country.url_img, country.prenom, country.country)">
+                <img class="img-circle" src="{{country.flag}}" style="width: 70px; height: 70px" />
+            </figure>
+        </div>
+        <div class="col-xs-4">
+            <!--<div id="vs" class="perso_choisi"><hr class="line_diagonal"><span id="text_vs">vs</span><hr class="line_diagonal2"></div>-->
+            <div class="perso_choisi">
+                <h3 class="text-center font_rustsla orange">{{persochoixname2}}</h3>
+               <img class="img_perso img-responsive" src="{{persochoix2}}" />
+            </div>
+        </div>
     </div>
-    <div class="col-xs-4">
-        <!--<div id="vs" class="perso_choisi"><hr class="line_diagonal"><span id="text_vs">vs</span><hr class="line_diagonal2"></div>-->
-        <div class="perso_choisi">
-            <h3 class="text-center font_rustsla orange">{{persochoixname2}}</h3>
-	       <img class="img_perso img-responsive" src="{{persochoix2}}" />
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 class="text-center"><a class="font_jaap orange" href="#/carte/{{countryA}}/{{countryB}}">Valider</a></h1>
         </div>
     </div>
 </div>
-<div class="row">
-    <div class="col-xs-12">
-        <h1 class="text-center"><a class="font_jaap orange" href="#/carte/{{countryA}}/{{countryB}}">Valider</a></h1>
-    </div>
-</div>
-
 
 <!--
 <script>
