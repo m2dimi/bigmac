@@ -16,6 +16,7 @@
                 $scope.persochoix = obj ;
                 $scope.persochoixname = name;
                 $scope.countryA = country;
+                $("#btn_anul1").fadeIn();
                 choix = 1;    
             }else if (choix == 1) {
                 $scope.persochoix2 = obj ;
@@ -23,6 +24,7 @@
                 $scope.countryB = country;
                 choix = 2;
                 $("#btn_valid").fadeIn();
+                $("#btn_anul2").fadeIn();
             };
 
 		}

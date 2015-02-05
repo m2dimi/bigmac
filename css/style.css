@@ -116,6 +116,16 @@ figure img{
     display: none;
 }
 
+
+.btn_anul
+{
+    background: #A9D4CE;
+    box-shadow: 5px 5px 0px #B3AB96;
+    color: #fff;
+    padding: 7px 30px 7px 30px;
+    display: none;
+}
+
 #btn_valid:hover
 {
     color: #E25B5A;
@@ -234,6 +244,24 @@ div.round canvas{
     .title
     {
         font-size: 22px;
+    }
+
+
+    .characterchoice figure{
+        margin: 5px;
+    }
+    .characterchoice figure:nth-child(0n+4),
+    .characterchoice figure:nth-child(0n+9),
+    .characterchoice figure:nth-child(0n+14),
+    .characterchoice figure:nth-child(0n+19){
+        margin-left: 0;
+        border-radius: 0 !important;
+    }
+
+    .characterchoice figure:nth-child(0n+5),
+    .characterchoice figure:nth-child(0n+10),
+    .characterchoice figure:nth-child(0n+15){
+        margin-right: 0;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
