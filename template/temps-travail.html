@@ -15,7 +15,7 @@
             <br/>
 
             <div>
-                <input type="text" name="round" class="round" data-min="0" data-max="50" value="30" />
+                <input type="text" name="round" class="round" data-min="1" data-max="24" value="10" />
             </div>
             <script>
                 (function($){
@@ -24,7 +24,8 @@
                         var $div = $input.parent();
                         var min = $input.data('min');
                         var max = $input.data('max');
-                        var ratio = ($input.val() - min) / (max - min);
+                        // var ratio = ($input.val() - min) / (max - min);
+
 
                         var $circle = $('<canvas width="200px" height="200px"/>' );
                         var $color = $('<canvas width="200px" height="200px"/>' );
@@ -45,18 +46,24 @@
                         ctx.strokeStyle = "#91c2ff"
                         ctx.stroke();
 
-                        $div.click(function(event){
-                            event.preventDefault();
-                            var x = event.pageX - $div.offset().left - $div.width()/2;
-                            var y = event.pageY - $div.offset().top - $div.height()/2;
-                            var a = Math.atan2(x,-y) / (2*Math.PI);
-                            if (a < 0) { a+=1; };
-                            ctx.clearRect(0,0,200,200);
-                            ctx.beginPath();
-                            ctx.arc(100,100,85,-1/2*Math.PI,a*2*Math.PI -1/2*Math.PI);
-                            ctx.lineWidth = 20;
-                            ctx.strokeStyle = "#91c2ff"
-                            ctx.stroke();
+                        $div.mousedown(function(event){
+                             event.preventDefault();
+                            $div.bind('mousemove', function(event){
+                                 var x = event.pageX - $div.offset().left - $div.width()/2;
+                                var y = event.pageY - $div.offset().top - $div.height()/2;
+                                var a = Math.atan2(x,-y) / (2*Math.PI);
+                                if (a < 0) { a+=1; };
+                                ctx.clearRect(0,0,200,200);
+                                ctx.beginPath();
+                                ctx.arc(100,100,85,-1/2*Math.PI,a*2*Math.PI -1/2*Math.PI);
+                                ctx.lineWidth = 20;
+                                ctx.strokeStyle = "#91c2ff"
+                                ctx.stroke();
+                                $input.val(Math.round(a * (max - min) + min));
+                            })
+                        }).mouseup(function(event){
+                             event.preventDefault();
+                            $div.unbind('mousemove');
                         })
                     })
                 })(jQuery)

@@ -16,5 +16,7 @@
                 $scope.countryselection = $filter('filter')(data, countrySelect, true)[0].worktime;
             })
 
+            
+
       });
     
