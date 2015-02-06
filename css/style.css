@@ -258,7 +258,7 @@ div.round canvas{
     .btn_valid
     {
         top: -184px;
-        left: 0px;
+        left: 10%;
     }
 
     .title
@@ -311,8 +311,41 @@ div.round canvas{
         font-size: 42px;
     }
 
+    .choice_country
+    {
+        width: 60px;
+        height: 60px;
+    }
+
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+    .choice_country
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+    .characterchoice figure{
+        margin: 5px 16px;
+    }
+    .characterchoice figure:nth-child(0n+4),
+    .characterchoice figure:nth-child(0n+9),
+    .characterchoice figure:nth-child(0n+14),
+    .characterchoice figure:nth-child(0n+19){
+        margin-left: 60px;
+        border-radius: 0 !important;
+    }
+
+    .characterchoice figure:nth-child(0n+5),
+    .characterchoice figure:nth-child(0n+10),
+    .characterchoice figure:nth-child(0n+15){
+        margin-right: 0;
+    }
+
+    .btn_valid
+    {
+        left: 5%;
+    }
 
 }
 @media (min-width: 1200px) {
