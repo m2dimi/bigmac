@@ -9,7 +9,7 @@
 		"meet_origin" : "France / Ireland / Netherlands / Italy",
 		"price" : "3.90",
         "thumb" : "ressources/character/thumb/france_thumb.png",
-        "url_img" : "ressources/character/test.jpg",
+        "url_img" : "ressources/character/big/france_big.png",
 		"perso" : "ressources/character/perso/perso_france.png",
 		"flag" : "ressources/character/flag/france.png"
     },
@@ -78,7 +78,7 @@
 		"meet_origin" : "USA",
 		"price" : "3.56",
         "thumb" : "ressources/character/thumb/amerique_thumb.png",
-        "url_img" : "ressources/character/test.jpg",
+        "url_img" : "ressources/character/big/amerique_big.png",
 		"perso" : "ressources/character/perso/perso_americain.png",
 		"flag" : "ressources/character/flag/usa.png"
     },
