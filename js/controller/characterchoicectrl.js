@@ -12,26 +12,59 @@
         })
         var choix =  0;
         $scope.characterDisplayClick = function(obj, name, country) {
-			if (choix == 0) {
+			if (choix <= 1) {
                 $scope.persochoix = obj ;
                 $scope.persochoixname = name;
                 $scope.countryA = country;
                 $("#btn_anul1").fadeIn();
-                choix = 1;    
-            }else if (choix == 1) {
-                $scope.persochoix2 = obj ;
+                if(choix == 0)
+                {
+                    choix = choix + 2
+                }
+                else
+                {
+                    $(".btn_valid").fadeIn();
+                }
+                choix = choix + 1;
+                console.log(choix);
+            }else if (choix > 1) {
+                $scope.persochoix2 = obj;
                 $scope.persochoixname2 = name;
                 $scope.countryB = country;
-                choix = 2;
-                $(".btn_valid").fadeIn();
+                choix = choix + 1;
+                console.log(choix);
                 $("#btn_anul2").fadeIn();
+                $(".btn_valid").fadeIn();
+
             };
 
 		}
-        $scope.deleteCharacterSelect = function() {
-            choix = 0;
-            $log.debug('choix');
+        $scope.characterremove1 = function() {
+            $scope.persochoix = "";
+            if(choix == 1)
+            {
+                choix = 0;
+                console.log(choix);
+            }
+            else
+            {
+                choix = choix - 3;
+                console.log(choix);
+            }
+
+            $("#btn_anul1").hide();
+            $(".btn_valid").fadeOut();
         }
+
+        $scope.characterremove2 = function() {
+            $scope.persochoix2 = "";
+            choix = choix - 1;
+            $("#btn_anul2").hide();
+            $(".btn_valid").fadeOut();
+            console.log(choix);
+        }
+
+
 			
        /*
  $scope.characterDisplayOver = function(obj) {
