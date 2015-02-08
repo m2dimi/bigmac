@@ -106,7 +106,7 @@
 		"meet_origin" : "Unknown",
 		"price" : "1.91",
         "thumb" : "ressources/character/thumb/argentine_thumb.png",
-        "url_img" : "ressources/character/test.jpg",
+        "url_img" : "ressources/character/big/argentine_big.png",
 		"perso" : "ressources/character/perso/perso_argentin.png",
 		"flag" : "ressources/character/flag/argentine.png"
     },
