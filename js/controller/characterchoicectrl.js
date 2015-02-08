@@ -10,58 +10,51 @@
             $scope.countries=data;
             console.log(data);
         })
-        var choix =  0;
+
+        var valid1 = 0;
+        var valid2 = 0;
+
         $scope.characterDisplayClick = function(obj, name, country) {
-			if (choix <= 1) {
+			if (valid1==0) {
                 $scope.persochoix = obj ;
                 $scope.persochoixname = name;
                 $scope.countryA = country;
                 $("#btn_anul1").fadeIn();
-                if(choix == 0)
-                {
-                    choix = choix + 2
-                }
-                else
-                {
-                    $(".btn_valid").fadeIn();
-                }
-                choix = choix + 1;
-                console.log(choix);
-            }else if (choix > 1) {
+                valid();
+                valid1 = 1;
+                console.log(valid1);
+            }else if (valid2==0) {
                 $scope.persochoix2 = obj;
                 $scope.persochoixname2 = name;
                 $scope.countryB = country;
-                choix = choix + 1;
-                console.log(choix);
                 $("#btn_anul2").fadeIn();
-                $(".btn_valid").fadeIn();
+                valid2 = 1;
+                valid();
 
             };
 
 		}
         $scope.characterremove1 = function() {
             $scope.persochoix = "";
-            if(choix == 1)
-            {
-                choix = 0;
-                console.log(choix);
-            }
-            else
-            {
-                choix = choix - 3;
-                console.log(choix);
-            }
-
+            valid1 = 0;
             $("#btn_anul1").hide();
             $(".btn_valid").fadeOut();
         }
 
         $scope.characterremove2 = function() {
             $scope.persochoix2 = "";
-            choix = choix - 1;
+            valid2 = 0;
             $("#btn_anul2").hide();
             $(".btn_valid").fadeOut();
-            console.log(choix);
+        }
+
+
+        function valid()
+        {
+            if(valid1 = valid2)
+            {
+                $(".btn_valid").fadeIn();
+            }
         }
 
 

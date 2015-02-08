@@ -129,6 +129,7 @@ figure img{
     color: #fff;
     padding: 10px;
     display: none;
+    cursor: pointer;
 }
 
 .btn_anul:hover
@@ -260,6 +261,11 @@ div.round canvas{
     {
         top: -184px;
         left: 10%;
+    }
+
+    .perso_choisi
+    {
+        height: 300px;
     }
 
     .title
