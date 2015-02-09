@@ -8,14 +8,6 @@
 }
 
 
-
-@font-face {
-    font-family: "rustslabblackshadow";
-    src: url('../fonts/rustslabblackshadow.ttf') format('truetype');
-
-}
-
-
 @font-face {
     font-family: "nexar";
     src: url('../fonts/nexarustscriptl0.eot');
