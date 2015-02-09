@@ -1,18 +1,30 @@
 
 @font-face {
     font-family: "jaapokkisubtract";
-    src: url('../fonts/jaapokkisubtract-regular.ttf') format('truetype');
+    src: url('../fonts/jaapokkisubtract-regular.eot');
+    src: url('../fonts/jaapokkisubtract-regular.eot') format('eot'),
+         url('../fonts/jaapokkisubtract-regular.woff') format('woff'),
+         url('../fonts/jaapokkisubtract-regular.ttf') format('truetype');
 }
+
+
 
 @font-face {
     font-family: "rustslabblackshadow";
     src: url('../fonts/rustslabblackshadow.ttf') format('truetype');
+
 }
+
 
 @font-face {
     font-family: "nexar";
-    src: url('../fonts/nexarustscriptl0.ttf') format('truetype');
+    src: url('../fonts/nexarustscriptl0.eot');
+    src: url('../fonts/nexarustscriptl0.eot') format('eot'),
+         url('../fonts/nexarustscriptl0.woff') format('woff'),
+         url('../fonts/nexarustscriptl0.ttf') format('truetype');
 }
+
+
 
 body{
     background : url("../ressources/site/fond.png") no-repeat;
@@ -40,7 +52,7 @@ a:hover{
 }
 .font_jaap
 {
-font-family : jaapokkisubtract;
+font-family : jaapokkisubtract, jaapokkisubtractie;
 }
 
 .font_rustsla
@@ -69,7 +81,7 @@ figure img{
 }
 
 figure img:hover{
-    
+
 }
 
 
@@ -214,7 +226,7 @@ figure img:hover{
     background: red;
 }
 .characterchoice figure{
-    margin: 0px 25px;
+    margin: 0px 24px;
 }
 .characterchoice figure:nth-child(0n+4),
 .characterchoice figure:nth-child(0n+9),
