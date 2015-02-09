@@ -57,20 +57,21 @@ font-family : jaapokkisubtract;
     background: #FEDC85;
 }
 
-/*
-#perso_choisi
-{
-    display: none;
-}
-*/
+
 figure{
 	float:left;
 }
+
 figure img{
 	height: 100%;
 	width: auto;
     cursor: pointer;
 }
+
+figure img:hover{
+    
+}
+
 
 #logo_big_indice
 {
