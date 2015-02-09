@@ -9,6 +9,15 @@
 
 
 @font-face {
+    font-family: "rustslabblackshadow";
+    src: url('../fonts/rustslabblackshadow.eot');
+    src: url('../fonts/rustslabblackshadow.eot') format('eot'),
+    url('../fonts/rustslabblackshadow.woff') format('woff'),
+    url('../fonts/rustslabblackshadow.ttf') format('truetype');
+}
+
+
+@font-face {
     font-family: "nexar";
     src: url('../fonts/nexarustscriptl0.eot');
     src: url('../fonts/nexarustscriptl0.eot') format('eot'),
@@ -44,7 +53,7 @@ a:hover{
 }
 .font_jaap
 {
-font-family : jaapokkisubtract, jaapokkisubtractie;
+font-family : jaapokkisubtract;
 }
 
 .font_rustsla
