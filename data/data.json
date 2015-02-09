@@ -28,7 +28,7 @@
     },
     {
         "id" : "3",
-		"prenom" : "Fransesca le mexicain",
+		"prenom" : "Fransesca la mexicaine",
         "country" : "Mexique",
         "worktime": "31",
 		"calorie": "486",
@@ -37,7 +37,7 @@
 		"price" : "2.41",
         "thumb" : "ressources/character/thumb/mexique_thumb.png",
         "url_img" : "ressources/character/test.jpg",
-		"perso" : "ressources/character/perso/perso_azer.png",
+		"perso" : "ressources/character/perso/perso_mexique.png",
 		"flag" : "ressources/character/flag/mexique.png"
     },
     {
@@ -84,7 +84,7 @@
     },
     {
         "id" : "7",
-		"prenom" : "Sveltala\n la russe",
+		"prenom" : "Sveltala la russe",
         "country" : "Russie",
         "worktime": "30",
 		"calorie": "510",
@@ -135,6 +135,7 @@
 		"price" : "2.67",
         "thumb" : "ressources/character/thumb/emirates_thumb.png",
         "url_img" : "ressources/character/test.jpg",
+		"perso" : "ressources/character/perso/perso_emirates.png",
 		"flag" : "ressources/character/flag/emirate.png"
     },
     {
@@ -147,7 +148,8 @@
 		"meet_origin" : "Australia / New Zealand",
 		"price" : "2.71",
         "thumb" : "ressources/character/thumb/japon_thumb.png",
-        "url_img" : "ressources/character/test.jpg",
+        "url_img" : "ressources/character/big/japon_big.png",
+		"perso" : "ressources/character/perso/perso_japon.png",
 		"flag" : "ressources/character/flag/japon.png"
     },
     {
@@ -175,6 +177,7 @@
 		"price" : "1.73",
         "thumb" : "ressources/character/thumb/sud_afrique_thumb.png",
         "url_img" : "ressources/character/test.jpg",
+		"perso" : "ressources/character/perso/perso_sud_afrique.png",
 		"flag" : "ressources/character/flag/afrique_du_sud.png"
     },
     {
@@ -188,6 +191,7 @@
 		"price" : "1.33",
         "thumb" : "ressources/character/thumb/inde_thumb.png",
         "url_img" : "ressources/character/big/indien_big.png",
+		"perso" : "ressources/character/perso/perso_indien.png",
 		"flag" : "ressources/character/flag/inde.png"
     },
     {
@@ -200,7 +204,8 @@
 		"meet_origin" : "UK / Ireland",
 		"price" : "3.78",
         "thumb" : "ressources/character/thumb/uk_thumb.png",
-        "url_img" : "ressources/character/test.jpg",
+        "url_img" : "ressources/character/big/angleterre_big.png",
+		"perso" : "ressources/character/perso/perso_anglais.png",
 		"flag" : "ressources/character/flag/royaume_uni.png"
     },
     {
@@ -226,7 +231,8 @@
 		"meet_origin" : "Europe",
 		"price" : "2.60",
         "thumb" : "ressources/character/thumb/grece_thumb.png",
-        "url_img" : "ressources/character/test.jpg",
+        "url_img" : "ressources/character/big/grece_big.png",
+		"perso" : "ressources/character/perso/perso_grece.png",
 		"flag" : "ressources/character/flag/grece.png"
     },
 	    {

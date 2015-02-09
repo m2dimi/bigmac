@@ -134,7 +134,8 @@ figure img{
 
 .btn_anul:hover
 {
-    color: #FBC05C;
+    background: #ee6463;
+    color: #fff;
 }
 
 #btn_valid:hover
