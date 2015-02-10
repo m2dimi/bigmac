@@ -13,7 +13,9 @@
             dataFactory.GetDataCountry(function(data){
                 var countrySelect = $routeParams.countryA;
                 var idcountry = $filter('filter')(data, countrySelect);
-                $scope.countryselection = $filter('filter')(data, countrySelect, true)[0].worktime;
+                $scope.worktimeselection = $filter('filter')(data, countrySelect, true)[0].worktime;
+                $scope.countryselection = $filter('filter')(data, countrySelect, true)[0].perso;
+                $scope.prenomselection = $filter('filter')(data, countrySelect, true)[0].prenom;
             })
 
             

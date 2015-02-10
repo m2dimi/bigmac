@@ -7,3 +7,40 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="start">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="orange font_rustsla">{{prenomselection}}</h2>
+                        <p class="">Mets une heure et tu verras quelle pays produit le plus de big dans ce temps imparti</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <img class="img-responsive center-block"  src="{{countryselection }}" />
+                    </div>
+                    <div class="col-xs-6">
+                        <img class="img-responsive" src="ressources/carte.png"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <h2> <a href="#" class="text-center orange font_jaap" data-dismiss="modal">START</a></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    window.onload
+    {
+        $('#start').modal('show')
+    }
+
+</script>

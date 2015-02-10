@@ -34,7 +34,6 @@
                 valid();
 
             };
-
 		}
         $scope.characterremove1 = function() {
             $scope.persochoix = "";
