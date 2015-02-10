@@ -12,7 +12,7 @@ var app = angular.module('playground', ['ngRoute']);
 	                    templateUrl: 'template/home.html',
 	                    controller: 'homeCtrl'
 	                    })
-	                .when('/compare/:countryA/:countryB', {
+	                .when('/comparatif/:countryA/:countryB', {
 	                    templateUrl: 'template/comparatif.html',
                         controller: 'comparatifCtrl'
 	                })

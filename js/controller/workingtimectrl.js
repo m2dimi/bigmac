@@ -9,6 +9,8 @@
                 dataurl1: $routeParams.countryA,
                 dataurl2: $routeParams.countryB
             }
+            $scope.countryA = $routeParams.countryA;
+            $scope.countryB = $routeParams.countryB;
 
             dataFactory.GetDataCountry(function(data){
                 var countrySelect = $routeParams.countryA;
