@@ -20,6 +20,7 @@
                 $scope.persochoixname = name;
                 $scope.countryA = country;
                 $("#btn_anul1").fadeIn();
+                $("#perso1").fadeIn();
                 valid();
                 valid1 = 1;
                 console.log(valid1);
@@ -28,6 +29,7 @@
                 $scope.persochoixname2 = name;
                 $scope.countryB = country;
                 $("#btn_anul2").fadeIn();
+                $("#perso2").fadeIn();
                 valid2 = 1;
                 valid();
 
@@ -38,6 +40,7 @@
             $scope.persochoix = "";
             valid1 = 0;
             $("#btn_anul1").hide();
+            $("#perso1").hide();
             $(".btn_valid").fadeOut();
         }
 
@@ -45,6 +48,7 @@
             $scope.persochoix2 = "";
             valid2 = 0;
             $("#btn_anul2").hide();
+            $("#perso2").hide();
             $(".btn_valid").fadeOut();
         }
 

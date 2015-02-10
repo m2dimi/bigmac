@@ -104,7 +104,7 @@ figure img:hover{
 
 .img_perso
 {
-    display: inline-block;
+    display: none;
 }
 
 .perso_name
