@@ -3,8 +3,7 @@
 
 //controller compare
         app.controller('comparatifCtrl', function($scope, $log, $routeParams, dataFactory, $filter) {
-        $log.debug('angular is ready');
-
+        
             //Display the name of the selected countries
             $scope.model = {
                 dataurl1: $routeParams.countryA,
@@ -13,11 +12,16 @@
             $scope.countryA = $routeParams.countryA;
             $scope.countryB = $routeParams.countryB;
 
+            var tailleFenetre = window.innerHeight;
+            $('.body_perso').css('height', tailleFenetre);
+
             dataFactory.GetDataCountry(function(data){
-                var countrySelect = $routeParams.countryA;
-                var idcountry = $filter('filter')(data, countrySelect);
-                $scope.worktimeselection = $filter('filter')(data, countrySelect, true)[0].worktime;
-                $scope.countryselection = $filter('filter')(data, countrySelect, true)[0].perso;
-                $scope.prenomselection = $filter('filter')(data, countrySelect, true)[0].prenom;
+                var countrySelect1 = $routeParams.countryA;
+                var countrySelect2 = $routeParams.countryB;
+                
+                $scope.thumbperso1 = $filter('filter')(data, countrySelect1, true)[0].thumb;
+                $scope.thumbperso2 = $filter('filter')(data, countrySelect2, true)[0].thumb;
+                $scope.prenomperso1 = $filter('filter')(data, countrySelect1, true)[0].prenom;
+                $scope.prenomperso2 = $filter('filter')(data, countrySelect2, true)[0].prenom;
             })
       });

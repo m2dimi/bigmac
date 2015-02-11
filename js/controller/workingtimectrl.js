@@ -11,6 +11,7 @@
             }
             $scope.countryA = $routeParams.countryA;
             $scope.countryB = $routeParams.countryB;
+            $scope.ecran = 'home';
 
             dataFactory.GetDataCountry(function(data){
                 var countrySelect = $routeParams.countryA;
