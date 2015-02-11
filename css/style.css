@@ -47,6 +47,11 @@ a:hover{
     text-decoration: none;
 }
 
+.font_default
+{
+    font-family: helvetica;
+}
+
 .font_nexar
 {
     font-family: nexar;
