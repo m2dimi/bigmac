@@ -26,68 +26,273 @@
             // if (number==1) {
                 // var idcurrent = event.target.id;
                  // $scope.colour = $scope.colour === "green" ? "blue" : "green";
-                var id = $(event.target).data('id');
+            var id = $(event.target.parentElement.parentElement).data('id');
+
                 // var col = "colour"+id;
                 // console.log(id);
                 switch(id) {
-                    case 102:
+
+                    case "other_country":
+                        var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour104 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "south_asia":
                         var count = 1;
                         var win = true;
                         find(count, win);
-                        $scope.colour102 = "green";
-                        $scope.countotale = countotale;
-                        break;
-                    case 103:
-                        $scope.colour103 = "blue";
-                        var count = 1;
-                        var win = false;
+                        color(id);
                         find(count, win);
+                        $scope.colour105 = "green";
                         $scope.countotale = countotale;
-                        // alert('perdu');
                         break;
-                    case 104:
+
+                    case "iran":
                         var count = 1;
                         var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour104 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "indonesia":
+                        var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour104 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "north_pole":
+                        var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour104 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "caraibaan_ship":
+                        var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour105 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "south-wale":
+                        var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour104 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "north-wale":
+                        var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour104 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "arabia2":
+                        var count = 1;
+                        var win = true;
+                        color(id);
                         find(count, win);
                         $scope.colour104 = "green";
                         $scope.countotale = countotale;
                         break;
                     
-                    case 105:
+                    case "arabia":
                         var count = 1;
                         var win = true;
+                        color(id);
                         find(count, win);
                         $scope.colour105 = "green";
                         $scope.countotale = countotale;
                         break;
-                    case 106:
+
+                    case "russia":
                         var count = 1;
                         var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colorrus = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "europe_west":
+                        var count = 0;
+                        var win = false;
+                        color(id);
+                        find(count, win);
+                        $scope.countotale = countotale;
+                        // alert('perdu');
+                        break;
+
+                    case "italia":
+                        var count = 1;
+                        var win = true;
+                        color(id);
                         find(count, win);
                         $scope.colour106 = "green";
                         $scope.countotale = countotale;
-                        break;
-                    case 107:
+                        break
+
+                    case "UK":
                         var count = 1;
                         var win = true;
+                        color(id);
                         find(count, win);
                         $scope.colour107 = "green";
                         $scope.countotale = countotale;
                         break;
-                    case 108:
+
+                    case "france":
                         var count = 1;
                         var win = true;
+                        color(id);
                         find(count, win);
                         $scope.colour108 = "green";
                         $scope.countotale = countotale;
                         break;
-                    case 109:
+
+                    case "west_africa":
                         var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour109 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "marocco":
+                        var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour109 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "egypte":
+                        var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour109 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "mongolia":
+                        var count = 1;
+                        color(id);
                         var win = true;
                         find(count, win);
                         $scope.colour109 = "green";
                         $scope.countotale = countotale;
-                        break;                        
+                        break;
+
+                    case "china":
+                        var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour109 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "india":
+                        var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour109 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "australia":
+                        var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour109 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "madagascar":
+                        var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour109 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "south_africa":
+                        var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour109 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "south_america":
+                        var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour109 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "bolivia":
+                        var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour109 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "alaska-canada":
+                        var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour109 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "USA_West":
+                        var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour109 = "green";
+                        $scope.countotale = countotale;
+                        break;
+
+                    case "USA_east":
+                        var count = 1;
+                        var win = true;
+                        color(id);
+                        find(count, win);
+                        $scope.colour109 = "green";
+                        $scope.countotale = countotale;
+                        break;
                 }
                  
                 // console.log(id);
@@ -114,4 +319,30 @@
                   $('#win').modal('show');
               }
           }
+      }
+
+      function color(id)
+      {
+          var i = 0;
+          var ele = '#'+id+ ' > *:first';
+          var nbr = $(ele).length;
+          alert(nbr);
+
+          console.log(nbr);
+
+
+          var elefill = '#'+id+ ' > [attribut="fill"]';
+          /*$('#russia > *').attr('fill', '#000');*/
+         // $("g#"+id).find(elechild).attr("fill", "#E25B5A");
+          $('path, polygon, circle', ele).attr('fill', "#E25B5A");
+          /*
+          while (i != nbr)
+
+          {
+              $(ele).attr('fill','#fff');
+             i++;
+          }
+
+*/
+
       }
