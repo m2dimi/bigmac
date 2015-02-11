@@ -38,7 +38,6 @@
                         var count = 1;
                         var win = false;
                         color(id, win, count);
-                        var actived = 1;
                         $scope.countotale = countotale;
                         break;
 
@@ -101,8 +100,7 @@
                     case "arabia":
                         var count = 1;
                         var win = true;
-                        color(id, win);
-                        find(count, win);
+                        color(id, win, count);
                         $scope.countotale = countotale;
                         break;
 
@@ -152,8 +150,7 @@
                     case "marocco":
                         var count = 1;
                         var win = true;
-                        color(id, win);
-                        find(count, win);
+                        color(id, win, count);
                         $scope.countotale = countotale;
                         break;
 
