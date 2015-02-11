@@ -2,8 +2,8 @@
 //Each page have his controller. We need to write the code in each controllers
 //controller carte
         app.controller('carteCtrl', function($scope, $log , $routeParams, dataFactory, $filter) {
-           
-        
+        $scope.countotale = 0;
+
         //Display the name of the selected countries   
         $scope.model = {
             dataurl1: $routeParams.countryA,
@@ -20,7 +20,8 @@
         })
 
         //Code for the map game
-        $scope.colourAll = '#9DD3CA';        
+        $scope.colourAll = '#9DD3CA';
+
 
         $scope.countryreveal = function(number, event){
             // if (number==1) {
@@ -28,10 +29,9 @@
                  // $scope.colour = $scope.colour === "green" ? "blue" : "green";
             var id = $(event.target.parentElement.parentElement).data('id');
 
-                // var col = "colour"+id;
+            // var col = "colour"+id;
                 // console.log(id);
                 switch(id) {
-
                     case "other_country":
                         var count = 1;
                         var win = false;
@@ -275,8 +275,11 @@
         }
 
       });
-      var countotale = 0;
-      function find (count, win)
+
+var countotale = 0;
+
+
+function find (count, win)
       {
           if(win == false)
           {

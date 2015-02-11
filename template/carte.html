@@ -8,6 +8,7 @@
 </div>
 <div class="row">
     <div class="col-xs-12">
+        <div class="counter font_nexar">Pays <div id="counter" class="text-center">{{countotale}}<span class="font_default">/</span>11</div></div>
         <div class="logo" ng-include="'ressources/map/carte.svg'"></div>
     </div>
 </div>
@@ -47,17 +48,23 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h2><strong>Tu as perdu !</strong></h2>
+                        <img class="img-responsive" src="ressources/popup/lose.png">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <p>Tu as trouvé {{countotale}} pays sur 8</p>
+                        <h2  class="text-center"><strong>I'm here !!!</strong></h2>
+                        <h3><strong>Tu as perdu !</strong></h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <a class="btn btn-danger" href="#/carte/{{countryA}}/{{countryB}}">Recommencer</a><a class="btn btn-success" href="#/temps-travail/{{countryA}}/{{countryB}}">Continuer</a>
+                        <p>Tu as trouvé {{countotale}} pays sur 11</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a class="btn btn-danger" href="javascript:window.location.reload()">Recommencer</a><a class="btn btn-success pull-right" href="#/temps-travail/{{countryA}}/{{countryB}}">Continuer</a>
                     </div>
                 </div>
             </div>
@@ -231,7 +238,7 @@
 
 window.onload
     {
-        $('#start').modal('show')
+        $('#start').modal('show');
     }
 
 </script>
