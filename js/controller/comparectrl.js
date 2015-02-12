@@ -32,14 +32,26 @@
             $('#page5compare').hide();
             $('#page6compare').hide();
             $('#page7compare').hide();
+            $('#page1compare2').hide();
+            $('#page2compare2').hide();
+            $('#page3compare2').hide();
+            $('#page4compare2').hide();
+            $('#page5compare2').hide();
+            $('#page6compare2').hide();
+            $('#page7compare2').hide();
+            $('.comparetimeline').hide();
 
             $scope.goPage1 = function(){
                 $('#homecompare').hide();
                 $('#page1compare').show();
+                $('#page1compare2').show();
+                $('.comparetimeline').show();
             }
             $scope.goPage2 = function(){
                 $('#page1compare').hide();
+                $('#page1compare2').hide();
                 $('#page2compare').show();
+                $filter('filter')(data, countrySelect1, true)[0].thumb;
             }
             $scope.goPage3 = function(){
                 $('#page2compare').hide();

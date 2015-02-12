@@ -324,23 +324,22 @@ div.round canvas{
 }
 /*//////Page Compare/////////*/
 
-.pagecompare .characterchoice{
-    font-family: "rustslabblackshadow";
-    position: absolute;
-    bottom: 0;
-
-}
 .pagecompare #comparestart{
     width: 100px;
     height: 100px;
     border-radius: 100px;
     background: #DF5252;
-     color: #fff;
+    color: #fff;
+    margin-top: -180px;
+
 }
 
 .pagecompare #comparestart p{
-    margin: 40px 8px;
+    width: 100px;
+    margin: 27px -14px 40px -14px;
+    /*margin: 40px 8px;*/
     font-family: "rustslabblackshadow";
+    text-align: center;
 }
 .pagecompare #comparestart img{
     margin-top: -80px;
@@ -350,7 +349,16 @@ div.round canvas{
     background: #FDDA80;
     height: 100%;
 }
-
+.bigmac svg{
+   width: 70%;
+    height: auto;
+    margin: 30% 20%;
+}
+.namepersocompare{
+     font-family: "rustslabblackshadow";
+     color: #DF5252;
+     font-size: 1.4em;
+}
 /*//////END Page Compare/////////*/
 
 /*//////responsive/////////*/
