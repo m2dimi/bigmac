@@ -1,25 +1,33 @@
-<div class="container body_perso">
-    <div class="row ">
-        <div class="col-xs-12">
-            <img src="{{thumbperso1}}" alt="">
-            <p >{{prenomperso1}}</p>
+<div class="container body_perso pagecompare">
+    
+    <!-- Diplay homecompare -->
+    <div class="row" id="homecompare">
+        <div class="col-xs-12 font_nexar">
+            <h1>Quelles sont les différences entre les Big Mac de {{prenomperso1}} et de {{prenomperso2}} ?</h1>
         </div>
     </div>
 
-    <div class="row ">
-        <div class="col-xs-12">
-            <img src="{{thumbperso2}}" alt="">
-            <p >{{prenomperso2}}</p>
+    <!-- display character chosen -->
+    <div class="row characterchoice">
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <img src="{{thumbperso1}}" alt="">
         </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+             <p >{{prenomperso1}}</p>
+        </div>
+        
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <img src="{{thumbperso2}}" alt="">
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+             <p >{{prenomperso2}}</p>
+        </div>
+
     </div>
+    <!-- END display character chosen -->
 
 </div>
-
-
-
-
-
-
+<!-- END container -->
 
 <div class="modal fade" id="start">
     <div class="modal-dialog">

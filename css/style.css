@@ -317,8 +317,15 @@ div.round canvas{
     right: 0;
     bottom: 0;
 }
+/*//////Page Compare/////////*/
 
+.pagecompare .characterchoice{
+    font-family: "rustslabblackshadow";
+    position: absolute;
+    bottom: 0;
+}
 
+/*//////END Page Compare/////////*/
 
 /*//////responsive/////////*/
 
