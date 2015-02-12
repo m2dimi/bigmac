@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row header">
     <div class="col-xs-3">
         <a href="#/home"><img class="logo_mini" src="ressources/logo_min.png"></a>
     </div>
@@ -6,9 +6,9 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-4">
-            <p>Ici le mini jeu sur le temps de travail</p>
-            <p>{{model.dataurl1}} vs {{model.dataurl2}}</p>
-            <span>{{worktimeselection }}</span>
+            <p>{{prenomselection1}}</p>
+            <img class="img-responsive center-block"  src="{{countryselection1}}" />
+            <span>{{worktimeselection1}}</span>
             <a href="#/comparatif/{{countryA}}/{{countryB}}">jeu suivant</a>
         </div>
         <div class="col-xs-4">
@@ -17,10 +17,9 @@
             </div>
         </div>
         <div class="col-xs-4">
-            <p>Ici le mini jeu sur le temps de travail</p>
-            <p>{{model.dataurl1}} vs {{model.dataurl2}}</p>
-            <span>{{worktimeselection }}</span>
-            <a href="#/comparatif/{{countryA}}/{{countryB}}">jeu suivant</a>
+            <p>{{prenomselection2}}</p>
+            <img class="img-responsive center-block"  src="{{countryselection2}}" />
+            <span>{{worktimeselection2 }}</span>
         </div>
     </div>
 </div>
@@ -30,13 +29,13 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h2 class="orange font_rustsla">{{prenomselection}}</h2>
+                        <h2 class="orange font_rustsla">{{prenomselection1}}</h2>
                         <p class="">Mets une heure et tu verras quelle pays produit le plus de big dans ce temps imparti</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-6">
-                        <img class="img-responsive center-block"  src="{{countryselection }}" />
+                        <img class="img-responsive center-block"  src="{{countryselection1}}" />
                     </div>
                     <div class="col-xs-6">
                         <img class="img-responsive" src="ressources/popup/machine.png"/>
