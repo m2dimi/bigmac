@@ -12,14 +12,10 @@ var app = angular.module('playground', ['ngRoute']);
 	                    templateUrl: 'template/home.html',
 	                    controller: 'homeCtrl'
 	                    })
-	                .when('/comparatif/:countryA/:countryB/home', {
+	                .when('/comparatif/:countryA/:countryB', {
 	                    templateUrl: 'template/comparatif.html',
                         controller: 'comparatifCtrl'
 	                })
-                    .when('/comparatif/:countryA/:countryB/calories', {
-                        templateUrl: 'template/comparatif.html',
-                        controller: 'comparatifCtrl'
-                    })
                     .when('/carte/:countryA/:countryB', {
 	                    templateUrl: 'template/carte.html',
 	                    controller: 'carteCtrl'
