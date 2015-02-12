@@ -76,7 +76,7 @@
                         $scope.countotale = countotale;
                         break;
 
-                    case "south-wale":
+                    case "south_wale":
                         var count = 1;
                         var win = false;
                         color(id, win, count);
