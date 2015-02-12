@@ -8,7 +8,7 @@
 </div>
 <div class="row">
     <div class="col-xs-12">
-        <div class="counter font_nexar">Pays <div id="counter" class="text-center">{{countotale}}<span class="font_default">/</span>11</div></div>
+        <div class="counter font_nexar">Zones <div id="counter" class="text-center">{{countotale}}<span class="font_default">/</span>11</div></div>
         <div class="logo" ng-include="'ressources/map/carte.svg'"></div>
     </div>
 </div>
@@ -48,23 +48,21 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-xs-12">
-                        <img class="img-responsive" src="ressources/popup/lose.png">
+                        <img class="img-responsive center-block" src="ressources/popup/lose.png">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <h2  class="text-center"><strong>I'm here !!!</strong></h2>
-                        <h3><strong>Tu as perdu !</strong></h3>
+                        <div class="text-center text_lose font_nexar">
+                            <div><strong>Je suis là</strong></div>
+                            <div><strong>Tu as perdu</strong></div>
+                            <div class="text-center">{{countotale}}<span class="font_default">/</span>11</div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <p>Tu as trouvé {{countotale}} pays sur 11</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <a class="btn btn-danger" href="javascript:window.location.reload()">Recommencer</a><a class="btn btn-success pull-right" href="#/temps-travail/{{countryA}}/{{countryB}}">Jeu suivant</a>
+                        <a class="btn btn-danger font_nexar font_30" href="javascript:window.location.reload()"><strong>Recommencer</strong></a><a class="btn btn-success pull-right font_nexar font_30" href="#/temps-travail/{{countryA}}/{{countryB}}"><strong>Jeu suivant</strong></a>
                     </div>
                 </div>
             </div>
@@ -77,18 +75,27 @@
         <div class="modal-content">
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-xs-12">
-                        <h2><strong>Tu as gagné !</strong></h2>
+                    <div class="col-xs-4">
+                        <img class="img-responsive center-block"  src="ressources/popup/bigmac.png" />
+                    </div>
+                    <div class="col-xs-4">
+                        <img class="img-responsive center-block"  src="{{countryselection }}" />
+                    </div>
+                    <div class="col-xs-4">
+                        <img class="img-responsive center-block"  src="ressources/popup/bigmac.png" />
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <p>Tu as trouvé les {{countotale}} pays</p>
+                        <div class="text-center text_win font_nexar">
+                            <div><strong>Gagné</strong></div>
+                            <div class="text-center">{{countotale}}<span class="font_default">/</span>11</div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <a class="btn btn-danger" href="javascript:window.location.reload()">Recommencer</a><a class="btn btn-success pull-right" href="#/temps-travail/{{countryA}}/{{countryB}}">Jeu suivant</a>
+                        <a class="btn btn-danger font_nexar font_30" href="javascript:window.location.reload()"><strong>Recommencer</strong></a><a class="btn btn-success pull-right font_nexar font_30" href="#/temps-travail/{{countryA}}/{{countryB}}"><strong>Jeu suivant</strong></a>
                     </div>
                 </div>
             </div>
