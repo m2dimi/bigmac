@@ -1,6 +1,172 @@
 //CONTROLLERS
 //Each page have his controller. We need to write the code in each controllers 
 
+//controller compare HOME and START
+        app.controller('comparatifHomeCtrl', function($scope, $log, $routeParams, dataFactory, $filter) {
+        
+            //Display the name of the selected countries
+            $scope.model = {
+                dataurl1: $routeParams.countryA,
+                dataurl2: $routeParams.countryB
+            }
+            $scope.countryA = $routeParams.countryA;
+            $scope.countryB = $routeParams.countryB;
+
+
+            dataFactory.GetDataCountry(function(data){
+                var countrySelect1 = $routeParams.countryA;
+                var countrySelect2 = $routeParams.countryB;
+                $scope.thumbperso1 = $filter('filter')(data, countrySelect1, true)[0].thumb;
+                $scope.thumbperso2 = $filter('filter')(data, countrySelect2, true)[0].thumb;
+                $scope.prenomperso1 = $filter('filter')(data, countrySelect1, true)[0].prenom;
+                $scope.prenomperso2 = $filter('filter')(data, countrySelect2, true)[0].prenom;
+            })//END DATAFACTORY
+      });
+
+//controller compare COULEUR
+        app.controller('comparatifCouleurCtrl', function($scope, $log, $routeParams, dataFactory, $filter) {
+        
+            //Display the name of the selected countries
+            $scope.model = {
+                dataurl1: $routeParams.countryA,
+                dataurl2: $routeParams.countryB
+            }
+            $scope.countryA = $routeParams.countryA;
+            $scope.countryB = $routeParams.countryB;
+
+            var tailleFenetre = window.innerHeight;
+            $('.body_perso').css('height', tailleFenetre);
+
+            dataFactory.GetDataCountry(function(data){
+                var countrySelect1 = $routeParams.countryA;
+                var countrySelect2 = $routeParams.countryB;
+                $scope.thumbperso1 = $filter('filter')(data, countrySelect1, true)[0].thumb;
+                $scope.thumbperso2 = $filter('filter')(data, countrySelect2, true)[0].thumb;
+                $scope.prenomperso1 = $filter('filter')(data, countrySelect1, true)[0].prenom;
+                $scope.prenomperso2 = $filter('filter')(data, countrySelect2, true)[0].prenom;
+
+                var color1 = $filter('filter')(data, countrySelect1, true)[0].color;
+                var color2 = $filter('filter')(data, countrySelect2, true)[0].color;
+                if (color1=="green") {
+                    $('#page2compare #front-bottom>polygon').attr("fill", "#01330A");
+                    $('#page2compare #front-top>polygon').attr("fill", "#004911");
+                    $('#page2compare #top>polygon').attr("fill", "#577C59");
+                    $('#page2compare #left-side>polygon').attr("fill", "#34663C");
+                    $('#page2compare #left-side-shadow>polygon').attr("fill", "#011904");
+                }else{
+                    $('#page2compare #front-bottom>polygon').attr("fill", "#A32332");
+                    $('#page2compare #front-top>polygon').attr("fill", "#BE1532");
+                    $('#page2compare #top>polygon').attr("fill", "#D77379");
+                    $('#page2compare #left-side>polygon').attr("fill", "#A32332");
+                    $('#page2compare #left-side-shadow>polygon').attr("fill", "#680117");
+                }
+
+                if (color2=="green") {
+                    $('#page2compare2 #front-bottom>polygon').attr("fill", "#01330A");
+                    $('#page2compare2 #front-top>polygon').attr("fill", "#004911");
+                    $('#page2compare2 #top>polygon').attr("fill", "#577C59");
+                    $('#page2compare2 #left-side>polygon').attr("fill", "#34663C");
+                    $('#page2compare2 #left-side-shadow>polygon').attr("fill", "#011904");
+                }else{
+                    $('#page2compare2 #front-bottom>polygon').attr("fill", "#A32332");
+                    $('#page2compare2 #front-top>polygon').attr("fill", "#BE1532");
+                    $('#page2compare2 #top>polygon').attr("fill", "#D77379");
+                    $('#page2compare2 #left-side>polygon').attr("fill", "#A32332");
+                    $('#page2compare2 #left-side-shadow>polygon').attr("fill", "#680117");
+                }
+               //timeline color 
+               $('#color circle').attr("fill", "#DF5252");
+               $scope.textcolor1 = $filter('filter')(data, countrySelect1, true)[0].color;
+               $scope.textcolor2 = $filter('filter')(data, countrySelect2, true)[0].color;
+            
+                
+            })//END DATAFACTORY
+      });
+
+//controller compare CALORIES
+        app.controller('comparatifCaloriesCtrl', function($scope, $log, $routeParams, dataFactory, $filter) {
+        
+            //Display the name of the selected countries
+            $scope.model = {
+                dataurl1: $routeParams.countryA,
+                dataurl2: $routeParams.countryB
+            }
+            $scope.countryA = $routeParams.countryA;
+            $scope.countryB = $routeParams.countryB;
+
+
+            dataFactory.GetDataCountry(function(data){
+                var countrySelect1 = $routeParams.countryA;
+                var countrySelect2 = $routeParams.countryB;
+                $scope.thumbperso1 = $filter('filter')(data, countrySelect1, true)[0].thumb;
+                $scope.thumbperso2 = $filter('filter')(data, countrySelect2, true)[0].thumb;
+                $scope.prenomperso1 = $filter('filter')(data, countrySelect1, true)[0].prenom;
+                $scope.prenomperso2 = $filter('filter')(data, countrySelect2, true)[0].prenom;
+
+                var color1 = $filter('filter')(data, countrySelect1, true)[0].color;
+                var color2 = $filter('filter')(data, countrySelect2, true)[0].color;
+                if (color1=="red") {
+                    $('#page3compare #top-background>polygon').attr("fill", "#D77379");
+                    $('#page3compare #bottom-side polygon').attr("fill", "#7F1C2B");
+                    $('#page3compare #bottom-background>polygon').attr("fill", "#661722");
+                    $('#page3compare #top-side-top-bot polygon').attr("fill", "#BE1532");
+                    $('#page3compare #top-side-left-right polygon').attr("fill", "#A32332");
+                    $('#page3compare #bottom-front>polygon').attr("fill", "#A32332");
+                }
+                if (color2=="red") {
+                    $('#page3compare2 #top-background>polygon').attr("fill", "#D77379");
+                    $('#page3compare2 #bottom-side polygon').attr("fill", "#7F1C2B");
+                    $('#page3compare2 #bottom-background>polygon').attr("fill", "#661722");
+                    $('#page3compare2 #top-side-top-bot polygon').attr("fill", "#BE1532");
+                    $('#page3compare2 #top-side-left-right polygon').attr("fill", "#A32332");
+                    $('#page3compare2 #bottom-front polygon').attr("fill", "#A32332");
+                }
+                $scope.cal1 = $filter('filter')(data, countrySelect1, true)[0].calorie;
+                $scope.cal2 = $filter('filter')(data, countrySelect2, true)[0].calorie;
+                //timeline color 
+                $('#color circle').attr("fill", "#DF5252");
+                $scope.textcolor1 = $filter('filter')(data, countrySelect1, true)[0].color;
+                $scope.textcolor2 = $filter('filter')(data, countrySelect2, true)[0].color;
+
+                $('#cal circle').attr("fill", "#DF5252");
+                $scope.textcal1 = $filter('filter')(data, countrySelect1, true)[0].calorie + ' cal';
+                $scope.textcal2 = $filter('filter')(data, countrySelect2, true)[0].calorie + ' cal';
+            })//END DATAFACTORY
+      });
+//controller compare CALORIES
+        app.controller('comparatifSelCtrl', function($scope, $log, $routeParams, dataFactory, $filter) {
+        
+            //Display the name of the selected countries
+            $scope.model = {
+                dataurl1: $routeParams.countryA,
+                dataurl2: $routeParams.countryB
+            }
+            $scope.countryA = $routeParams.countryA;
+            $scope.countryB = $routeParams.countryB;
+
+
+            dataFactory.GetDataCountry(function(data){
+                var countrySelect1 = $routeParams.countryA;
+                var countrySelect2 = $routeParams.countryB;
+                $scope.thumbperso1 = $filter('filter')(data, countrySelect1, true)[0].thumb;
+                $scope.thumbperso2 = $filter('filter')(data, countrySelect2, true)[0].thumb;
+                $scope.prenomperso1 = $filter('filter')(data, countrySelect1, true)[0].prenom;
+                $scope.prenomperso2 = $filter('filter')(data, countrySelect2, true)[0].prenom;
+
+                
+                $scope.sel1 = $filter('filter')(data, countrySelect1, true)[0].sodium;
+                $scope.sel2 = $filter('filter')(data, countrySelect2, true)[0].sodium;
+                //timeline color 
+                $('#color circle').attr("fill", "#DF5252");
+                $scope.textcolor1 = $filter('filter')(data, countrySelect1, true)[0].color;
+                $scope.textcolor2 = $filter('filter')(data, countrySelect2, true)[0].color;
+
+                $('#cal circle').attr("fill", "#DF5252");
+                $scope.textcal1 = $filter('filter')(data, countrySelect1, true)[0].calorie + ' cal';
+                $scope.textcal2 = $filter('filter')(data, countrySelect2, true)[0].calorie + ' cal';
+            })//END DATAFACTORY
+      });
+
 //controller compare
         app.controller('comparatifCtrl', function($scope, $log, $routeParams, dataFactory, $filter) {
         
@@ -52,39 +218,7 @@
                     $('#page1compare2').hide();
                     $('#page2compare').show();
                     $('#page2compare2').show();
-                    var color1 = $filter('filter')(data, countrySelect1, true)[0].color;
-                    var color2 = $filter('filter')(data, countrySelect2, true)[0].color;
-                    if (color1=="green") {
-                        $('#page2compare #front-bottom>polygon').attr("fill", "#01330A");
-                        $('#page2compare #front-top>polygon').attr("fill", "#004911");
-                        $('#page2compare #top>polygon').attr("fill", "#577C59");
-                        $('#page2compare #left-side>polygon').attr("fill", "#34663C");
-                        $('#page2compare #left-side-shadow>polygon').attr("fill", "#011904");
-                    }else{
-                        $('#page2compare #front-bottom>polygon').attr("fill", "#A32332");
-                        $('#page2compare #front-top>polygon').attr("fill", "#BE1532");
-                        $('#page2compare #top>polygon').attr("fill", "#D77379");
-                        $('#page2compare #left-side>polygon').attr("fill", "#A32332");
-                        $('#page2compare #left-side-shadow>polygon').attr("fill", "#680117");
-                    }
-
-                    if (color2=="green") {
-                        $('#page2compare2 #front-bottom>polygon').attr("fill", "#01330A");
-                        $('#page2compare2 #front-top>polygon').attr("fill", "#004911");
-                        $('#page2compare2 #top>polygon').attr("fill", "#577C59");
-                        $('#page2compare2 #left-side>polygon').attr("fill", "#34663C");
-                        $('#page2compare2 #left-side-shadow>polygon').attr("fill", "#011904");
-                    }else{
-                        $('#page2compare2 #front-bottom>polygon').attr("fill", "#A32332");
-                        $('#page2compare2 #front-top>polygon').attr("fill", "#BE1532");
-                        $('#page2compare2 #top>polygon').attr("fill", "#D77379");
-                        $('#page2compare2 #left-side>polygon').attr("fill", "#A32332");
-                        $('#page2compare2 #left-side-shadow>polygon').attr("fill", "#680117");
-                    }
-                   //timeline color 
-                   $('#color circle').attr("fill", "#DF5252");
-                   $scope.textcolor1 = $filter('filter')(data, countrySelect1, true)[0].color;
-                   $scope.textcolor2 = $filter('filter')(data, countrySelect2, true)[0].color;
+                    
                     
                    
                 }
@@ -94,30 +228,7 @@
                     $('#page3compare').show();
                     $('#page3compare2').show();
 
-                    var color1 = $filter('filter')(data, countrySelect1, true)[0].color;
-                    var color2 = $filter('filter')(data, countrySelect2, true)[0].color;
-                    if (color1=="red") {
-                        $('#page3compare #top-background>polygon').attr("fill", "#D77379");
-                        $('#page3compare #bottom-side polygon').attr("fill", "#7F1C2B");
-                        $('#page3compare #bottom-background>polygon').attr("fill", "#661722");
-                        $('#page3compare #top-side-top-bot polygon').attr("fill", "#BE1532");
-                        $('#page3compare #top-side-left-right polygon').attr("fill", "#A32332");
-                        $('#page3compare #bottom-front>polygon').attr("fill", "#A32332");
-                    }
-                    if (color2=="red") {
-                        $('#page3compare2 #top-background>polygon').attr("fill", "#D77379");
-                        $('#page3compare2 #bottom-side polygon').attr("fill", "#7F1C2B");
-                        $('#page3compare2 #bottom-background>polygon').attr("fill", "#661722");
-                        $('#page3compare2 #top-side-top-bot polygon').attr("fill", "#BE1532");
-                        $('#page3compare2 #top-side-left-right polygon').attr("fill", "#A32332");
-                        $('#page3compare2 #bottom-front polygon').attr("fill", "#A32332");
-                    }
-                    // $scope.cal1 = 'prout';
-                    // $scope.cal2 = 'prout2';
-                    //timeline color 
-                    $('#cal circle').attr("fill", "#DF5252");
-                    $scope.textcal1 = $filter('filter')(data, countrySelect1, true)[0].calorie + ' cal';
-                    $scope.textcal2 = $filter('filter')(data, countrySelect2, true)[0].calorie + ' cal';
+                    
                 }
                 $scope.goPage4 = function(){
                     $('#page3compare').hide();
