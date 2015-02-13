@@ -156,6 +156,17 @@ figure img:hover{
     width: 73%;
 }
 
+#nbr_bigmac1
+{
+    position: absolute;
+    bottom: 112px;
+    left: 333px;
+    font-size: 39px;
+    color: #97D185;
+}
+
+
+
 .img_perso_mach
 {
     width: 12%;

@@ -19,12 +19,10 @@ var worktimeselection2;
                 var countrySelect2 = $routeParams.countryB;
                 var idcountry = $filter('filter')(data, countrySelect1);
                 worktimeselection1 = $filter('filter')(data, countrySelect1, true)[0].worktime;
-                $scope.worktimeselection1 = worktimeselection1;
                 $scope.countryselection1 = $filter('filter')(data, countrySelect1, true)[0].perso;
                 $scope.prenomselection1 = $filter('filter')(data, countrySelect1, true)[0].prenom;
 
                 worktimeselection2 = $filter('filter')(data, countrySelect2, true)[0].worktime;
-                $scope.worktimeselection2 = worktimeselection2;
                 $scope.countryselection2 = $filter('filter')(data, countrySelect2, true)[0].perso;
                 $scope.prenomselection2 = $filter('filter')(data, countrySelect2, true)[0].prenom;
             })
@@ -35,8 +33,8 @@ var worktimeselection2;
                 var totalbigmac1;
                 var totalbigmac2;
 
-                $scope.totalbigmac1 = min/worktimeselection1;
-                $scope.totalbigmac2 = min/worktimeselection2;
+                $scope.totalbigmac1 =  Math.round(min/worktimeselection1)*0.5;
+                $scope.totalbigmac2 = Math.round(min/worktimeselection2)*0.5;
             }
 
 
