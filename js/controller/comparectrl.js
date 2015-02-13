@@ -81,26 +81,72 @@
                         $('#page2compare2 #left-side>polygon').attr("fill", "#A32332");
                         $('#page2compare2 #left-side-shadow>polygon').attr("fill", "#680117");
                     }
-
-                   
+                   //timeline color 
+                   $('#color circle').attr("fill", "#DF5252");
+                   $scope.textcolor1 = $filter('filter')(data, countrySelect1, true)[0].color;
+                   $scope.textcolor2 = $filter('filter')(data, countrySelect2, true)[0].color;
                     
                    
                 }
                 $scope.goPage3 = function(){
                     $('#page2compare').hide();
+                    $('#page2compare2').hide();
                     $('#page3compare').show();
+                    $('#page3compare2').show();
+
+                    var color1 = $filter('filter')(data, countrySelect1, true)[0].color;
+                    var color2 = $filter('filter')(data, countrySelect2, true)[0].color;
+                    if (color1=="red") {
+                        $('#page3compare #top-background>polygon').attr("fill", "#D77379");
+                        $('#page3compare #bottom-side polygon').attr("fill", "#7F1C2B");
+                        $('#page3compare #bottom-background>polygon').attr("fill", "#661722");
+                        $('#page3compare #top-side-top-bot polygon').attr("fill", "#BE1532");
+                        $('#page3compare #top-side-left-right polygon').attr("fill", "#A32332");
+                        $('#page3compare #bottom-front>polygon').attr("fill", "#A32332");
+                    }
+                    if (color2=="red") {
+                        $('#page3compare2 #top-background>polygon').attr("fill", "#D77379");
+                        $('#page3compare2 #bottom-side polygon').attr("fill", "#7F1C2B");
+                        $('#page3compare2 #bottom-background>polygon').attr("fill", "#661722");
+                        $('#page3compare2 #top-side-top-bot polygon').attr("fill", "#BE1532");
+                        $('#page3compare2 #top-side-left-right polygon').attr("fill", "#A32332");
+                        $('#page3compare2 #bottom-front polygon').attr("fill", "#A32332");
+                    }
+                    // $scope.cal1 = 'prout';
+                    // $scope.cal2 = 'prout2';
+                    //timeline color 
+                    $('#cal circle').attr("fill", "#DF5252");
+                    $scope.textcal1 = $filter('filter')(data, countrySelect1, true)[0].calorie + ' cal';
+                    $scope.textcal2 = $filter('filter')(data, countrySelect2, true)[0].calorie + ' cal';
                 }
                 $scope.goPage4 = function(){
                     $('#page3compare').hide();
+                    $('#page3compare2').hide();
                     $('#page4compare').show();
+                    $('#page4compare2').show();
+
+
+                    //timeline color 
+                    $('#salt circle').attr("fill", "#DF5252");
+                    $scope.textsalt1 = $filter('filter')(data, countrySelect1, true)[0].sodium + ' mg';
+                    $scope.textsalt2 = $filter('filter')(data, countrySelect2, true)[0].sodium + ' mg';
                 }
                 $scope.goPage5 = function(){
                     $('#page4compare').hide();
+                    $('#page4compare2').hide();
                     $('#page5compare').show();
+                    $('#page5compare2').show();
+
+                    //timeline color 
+                    $('#meat circle').attr("fill", "#DF5252");
+                    $scope.textsalt1 = $filter('filter')(data, countrySelect1, true)[0].meat_origin;
+                    $scope.textsalt2 = $filter('filter')(data, countrySelect2, true)[0].meat_origin;
                 }
                 $scope.goPage6 = function(){
                     $('#page5compare').hide();
+                    $('#page5compare2').hide();
                     $('#page6compare').show();
+                    $('#page6compare2').show();
                 }
                 $scope.goPage7 = function(){
                     $('#page6compare').hide();

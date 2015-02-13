@@ -45,7 +45,7 @@
                     </div>
                     <div class="row" id="page3compare">
                         <div class="col-xs-12 font_nexar">
-                            <h1>caloriiiiiiiies</h1>
+                           <ng-include class="bigmac" src="'ressources/compare/bigmac-open.svg'"></ng-include>
                         </div>
                         <a href="" ng-click="goPage4()">
                             <div class="col-xs-2 col-xs-offset-5" id="comparestart">
@@ -57,7 +57,7 @@
                     </div>
                     <div class="row" id="page4compare">
                         <div class="col-xs-12 font_nexar">
-                            <h1>seeeeeeeeeeeeel</h1>
+                             <ng-include class="bigmac" src="'ressources/compare/sel.svg'"></ng-include>
                         </div>
                         <a href="" ng-click="goPage5()">
                             <div class="col-xs-2 col-xs-offset-5" id="comparestart">
@@ -70,7 +70,7 @@
 
                     <div class="row" id="page5compare">
                         <div class="col-xs-12 font_nexar">
-                            <h1>viaaaaaaaaaande</h1>
+                             <ng-include class="bigmac" src="'ressources/compare/meat.svg'"></ng-include>
                         </div>
                         <a href="" ng-click="goPage6()">
                             <div class="col-xs-2 col-xs-offset-5" id="comparestart">
@@ -119,7 +119,18 @@
         </div>
         <!-- diplay timeline btn-->
         <div class="col-xs-2 comparetimeline">
+            <p class="timelignetext">{{textcolor1}}</p>
+            <p class="timelignetext">{{textcal1}}</p>
+            <p class="timelignetext">{{textsalt1}}</p>
+            <p class="timelignetext">{{textmeat1}}</p>
+            <p class="timelignetext">{{textprice1}}</p>
             <ng-include src="'ressources/compare/interface/btn-timeline.svg'"></ng-include>
+            <p class="timelignetext">{{textcolor2}}</p>
+            <p class="timelignetext">{{textcal2}}</p>
+            <p class="timelignetext">{{textsalt2}}</p>
+            <p class="timelignetext">{{textmeat2}}</p>
+            <p class="timelignetext">{{textprice2}}</p>
+            
         </div>
         <!-- diplay timeline btn-->
         <div class="col-xs-5">
@@ -145,6 +156,43 @@
                         <a href="" ng-click="goPage3()">
                             <div class="col-xs-2 col-xs-offset-5" id="comparestart">
                                 <p>les calories</p>
+                                <img src="ressources/compare/interface/arrow.png" alt="">
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row" id="page3compare2">
+                        <div class="col-xs-12 font_nexar">
+                           <ng-include class="bigmac" src="'ressources/compare/bigmac-open2.svg'"></ng-include>
+                        </div>
+                        <a href="" ng-click="goPage4()">
+                            <div class="col-xs-2 col-xs-offset-5" id="comparestart">
+                                <p>Le sel</p>
+                                <img src="ressources/compare/interface/arrow.png" alt="">
+                                
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row" id="page4compare2">
+                        <div class="col-xs-12 font_nexar">
+                             <ng-include class="bigmac" src="'ressources/compare/sel.svg'"></ng-include>
+                        </div>
+                        <a href="" ng-click="goPage5()">
+                            <div class="col-xs-2 col-xs-offset-5" id="comparestart">
+                                <p>La viande</p>
+                                <img src="ressources/compare/interface/arrow.png" alt="">
+                                
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="row" id="page5compare2">
+                        <div class="col-xs-12 font_nexar">
+                             <ng-include class="bigmac" src="'ressources/compare/meat.svg'"></ng-include>
+                        </div>
+                        <a href="" ng-click="goPage6()">
+                            <div class="col-xs-2 col-xs-offset-5" id="comparestart">
+                                <p>Le prix</p>
                                 <img src="ressources/compare/interface/arrow.png" alt="">
                                 
                             </div>
