@@ -81,7 +81,7 @@
 
             var ctx = $color[0].getContext('2d');
             ctx.beginPath();
-            ctx.arc(100,100,85,-1/2*Math.PI,ratio*2*Math.PI);
+            ctx.arc(100,100,85,-1/2*Math.PI,ratio*2*Math.PI - 1/2 * Math.PI);
             ctx.lineWidth = 30;
             ctx.strokeStyle = "#C22E38"
             ctx.stroke();
