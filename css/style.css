@@ -148,9 +148,17 @@ figure img:hover{
     font-size: 52px;
 }
 
-.img_perso_compare
+#img_camion1
 {
+    position: absolute;
+    bottom: 7%;
+    left: 46%;
+    width: 73%;
+}
 
+.img_perso_mach
+{
+    width: 12%;
 }
 
 .img_perso
@@ -295,7 +303,7 @@ figure img:hover{
 }
 /*////input round///*/
 div.round{
-    margin: 50px;
+    /*margin: 50px;*/
     width: 200px;
     height: 200px;
     position: relative;

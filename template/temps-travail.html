@@ -5,20 +5,25 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-xs-4">
+        <div class="col-xs-5">
             <p>{{prenomselection1}}</p>
-            <img class="img-responsive center-block"  src="{{countryselection1}}" />
-            <span>{{worktimeselection1}}</span>
+                <img class="img-responsive pull_left img_perso_mach"  src="{{countryselection1}}" />
+                <img id="img_machine" class="img-responsive center-block img_machine"  src="ressources/machine/machine.gif" />
+                <img id="img_camion1" class="img-responsive"  src="ressources/machine/camion.png" />
+            <span>{{totalbigmac1}}</span>
+            <!--<span>{{worktimeselection1}}</span>-->
             <a href="#/comparatif/{{countryA}}/{{countryB}}">jeu suivant</a>
         </div>
-        <div class="col-xs-4">
+        <div class="col-xs-2">
             <div>
-                <input type="text" name="round" class="round" data-min="1" data-max="24" value="10" />
+                <input id="time" type="text" name="round" class="round" data-min="1" data-max="24" value="10" />
+                <a id="btn_act"  ng-click="bigmac_calcul()">Activer</a>
             </div>
         </div>
-        <div class="col-xs-4">
+        <div class="col-xs-5">
             <p>{{prenomselection2}}</p>
-            <img class="img-responsive center-block"  src="{{countryselection2}}" />
+            <img class="img-responsive pull-right img_perso_mach"  src="{{countryselection2}}" />
+            <span>{{totalbigmac2}}</span>
             <span>{{worktimeselection2 }}</span>
         </div>
     </div>
@@ -55,6 +60,7 @@
     window.onload
     {
         $('#start').modal('show')
+        setInterval(refresh,35000);
     }
 
 
