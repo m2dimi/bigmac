@@ -12,10 +12,38 @@ var app = angular.module('playground', ['ngRoute']);
 	                    templateUrl: 'template/home.html',
 	                    controller: 'homeCtrl'
 	                    })
-	                .when('/comparatif/:countryA/:countryB', {
-	                    templateUrl: 'template/comparatif.html',
-                        controller: 'comparatifCtrl'
+	                .when('/comparatif/home/:countryA/:countryB', {
+	                    templateUrl: 'template/comparatif-home.html',
+                        controller: 'comparatifHomeCtrl'
 	                })
+                    .when('/comparatif/start/:countryA/:countryB', {
+                        templateUrl: 'template/comparatif-start.html',
+                        controller: 'comparatifHomeCtrl'
+                    })
+                    .when('/comparatif/couleur/:countryA/:countryB', {
+                        templateUrl: 'template/comparatif-couleur.html',
+                        controller: 'comparatifCouleurCtrl'
+                    })
+                    .when('/comparatif/calories/:countryA/:countryB', {
+                        templateUrl: 'template/comparatif-calories.html',
+                        controller: 'comparatifCaloriesCtrl'
+                    })
+                    .when('/comparatif/sel/:countryA/:countryB', {
+                        templateUrl: 'template/comparatif-sel.html',
+                        controller: 'comparatifSelCtrl'
+                    })
+                    .when('/comparatif/viande/:countryA/:countryB', {
+                        templateUrl: 'template/comparatif-viande.html',
+                        controller: 'comparatifViandeCtrl'
+                    })
+                    .when('/comparatif/prix/:countryA/:countryB', {
+                        templateUrl: 'template/comparatif-prix.html',
+                        controller: 'comparatifPrixCtrl'
+                    })
+                    .when('/comparatif/resume/:countryA/:countryB', {
+                        templateUrl: 'template/comparatif-resume.html',
+                        controller: 'comparatifResumeCtrl'
+                    })
                     .when('/carte/:countryA/:countryB', {
 	                    templateUrl: 'template/carte.html',
 	                    controller: 'carteCtrl'
