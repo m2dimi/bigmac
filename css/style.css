@@ -39,7 +39,7 @@ body{
     background : url("../ressources/site/fond_perso.png") repeat-y;
     background-size: contain;
     background-position:  center;
-    padding-bottom: 50px ;
+    padding-bottom: 20px ;
 }
 
 .text_lose
@@ -175,6 +175,7 @@ figure img:hover{
 .img_perso
 {
     display: none;
+    width: 80%;
 }
 
 .perso_name
