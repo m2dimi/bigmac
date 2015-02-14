@@ -29,22 +29,31 @@ var worktimeselection2;
 
             $scope.bigmac_calcul= function() {
                 $("#interupt")[0].src = "ressources/machine/off.png";
+                refresh();
+                setInterval(refresh,30000);
+                result();
+                setTimeout(result, 30000);
+                setTimeout(reload, 30000);
+            }
+
+            function result()
+            {
                 var time =  $("#time").val();
                 var min = time * 60;
                 var totalbigmac1;
                 var totalbigmac2;
-
-
+                $scope.totalbigmac1 =  Math.round(min/worktimeselection1)*0.5;
                 $scope.totalbigmac2 = Math.round(min/worktimeselection2)*0.5;
-                refresh();
-                setInterval(refresh,30000);
-                setTimeout($scope.totalbigmac1 =  Math.round(min/worktimeselection1)*0.5, 30000);
             }
-
 
       });
 
 
+
+function reload()
+{
+    $("#interupt")[0].src = "ressources/machine/on.png";
+}
 
 
 function refresh() {

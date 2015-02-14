@@ -67,7 +67,7 @@ body{
 #poteau
 {
     position: absolute;
-    bottom: 0;
+    bottom: -330px;
     left: 43%;
     z-index: 1;
 }
@@ -78,7 +78,7 @@ body{
     cursor: pointer;
     position: absolute;
     z-index: 2;
-    top: 35%;
+    top: 99%;
     left: 17%;
 }
 
@@ -170,30 +170,43 @@ figure img:hover{
     position: absolute;
     bottom: -2%;
     left: 46%;
-    width: 73%;
+    width: 53%;
     z-index: 2;
 }
 
 #img_camion2
 {
     position: absolute;
-    bottom: -2%;
-    left: -18%;
-    width: 73%;
+    bottom: -6%;
+    left: 1%;
+    width: 53%;
     z-index: 2;
 }
 
 #nbr_bigmac1
 {
     position: absolute;
-    bottom: 7%;
-    left: 64%;
+    bottom: 6%;
+    left: 58%;
     font-size: 39px;
     color: #97D185;
     z-index: 3;
 }
 
+#img2
+{
+    right: 0;
+}
 
+#nbr_bigmac2
+{
+    position: absolute;
+    bottom: 2%;
+    left: 27%;
+    font-size: 39px;
+    color: #97D185;
+    z-index: 3;
+}
 
 .img_perso_mach
 {
@@ -348,8 +361,8 @@ figure img:hover{
 {
     position: absolute;
     z-index: 3;
-    top: -394px;
-    left: 2%;
+    top: -52px;
+    left: -12px;
 }
 
 div.round{
@@ -527,10 +540,7 @@ div.round canvas{
 @media (min-width: 1200px) {
 
 
-    .test {
-        display: table-cell;
-        float: none;
-    }
+
 
 }
 
