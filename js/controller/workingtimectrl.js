@@ -33,8 +33,11 @@ var worktimeselection2;
                 var totalbigmac1;
                 var totalbigmac2;
 
-                $scope.totalbigmac1 =  Math.round(min/worktimeselection1)*0.5;
+
                 $scope.totalbigmac2 = Math.round(min/worktimeselection2)*0.5;
+                refresh();
+                setInterval(refresh,30000);
+                setTimeout($scope.totalbigmac1 =  Math.round(min/worktimeselection1)*0.5, 30000);
             }
 
 
@@ -46,6 +49,6 @@ var worktimeselection2;
 function refresh() {
     var tmp = new Date();
     var img = $("#img_machine")[0];
-    img.src = img.src + '?' + tmp.getTime();
+    img.src = "ressources/machine/machine.gif" + '?' + tmp.getTime();
 }
 

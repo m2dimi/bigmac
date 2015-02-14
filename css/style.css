@@ -151,7 +151,7 @@ figure img:hover{
 #img_camion1
 {
     position: absolute;
-    bottom: 7%;
+    bottom: -2%;
     left: 46%;
     width: 73%;
 }
@@ -159,8 +159,8 @@ figure img:hover{
 #nbr_bigmac1
 {
     position: absolute;
-    bottom: 112px;
-    left: 333px;
+    bottom: 7%;
+    left: 64%;
     font-size: 39px;
     color: #97D185;
 }
