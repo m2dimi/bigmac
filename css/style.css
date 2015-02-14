@@ -64,6 +64,23 @@ body{
     margin-bottom: 10px;
 }
 
+#poteau
+{
+    position: absolute;
+    bottom: 0;
+    left: 43%;
+    z-index: 1;
+}
+
+#interupt
+{
+    width: 70%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    left: 17%;
+}
 
 .font_30
 {
@@ -154,6 +171,16 @@ figure img:hover{
     bottom: -2%;
     left: 46%;
     width: 73%;
+    z-index: 2;
+}
+
+#img_camion2
+{
+    position: absolute;
+    bottom: -2%;
+    left: -18%;
+    width: 73%;
+    z-index: 2;
 }
 
 #nbr_bigmac1
@@ -163,6 +190,7 @@ figure img:hover{
     left: 64%;
     font-size: 39px;
     color: #97D185;
+    z-index: 3;
 }
 
 
@@ -170,6 +198,7 @@ figure img:hover{
 .img_perso_mach
 {
     width: 12%;
+    position: absolute;
 }
 
 .img_perso
@@ -314,6 +343,15 @@ figure img:hover{
     margin-right: 50px;
 }
 /*////input round///*/
+
+.round
+{
+    position: absolute;
+    z-index: 3;
+    top: -394px;
+    left: 2%;
+}
+
 div.round{
     /*margin: 50px;*/
     width: 200px;
@@ -386,6 +424,7 @@ div.round canvas{
 
 @media (max-width: 767px) {
 
+
     .btn_valid
     {
         top: -184px;
@@ -442,6 +481,7 @@ div.round canvas{
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+
     .title
     {
         font-size: 42px;
@@ -485,6 +525,12 @@ div.round canvas{
 
 }
 @media (min-width: 1200px) {
+
+
+    .test {
+        display: table-cell;
+        float: none;
+    }
 
 }
 

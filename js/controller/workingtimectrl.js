@@ -28,6 +28,7 @@ var worktimeselection2;
             })
 
             $scope.bigmac_calcul= function() {
+                $("#interupt")[0].src = "ressources/machine/off.png";
                 var time =  $("#time").val();
                 var min = time * 60;
                 var totalbigmac1;
@@ -48,7 +49,9 @@ var worktimeselection2;
 
 function refresh() {
     var tmp = new Date();
-    var img = $("#img_machine")[0];
-    img.src = "ressources/machine/machine.gif" + '?' + tmp.getTime();
+    var img1 = $("#img_machine1")[0];
+    var img2 = $("#img_machine2")[0];
+    img1.src = "ressources/machine/machine.gif" + '?' + tmp.getTime();
+    img2.src = "ressources/machine/machine2.gif" + '?' + tmp.getTime();
 }
 
