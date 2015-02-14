@@ -280,8 +280,8 @@ figure img:hover{
 
 .choice_country
 {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 
 .testmap01{
@@ -393,7 +393,7 @@ div.round canvas{
 
     .perso_choisi
     {
-        height: 350px;
+        height: 325px;
     }
 
     .title
