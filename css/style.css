@@ -463,9 +463,9 @@ div.round canvas{
     height: 100%;
 }
 .bigmac svg{
-   width: 70%;
+    width: 100%;
     height: auto;
-    margin: 30% 20%;
+    margin: 30% 0%;
 }
 .namepersocompare{
      font-family: "rustslabblackshadow";

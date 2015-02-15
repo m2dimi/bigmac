@@ -47,7 +47,7 @@
 
                 var color1 = $filter('filter')(data, countrySelect1, true)[0].color;
                 var color2 = $filter('filter')(data, countrySelect2, true)[0].color;
-                if (color1=="green") {
+                if (color1=="Vert") {
                     $('#page2compare #front-bottom>polygon').attr("fill", "#01330A");
                     $('#page2compare #front-top>polygon').attr("fill", "#004911");
                     $('#page2compare #top>polygon').attr("fill", "#577C59");
@@ -61,7 +61,7 @@
                     $('#page2compare #left-side-shadow>polygon').attr("fill", "#680117");
                 }
 
-                if (color2=="green") {
+                if (color2=="Vert") {
                     $('#page2compare2 #front-bottom>polygon').attr("fill", "#01330A");
                     $('#page2compare2 #front-top>polygon').attr("fill", "#004911");
                     $('#page2compare2 #top>polygon').attr("fill", "#577C59");
@@ -101,7 +101,7 @@
                 var color1 = $filter('filter')(data, countrySelect1, true)[0].color;
                 var color2 = $filter('filter')(data, countrySelect2, true)[0].color;
                 
-                if (color1=="red") {
+                if (color1=="Rouge") {
                     $('#page3compare #top-background>polygon').attr("fill", "#D77379");
                     $('#page3compare #bottom-side polygon').attr("fill", "#7F1C2B");
                     $('#page3compare #bottom-background>polygon').attr("fill", "#661722");
@@ -109,7 +109,7 @@
                     $('#page3compare #top-side-left-right polygon').attr("fill", "#A32332");
                     $('#page3compare #bottom-front>polygon').attr("fill", "#A32332");
                 }
-                if (color2=="red") {
+                if (color2=="Rouge") {
                     $('#page3compare2 #top-background>polygon').attr("fill", "#D77379");
                     $('#page3compare2 #bottom-side polygon').attr("fill", "#7F1C2B");
                     $('#page3compare2 #bottom-background>polygon').attr("fill", "#661722");
@@ -167,10 +167,14 @@
                 $('#cal circle').attr("fill", "#DF5252");
                 $scope.textcal1 = $filter('filter')(data, countrySelect1, true)[0].calorie + ' cal';
                 $scope.textcal2 = $filter('filter')(data, countrySelect2, true)[0].calorie + ' cal';
+
+                $('#salt circle').attr("fill", "#DF5252");
+                $scope.textsalt1 = $filter('filter')(data, countrySelect1, true)[0].sodium + ' mg';
+                $scope.textsalt2 = $filter('filter')(data, countrySelect2, true)[0].sodium + ' mg';
             })//END DATAFACTORY
       });
 
-//controller compare SEL
+//controller compare VIANDE
         app.controller('comparatifViandeCtrl', function($scope, $log, $routeParams, dataFactory, $filter) {
         
             //Display the name of the selected countries
@@ -201,9 +205,108 @@
                 $('#cal circle').attr("fill", "#DF5252");
                 $scope.textcal1 = $filter('filter')(data, countrySelect1, true)[0].calorie + ' cal';
                 $scope.textcal2 = $filter('filter')(data, countrySelect2, true)[0].calorie + ' cal';
+
+                $('#salt circle').attr("fill", "#DF5252");
+                $scope.textsalt1 = $filter('filter')(data, countrySelect1, true)[0].sodium + ' mg';
+                $scope.textsalt2 = $filter('filter')(data, countrySelect2, true)[0].sodium + ' mg';
+
+                $('#meat circle').attr("fill", "#DF5252");
+                $scope.textmeat1 = $filter('filter')(data, countrySelect1, true)[0].meatorigin;
+                $scope.textmeat2 = $filter('filter')(data, countrySelect2, true)[0].meatorigin;
             })//END DATAFACTORY
       });
 
+//controller compare PRIX
+        app.controller('comparatifPrixCtrl', function($scope, $log, $routeParams, dataFactory, $filter) {
+        
+            //Display the name of the selected countries
+            $scope.model = {
+                dataurl1: $routeParams.countryA,
+                dataurl2: $routeParams.countryB
+            }
+            $scope.countryA = $routeParams.countryA;
+            $scope.countryB = $routeParams.countryB;
+
+
+            dataFactory.GetDataCountry(function(data){
+                var countrySelect1 = $routeParams.countryA;
+                var countrySelect2 = $routeParams.countryB;
+                $scope.thumbperso1 = $filter('filter')(data, countrySelect1, true)[0].thumb;
+                $scope.thumbperso2 = $filter('filter')(data, countrySelect2, true)[0].thumb;
+                $scope.prenomperso1 = $filter('filter')(data, countrySelect1, true)[0].prenom;
+                $scope.prenomperso2 = $filter('filter')(data, countrySelect2, true)[0].prenom;
+
+                
+                $scope.sel1 = $filter('filter')(data, countrySelect1, true)[0].sodium;
+                $scope.sel2 = $filter('filter')(data, countrySelect2, true)[0].sodium;
+                //timeline color 
+                $('#color circle').attr("fill", "#DF5252");
+                $scope.textcolor1 = $filter('filter')(data, countrySelect1, true)[0].color;
+                $scope.textcolor2 = $filter('filter')(data, countrySelect2, true)[0].color;
+
+                $('#cal circle').attr("fill", "#DF5252");
+                $scope.textcal1 = $filter('filter')(data, countrySelect1, true)[0].calorie + ' cal';
+                $scope.textcal2 = $filter('filter')(data, countrySelect2, true)[0].calorie + ' cal';
+
+                $('#salt circle').attr("fill", "#DF5252");
+                $scope.textsalt1 = $filter('filter')(data, countrySelect1, true)[0].sodium + ' mg';
+                $scope.textsalt2 = $filter('filter')(data, countrySelect2, true)[0].sodium + ' mg';
+
+                $('#meat circle').attr("fill", "#DF5252");
+                $scope.textmeat1 = $filter('filter')(data, countrySelect1, true)[0].meatorigin;
+                $scope.textmeat2 = $filter('filter')(data, countrySelect2, true)[0].meatorigin;
+
+                 $('#price circle').attr("fill", "#DF5252");
+                $scope.textprice1 = $filter('filter')(data, countrySelect1, true)[0].price + ' euros';
+                $scope.textprice2 = $filter('filter')(data, countrySelect2, true)[0].price + ' euros';
+            })//END DATAFACTORY
+      });
+//controller compare RESUMÉ
+        app.controller('comparatifResumeCtrl', function($scope, $log, $routeParams, dataFactory, $filter) {
+        
+            //Display the name of the selected countries
+            
+            $scope.countryA = $routeParams.countryA;
+            $scope.countryB = $routeParams.countryB;
+
+
+            dataFactory.GetDataCountry(function(data){
+                var countrySelect1 = $routeParams.countryA;
+                var countrySelect2 = $routeParams.countryB;
+                $scope.thumbperso1 = $filter('filter')(data, countrySelect1, true)[0].thumb;
+                $scope.thumbperso2 = $filter('filter')(data, countrySelect2, true)[0].thumb;
+
+                $scope.fullperso1 = $filter('filter')(data, countrySelect1, true)[0].url_img;
+                $scope.fullperso2 = $filter('filter')(data, countrySelect2, true)[0].url_img;
+
+                $scope.prenomperso1 = $filter('filter')(data, countrySelect1, true)[0].prenom;
+                $scope.prenomperso2 = $filter('filter')(data, countrySelect2, true)[0].prenom;
+
+                
+                $scope.sel1 = $filter('filter')(data, countrySelect1, true)[0].sodium;
+                $scope.sel2 = $filter('filter')(data, countrySelect2, true)[0].sodium;
+                //timeline color 
+                $('#color circle').attr("fill", "#DF5252");
+                $scope.textcolor1 = $filter('filter')(data, countrySelect1, true)[0].color;
+                $scope.textcolor2 = $filter('filter')(data, countrySelect2, true)[0].color;
+
+                $('#cal circle').attr("fill", "#DF5252");
+                $scope.textcal1 = $filter('filter')(data, countrySelect1, true)[0].calorie + ' cal';
+                $scope.textcal2 = $filter('filter')(data, countrySelect2, true)[0].calorie + ' cal';
+
+                $('#salt circle').attr("fill", "#DF5252");
+                $scope.textsalt1 = $filter('filter')(data, countrySelect1, true)[0].sodium + ' mg';
+                $scope.textsalt2 = $filter('filter')(data, countrySelect2, true)[0].sodium + ' mg';
+
+                $('#meat circle').attr("fill", "#DF5252");
+                $scope.textmeat1 = $filter('filter')(data, countrySelect1, true)[0].meatorigin;
+                $scope.textmeat2 = $filter('filter')(data, countrySelect2, true)[0].meatorigin;
+
+                 $('#price circle').attr("fill", "#DF5252");
+                $scope.textprice1 = $filter('filter')(data, countrySelect1, true)[0].price + ' euros';
+                $scope.textprice2 = $filter('filter')(data, countrySelect2, true)[0].price + ' euros';
+            })//END DATAFACTORY
+      });
 //controller compare
         app.controller('comparatifCtrl', function($scope, $log, $routeParams, dataFactory, $filter) {
         

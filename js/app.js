@@ -47,11 +47,11 @@ var app = angular.module('playground', ['ngRoute']);
                     .when('/carte/:countryA/:countryB', {
 	                    templateUrl: 'template/carte.html',
 	                    controller: 'carteCtrl'
-	                    })
+	                })
                     .when('/choix-personnage', {
 	                    templateUrl: 'template/choix-personnage.html',
 	                    controller: 'personnageCtrl'
-	                    })
+	                })
 
                     .when('/temps-travail/:countryA/:countryB', {
 	                    templateUrl: 'template/temps-travail.html',

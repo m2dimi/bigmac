@@ -154,7 +154,7 @@
 <rect x="713.2" y="223.6" fill="none" width="298.4" height="96.1"/>
 <text transform="matrix(1 0 0 1 713.2181 252.2487)" fill="#DF5252" font-family="'Courgette-Regular'" font-size="34.8482">{{textcal2}}</text>
 <rect x="284.1" y="388.7" fill="none" width="293.9" height="96.1"/>
-<text transform="matrix(1 0 0 1 505.6312 417.3513)" fill="#DF5252" font-family="'Courgette-Regular'" font-size="34.8482">{{textsalt1}}</text>
+<text transform="matrix(1 0 0 1 435.6312 417.3513)" fill="#DF5252" font-family="'Courgette-Regular'" font-size="34.8482">{{textsalt1}}</text>
 <rect x="713.2" y="388.7" fill="none" width="298.4" height="96.1"/>
 <text transform="matrix(1 0 0 1 713.2181 417.3513)" fill="#DF5252" font-family="'Courgette-Regular'" font-size="34.8482">{{textsalt2}}</text>
 <rect x="284.1" y="550.3" fill="none" width="293.9" height="96.1"/>
