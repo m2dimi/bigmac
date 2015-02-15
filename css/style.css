@@ -72,6 +72,16 @@ body{
     z-index: 1;
 }
 
+#text_hour
+{
+    position: absolute;
+    top: 42%;
+    z-index: 4;
+    left: 35%;
+    font-size: 26px;
+    color: #fff;
+}
+
 #interupt
 {
     width: 70%;
