@@ -1,5 +1,8 @@
 <h1> The BIG Indice <1>
 ======
+Groupe composé de : Briere Nils - Derouiche Hymen - Duvernay Mickael - Turuani Lucas 
+
+
 <h4>Description du projet<h4>
 
 Le Big Mac est le sandwich emblématique de la chaîne de restauration rapide “Macdonalds”. Macdonalds est présent dans de nombreux pays à travers le monde : il possèdent plus de 32 000 restaurants. 
