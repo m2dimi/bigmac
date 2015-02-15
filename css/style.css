@@ -39,7 +39,7 @@ body{
     background : url("../ressources/site/fond_perso.png") repeat-y;
     background-size: contain;
     background-position:  center;
-    padding-bottom: 20px ;
+    padding-bottom: 1px ;
 }
 
 .text_lose
@@ -97,6 +97,11 @@ body{
     font-size:25px;
 }
 
+
+#map
+{
+    margin-top: -73px;
+}
 
 .counter
 {
@@ -167,6 +172,7 @@ figure img:hover{
 .header
 {
     padding-top: 20px;
+    padding-bottom: 20px;
     color: #fff;
 }
 
