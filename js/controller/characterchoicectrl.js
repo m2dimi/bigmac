@@ -37,6 +37,7 @@
 		}
         $scope.characterremove1 = function() {
             $scope.persochoix = "";
+            $scope.persochoixname = "";
             valid1 = 0;
             $("#btn_anul1").hide();
             $("#perso1").hide();
@@ -45,6 +46,7 @@
 
         $scope.characterremove2 = function() {
             $scope.persochoix2 = "";
+            $scope.persochoixname2 = ""
             valid2 = 0;
             $("#btn_anul2").hide();
             $("#perso2").hide();
