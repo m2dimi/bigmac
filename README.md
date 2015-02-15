@@ -5,7 +5,7 @@
 Le Big Mac est le sandwich emblématique de la chaîne de restauration rapide “Macdonalds”. Macdonalds est présent dans de nombreux pays à travers le monde : il possèdent plus de 32 000 restaurants. 
 Notre projet  se concentrera sur la comparaison des données nutritionnelles du Big Mac à travers la plupart des pays dans lesquels Macdonalds est implanté. Les données que nous utiliseront seront collectés à partir des chiffres communiqués sur les sites officiels de chaque pays. Le projet ne comportera pas de dimension temporelle : les chiffres seront les chiffres actuels.
 
-The Indice project se veut facile d'utilisation pour mieux comprendre les données qui nous ont semblées les plus importantes et ainsi comprendre l'impact de cet indice. 
+The Indice project se veut facile d'utilisation pour mieux comprendre les données qui nous ont semblées les plus importantes de ce sandwish emblématique et ainsi comprendre l'impact de cet indice. 
 
 <h4>Cible<h4> 
 
