@@ -144,7 +144,7 @@
 		"price" : "2.67",
 		"color" : "red",
         "thumb" : "ressources/character/thumb/emirates_thumb.png",
-        "url_img" : "ressources/character/test.jpg",
+        "url_img" : "ressources/character/big/emirate_big.png",
 		"perso" : "ressources/character/perso/perso_emirates.png",
 		"flag" : "ressources/character/flag/emirate.png"
     },
@@ -174,7 +174,7 @@
 		"price" : "2.03",
 		"color" : "red",
         "thumb" : "ressources/character/thumb/chine_thumb.png",
-        "url_img" : "ressources/character/test.jpg",
+        "url_img" : "ressources/character/big/chinois_big.png",
 		"perso" : "ressources/character/perso/perso_chine.png",
 		"flag" : "ressources/character/flag/chine.png"
     },
@@ -263,7 +263,7 @@
 		"price" : "4.26",
 		"color" : "red",
         "thumb" : "ressources/character/thumb/maroc_thumb.png",
-        "url_img" : "ressources/character/test.jpg",
+        "url_img" : "ressources/character/big/maroc_big.png",
 		"perso" : "ressources/character/perso/perso_maroc.png",
 		"flag" : "ressources/character/flag/maroc.png"
     },
