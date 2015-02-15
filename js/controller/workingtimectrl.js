@@ -4,7 +4,7 @@ var worktimeselection1;
 var worktimeselection2;
 
  //controller temps travail
-        app.controller('tempstravailCtrl', function($scope, $log, $routeParams, dataFactory, $filter) {
+        app.controller('tempstravailCtrl', function($scope, $timeout, $log, $routeParams, dataFactory, $filter) {
             //Display the name of the selected countries
             $scope.model = {
                 dataurl1: $routeParams.countryA,
@@ -28,10 +28,11 @@ var worktimeselection2;
             })
 
             $scope.bigmac_calcul= function() {
+                $scope.totalbigmac1 =  "";
+                $scope.totalbigmac2 = "";
                 $("#interupt")[0].src = "ressources/machine/off.png";
                 refresh();
-                setInterval(refresh,30000);
-                result();
+                setInterval(refresh, 30000);
                 setTimeout(result, 30000);
                 setTimeout(reload, 30000);
             }
@@ -44,6 +45,7 @@ var worktimeselection2;
                 var totalbigmac2;
                 $scope.totalbigmac1 =  Math.round(min/worktimeselection1)*0.5;
                 $scope.totalbigmac2 = Math.round(min/worktimeselection2)*0.5;
+                $timeout(function () {$scope.$apply();});
             }
 
       });
