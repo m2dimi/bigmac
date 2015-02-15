@@ -273,6 +273,10 @@ figure img:hover{
     display: none;
 }
 
+.zone:hover
+{
+    fill : #B7DFD9;
+}
 
 .btn_anul
 {
