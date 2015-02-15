@@ -39,7 +39,7 @@
 		"price" : "2.41",
 		"color" : "red",
         "thumb" : "ressources/character/thumb/mexique_thumb.png",
-        "url_img" : "ressources/character/test.jpg",
+        "url_img" : "ressources/character/big/mexique_big.png",
 		"perso" : "ressources/character/perso/perso_mexique.png",
 		"flag" : "ressources/character/flag/mexique.png"
     },
