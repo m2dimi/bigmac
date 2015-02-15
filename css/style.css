@@ -78,7 +78,7 @@ body{
     cursor: pointer;
     position: absolute;
     z-index: 2;
-    top: 99%;
+    top: 113%;
     left: 17%;
 }
 
@@ -361,8 +361,21 @@ figure img:hover{
 {
     position: absolute;
     z-index: 3;
-    top: -52px;
+    top: -19px;
     left: -12px;
+
+}
+
+.fond_round
+{
+    background : url("../ressources/machine/fond_hours.png") no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+    top: -107px;
+    left: -9px;
+    position: absolute;
+    z-index: 3;
 }
 
 div.round{
