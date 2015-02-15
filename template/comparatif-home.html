@@ -1,57 +1,33 @@
-<div class="container body_perso pagecompare">
-    <!--diplay the homepage of the comparaison-->
-    <div class="row" id="homecompare">
-        <div class="col-xs-12 font_nexar">
-            <h1>Quelles sont les différences entre les Big Mac de {{prenomperso1}} et de {{prenomperso2}} ?</h1>
-        </div>
-        <a href="#/comparatif/start/{{countryA}}/{{countryB}}" >
+<div class="pagecompare">
+    <section class="row">
+
+         <h1 class="col-xs-12">Quelles sont les différences entre les Big Mac de {{prenomperso1}} et de {{prenomperso2}} ?</h1>
+
+         <a href="#/comparatif/start/{{countryA}}/{{countryB}}" >
             <div class="col-xs-2 col-xs-offset-5" id="comparestart">
                 <p>start</p>
                 <img src="ressources/compare/interface/arrow.png" alt="">
             </div>
         </a>
-    </div>
-   <!--END diplay the homepage of the comparaison-->
-    
-    <div class="row">
-        <div class="col-xs-5">
-            <div class="row">
-                <div class="col-xs-12">
 
-            
-                </div>
-            </div>
-            <!-- display character 1 chosen -->
-            <div class="row">
-                <div class="col-xs-12 namepersocompare">
-                    <p ><img class="img_perso_compare" src="{{thumbperso1}}" alt="">{{prenomperso1}}</p>
-                </div>
-            </div>
-            <!--END display character 1 chosen -->
-        </div>
-    
-        <div class="col-xs-5">
-            <div class="row">
-                <div class="col-xs-12">
-                  
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 namepersocompare">
-                    <p ><img class="img_perso_compare" src="{{thumbperso2}}" alt="">{{prenomperso2}}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END display character chosen -->
-    
-    </div>
+    </section>
 </div>
-<!-- END container -->
 
+<section class="row namepersocompare">
 
+        <div class="col-xs-5"> 
+            <img class="img_perso_compare" src="{{thumbperso1}}" alt="">
+            <p>{{prenomperso1}}</p>
+        </div>
 
-<div class="modal fade" id="start">
+        <div class="col-xs-5 col-xs-offset-2"> 
+            <img class="img_perso_compare" src="{{thumbperso2}}" alt="">
+            <p>{{prenomperso2}}</p>
+        </div>
+
+</section>
+
+<!-- <div class="modal fade" id="start">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
@@ -78,13 +54,6 @@
         </div>
     </div>
 
-<div class="container-fluid">
-     <section class="backgroundcompare">
-        <div class="col-xs-6"></div>
-        <div class="col-xs-6"></div>
-    </section>
-</div>
-
 <script>
 
     window.onload
@@ -92,4 +61,4 @@
         $('#start').modal('show');
     }
 
-</script>
+</script> -->

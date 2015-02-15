@@ -424,7 +424,9 @@ div.round canvas{
     bottom: 0;
 }
 /*//////Page Compare/////////*/
-
+.pagecompare section h1{
+    margin: 20% 0;
+}
 .pagecompare #comparestart{
     width: 100px;
     height: 100px;
@@ -432,7 +434,9 @@ div.round canvas{
     background: #DF5252;
     color: #fff;
     margin-top: -180px;
-
+}
+.timeline svg{
+    margin-top: 80px;
 }
 
 .pagecompare #comparestart p{

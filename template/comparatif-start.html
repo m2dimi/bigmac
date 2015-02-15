@@ -1,79 +1,46 @@
-<div class="container body_perso pagecompare">
+<div class="pagecompare">
     
-    <div class="row">
-        <div class="col-xs-5">
-            <div class="row">
-                <div class="col-xs-12">
+    <section class="row">
 
-                    <!--ton svg -->
-                     <div class="row" id="page1compare">
-                        <div class="col-xs-12 font_nexar">
-                            <ng-include class="bigmac" src="'ressources/compare/bigmac-close.svg'"></ng-include>
-                        </div>
-                        <a href="#/comparatif/couleur/{{countryA}}/{{countryB}}">
-                            <div class="col-xs-2 col-xs-offset-5" id="comparestart">
-                                <p>La couleur</p>
-                                <img src="ressources/compare/interface/arrow.png" alt="">
-                                
-                            </div>
-                        </a>
-                    </div>
-                    <!--END ton svg -->
-
+        <div class="col-xs-4" id="page1compare">
+             <ng-include class="bigmac" src="'ressources/compare/bigmac-close.svg'"></ng-include>
+             <a href="#/comparatif/couleur/{{countryA}}/{{countryB}}">
+                <div class="col-xs-2 col-xs-offset-5" id="comparestart">
+                    <p>La couleur</p>
+                    <img src="ressources/compare/interface/arrow.png" alt="">
+                    
                 </div>
-            </div>
-            <!-- display character 1 chosen -->
-            <div class="row">
-                <div class="col-xs-12 namepersocompare">
-                    <p ><img class="img_perso_compare" src="{{thumbperso1}}" alt="">{{prenomperso1}}</p>
-                </div>
-            </div>
-            <!--END display character 1 chosen -->
+            </a>     
         </div>
-        <!-- diplay timeline btn-->
-        <div class="col-xs-2 comparetimeline">
-            <p class="timelignetext">{{textcolor1}}</p>
-            <p class="timelignetext">{{textcal1}}</p>
-            <p class="timelignetext">{{textsalt1}}</p>
-            <p class="timelignetext">{{textmeat1}}</p>
-            <p class="timelignetext">{{textprice1}}</p>
+
+        <div class="col-xs-4 timeline" >
             <ng-include src="'ressources/compare/interface/btn-timeline.svg'"></ng-include>
-            <p class="timelignetext">{{textcolor2}}</p>
-            <p class="timelignetext">{{textcal2}}</p>
-            <p class="timelignetext">{{textsalt2}}</p>
-            <p class="timelignetext">{{textmeat2}}</p>
-            <p class="timelignetext">{{textprice2}}</p>
-            
         </div>
-        <!-- diplay timeline btn-->
-        <div class="col-xs-5">
-            <div class="row">
-                <div class="col-xs-12">
-                    <!--ton svg 2 -->
-                    <div class="row" id="page1compare2">
-                        <div class="col-xs-12 font_nexar">
-                            <ng-include class="bigmac" src="'ressources/compare/bigmac-close.svg'"></ng-include>
-                        </div>
-                        <a href="#/comparatif/couleur/{{countryA}}/{{countryB}}">
-                            <div class="col-xs-2 col-xs-offset-5" id="comparestart">
-                                <p>La couleur</p>
-                                <img src="ressources/compare/interface/arrow.png" alt="">
-                                
-                            </div>
-                        </a>
-                    </div>
-                    <!--END ton svg 2 -->
+
+        <div class="col-xs-4" id="page1compare2">
+            <ng-include class="bigmac" src="'ressources/compare/bigmac-close.svg'"></ng-include>
+            <a href="#/comparatif/couleur/{{countryA}}/{{countryB}}">
+                <div class="col-xs-2 col-xs-offset-5" id="comparestart">
+                    <p>La couleur</p>
+                    <img src="ressources/compare/interface/arrow.png" alt="">
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 namepersocompare">
-                    <p ><img class="img_perso_compare" src="{{thumbperso2}}" alt="">{{prenomperso2}}</p>
-                </div>
-            </div>
+            </a>
         </div>
-    </div>
-    <!-- END display character chosen -->
+
+    </section>
     
-    </div>
+    <section class="row namepersocompare">
+
+        <div class="col-xs-5"> 
+            <img class="img_perso_compare" src="{{thumbperso1}}" alt="">
+            <p>{{prenomperso1}}</p>
+        </div>
+
+        <div class="col-xs-5 col-xs-offset-2"> 
+            <img class="img_perso_compare" src="{{thumbperso2}}" alt="">
+            <p>{{prenomperso2}}</p>
+        </div>
+
+    </section>
+
 </div>
-<!-- END container -->

@@ -98,13 +98,9 @@
             dataFactory.GetDataCountry(function(data){
                 var countrySelect1 = $routeParams.countryA;
                 var countrySelect2 = $routeParams.countryB;
-                $scope.thumbperso1 = $filter('filter')(data, countrySelect1, true)[0].thumb;
-                $scope.thumbperso2 = $filter('filter')(data, countrySelect2, true)[0].thumb;
-                $scope.prenomperso1 = $filter('filter')(data, countrySelect1, true)[0].prenom;
-                $scope.prenomperso2 = $filter('filter')(data, countrySelect2, true)[0].prenom;
-
                 var color1 = $filter('filter')(data, countrySelect1, true)[0].color;
                 var color2 = $filter('filter')(data, countrySelect2, true)[0].color;
+                
                 if (color1=="red") {
                     $('#page3compare #top-background>polygon').attr("fill", "#D77379");
                     $('#page3compare #bottom-side polygon').attr("fill", "#7F1C2B");
@@ -121,8 +117,48 @@
                     $('#page3compare2 #top-side-left-right polygon').attr("fill", "#A32332");
                     $('#page3compare2 #bottom-front polygon').attr("fill", "#A32332");
                 }
+                $scope.thumbperso1 = $filter('filter')(data, countrySelect1, true)[0].thumb;
+                $scope.thumbperso2 = $filter('filter')(data, countrySelect2, true)[0].thumb;
+                $scope.prenomperso1 = $filter('filter')(data, countrySelect1, true)[0].prenom;
+                $scope.prenomperso2 = $filter('filter')(data, countrySelect2, true)[0].prenom;
+
+                
                 $scope.cal1 = $filter('filter')(data, countrySelect1, true)[0].calorie;
                 $scope.cal2 = $filter('filter')(data, countrySelect2, true)[0].calorie;
+                
+                //timeline color 
+                $('#color circle').attr("fill", "#DF5252");
+                $scope.textcolor1 = $filter('filter')(data, countrySelect1, true)[0].color;
+                $scope.textcolor2 = $filter('filter')(data, countrySelect2, true)[0].color;
+
+                $('.timeline #cal circle').attr("fill", "#DF5252");
+                $scope.textcal1 = $filter('filter')(data, countrySelect1, true)[0].calorie + ' cal';
+                $scope.textcal2 = $filter('filter')(data, countrySelect2, true)[0].calorie + ' cal';
+            })//END DATAFACTORY
+      });
+//controller compare SEL
+        app.controller('comparatifSelCtrl', function($scope, $log, $routeParams, dataFactory, $filter) {
+        
+            //Display the name of the selected countries
+            $scope.model = {
+                dataurl1: $routeParams.countryA,
+                dataurl2: $routeParams.countryB
+            }
+            $scope.countryA = $routeParams.countryA;
+            $scope.countryB = $routeParams.countryB;
+
+
+            dataFactory.GetDataCountry(function(data){
+                var countrySelect1 = $routeParams.countryA;
+                var countrySelect2 = $routeParams.countryB;
+                $scope.thumbperso1 = $filter('filter')(data, countrySelect1, true)[0].thumb;
+                $scope.thumbperso2 = $filter('filter')(data, countrySelect2, true)[0].thumb;
+                $scope.prenomperso1 = $filter('filter')(data, countrySelect1, true)[0].prenom;
+                $scope.prenomperso2 = $filter('filter')(data, countrySelect2, true)[0].prenom;
+
+                
+                $scope.sel1 = $filter('filter')(data, countrySelect1, true)[0].sodium;
+                $scope.sel2 = $filter('filter')(data, countrySelect2, true)[0].sodium;
                 //timeline color 
                 $('#color circle').attr("fill", "#DF5252");
                 $scope.textcolor1 = $filter('filter')(data, countrySelect1, true)[0].color;
@@ -133,8 +169,9 @@
                 $scope.textcal2 = $filter('filter')(data, countrySelect2, true)[0].calorie + ' cal';
             })//END DATAFACTORY
       });
-//controller compare CALORIES
-        app.controller('comparatifSelCtrl', function($scope, $log, $routeParams, dataFactory, $filter) {
+
+//controller compare SEL
+        app.controller('comparatifViandeCtrl', function($scope, $log, $routeParams, dataFactory, $filter) {
         
             //Display the name of the selected countries
             $scope.model = {
