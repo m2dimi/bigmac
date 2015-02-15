@@ -293,7 +293,7 @@
 		"price" : "3.78",
 		"color" : "red",
         "thumb" : "ressources/character/thumb/chili_thumb.png",
-        "url_img" : "ressources/character/test.jpg",
+        "url_img" : "ressources/character/big/chili_big.png",
 		"perso" : "ressources/character/perso/perso_chili.png",
 		"flag" : "ressources/character/flag/chili.png"
     }
