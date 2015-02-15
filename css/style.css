@@ -92,6 +92,14 @@ body{
     left: 17%;
 }
 
+#btn_suivant_worktime
+{
+    position: absolute;
+    z-index: 3;
+    top: 197%;
+    left: 17%;
+}
+
 .font_30
 {
     font-size:25px;
@@ -185,7 +193,7 @@ figure img:hover{
 #img_camion1
 {
     position: absolute;
-    bottom: -2%;
+    bottom: -6%;
     left: 46%;
     width: 53%;
     z-index: 2;
@@ -203,7 +211,7 @@ figure img:hover{
 #nbr_bigmac1
 {
     position: absolute;
-    bottom: 6%;
+    bottom: 2%;
     left: 58%;
     font-size: 39px;
     color: #97D185;
