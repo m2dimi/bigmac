@@ -101,6 +101,7 @@ body{
 #map
 {
     margin-top: -73px;
+    cursor: pointer;
 }
 
 .counter
