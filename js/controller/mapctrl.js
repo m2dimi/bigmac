@@ -33,6 +33,12 @@
             // var col = "colour"+id;
                 // console.log(id);
                 switch(id) {
+                    case "cuba":
+                        var count = 1;
+                        var win = true;
+                        color(id, win, count);
+                        $scope.countotale = countotale;
+                        break;
 
                     case "other_country":
                         var count = 1;
@@ -196,6 +202,13 @@
                         $scope.countotale = countotale;
                         break;
 
+                    case "africa":
+                        var count = 1;
+                        var win = true;
+                        color(id, win, count);
+                        $scope.countotale = countotale;
+                        break;
+
                     case "south_africa":
                         var count = 1;
                         var win = false;
@@ -268,7 +281,7 @@
               if($('path, polygon, circle', ele).attr('fill')!= "#3DB807")
               {
                   countotale = countotale + count;
-                  if (countotale == 11) {
+                  if (countotale == 13) {
                       $('#win').modal('show');
                   }
               }
