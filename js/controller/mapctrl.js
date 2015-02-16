@@ -113,6 +113,7 @@
                     case "russia":
                         var count = 1;
                         var win = false;
+                        $("#russia").removeAttribute('class');
                         color(id, win, count);
                         $scope.countotale = countotale;
                         break;
@@ -280,6 +281,7 @@
           {
               if($('path, polygon, circle', ele).attr('fill')!= "#3DB807")
               {
+                  $('path, polygon, circle', ele).attr('class', "");
                   countotale = countotale + count;
                   if (countotale == 13) {
                       $('#win').modal('show');
