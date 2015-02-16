@@ -25,7 +25,8 @@
 		"price" : "4.35",
 		"color" : "Rouge",
         "thumb" : "ressources/character/thumb/bresile_thumb.png",
-        "url_img" : "ressources/character/test.jpg",
+	  	"perso" : "ressources/character/perso/perso_bresil.png",
+        "url_img" : "ressources/character/big/bresil_big.png",
 		"flag" : "ressources/character/flag/bresil.png"
     },
     {
@@ -69,7 +70,7 @@
 		"price" : "3.80",
 		"color" : "Rouge",
         "thumb" : "ressources/character/thumb/azerbajan_thumb.png",
-        "url_img" : "ressources/character/test.jpg",
+        "url_img" : "ressources/character/big/azerbaijan_big.png",
 		"perso" : "ressources/character/perso/perso_azer.png",
 		"flag" : "ressources/character/flag/azerbadjan.png"
 	},
@@ -278,7 +279,7 @@
 		"price" : "2.76",
 		"color" : "Rouge",
         "thumb" : "ressources/character/thumb/suede_thumb.png",
-        "url_img" : "ressources/character/test.jpg",
+        "url_img" : "ressources/character/big/suede_big.png",
 		"perso" : "ressources/character/perso/perso_suede.png",
 		"flag" : "ressources/character/flag/suede.png"
     },
