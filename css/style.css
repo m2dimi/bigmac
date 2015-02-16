@@ -148,6 +148,11 @@ font-family : jaapokkisubtract;
     font-family: rustslabblackshadow;
 }
 
+.font_courgette
+{
+    font-family: 'Courgette', cursive;
+}
+
 .orange {
     color: #E25B5A;
 }
