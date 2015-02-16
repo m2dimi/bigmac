@@ -30,7 +30,7 @@ var worktimeselection2;
             $scope.bigmac_calcul= function() {
                 $scope.totalbigmac1 =  "";
                 $scope.totalbigmac2 = "";
-                $("#interupt")[0].src = "ressources/machine/off.png";
+                $("#interupt")[0].src = "ressources/machine/on.png";
                 refresh();
                 setTimeout(result, 30000);
                 setTimeout(reload, 30000);
@@ -53,7 +53,7 @@ var worktimeselection2;
 
 function reload()
 {
-    $("#interupt")[0].src = "ressources/machine/on.png";
+    $("#interupt")[0].src = "ressources/machine/off.png";
 }
 
 

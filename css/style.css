@@ -556,6 +556,7 @@ div.round canvas{
         height: 70px;
     }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
 
     .title
