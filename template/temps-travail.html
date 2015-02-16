@@ -41,10 +41,10 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-4">
-                        <img class="img-responsive" src="ressources/popup/horloge.png"/>
+                        <img id="horloge_gif" class="img-responsive" src="ressources/popup/horloge.gif"/>
                     </div>
                     <div class="col-xs-4">
-                        <img class="img-responsive" src="ressources/popup/interupt.png" style="margin-top: 65px;"/>
+                        <img id="interupt_gif" class="img-responsive center-block" src="ressources/popup/interupt.gif" style="margin-top: 65px;"/>
                     </div>
                     <div class="col-xs-4">
                         <img class="img-responsive" src="ressources/popup/camion.png" style="margin-top: 159px;"/>
@@ -68,8 +68,21 @@
 <script>
     window.onload
     {
-        $('#start').modal('show')
+        $('#start').modal('show');
+        setInterval(gif_popup,3000);
+
     }
+
+    function gif_popup ()
+    {
+        var tmp = new Date();
+        var img1 = $("#horloge_gif")[0];
+        var img2 = $("#interupt_gif")[0];
+        img1.src = "ressources/popup/horloge.gif" + '?' + tmp.getTime();
+        img2.src = "ressources/popup/interupt.gif" + '?' + tmp.getTime();
+
+    }
+
 
 
     (function($){
