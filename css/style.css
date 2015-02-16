@@ -42,6 +42,12 @@ body{
     padding-bottom: 1px ;
 }
 
+.logo_mini
+{
+    position: relative;
+    z-index: 4;
+}
+
 .text_lose
 {
     background: #DF4444;
