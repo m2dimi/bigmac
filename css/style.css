@@ -115,7 +115,6 @@ body{
 #map
 {
     margin-top: -73px;
-    cursor: pointer;
 }
 
 .counter
@@ -287,6 +286,7 @@ figure img:hover{
 .zone:hover
 {
     fill : #B7DFD9;
+    cursor: pointer;
 }
 
 .btn_anul
