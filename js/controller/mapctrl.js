@@ -113,7 +113,6 @@
                     case "russia":
                         var count = 1;
                         var win = false;
-                        $("#russia").removeAttribute('class');
                         color(id, win, count);
                         $scope.countotale = countotale;
                         break;
