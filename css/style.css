@@ -538,6 +538,10 @@ div.round canvas{
 
 @media (max-width: 767px) {
 
+    .font_30
+    {
+        font-size:15px;
+    }
 
     .btn_valid
     {
