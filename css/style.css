@@ -501,6 +501,13 @@ div.round canvas{
 /*#page6compare2*/
 /*//////END Page Compare/////////*/
 
+/*//////Page ABOUT/////////*/
+.about{
+    font-size: 40px !important;
+    background: red;
+}
+/*//////END Page ABOUT/////////*/
+
 /*//////responsive/////////*/
 
 
