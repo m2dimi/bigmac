@@ -219,7 +219,7 @@ figure img:hover{
     bottom: 2%;
     left: 58%;
     font-size: 39px;
-    color: #97D185;
+    color: #000;
     z-index: 3;
 }
 
@@ -234,7 +234,7 @@ figure img:hover{
     bottom: 2%;
     left: 27%;
     font-size: 39px;
-    color: #97D185;
+    color: #000;
     z-index: 3;
 }
 
@@ -389,6 +389,17 @@ figure img:hover{
 .characterchoice figure:nth-child(0n+15){
     margin-right: 50px;
 }
+
+
+/*////about////*/
+
+.name_about
+{
+    color: #fff;
+    font-weight: bold;
+}
+
+
 /*////input round///*/
 
 .round
