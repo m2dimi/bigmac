@@ -200,9 +200,10 @@ figure img:hover{
     font-size: 52px;
 }
 
-#horloge_gif
-{
-    margin: 50px;
+#horloge_gif {
+    /* margin: 20px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #img_camion1
