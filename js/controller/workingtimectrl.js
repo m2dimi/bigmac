@@ -32,7 +32,6 @@ var worktimeselection2;
                 $scope.totalbigmac2 = "";
                 $("#interupt")[0].src = "ressources/machine/off.png";
                 refresh();
-                setInterval(refresh, 30000);
                 setTimeout(result, 30000);
                 setTimeout(reload, 30000);
             }
