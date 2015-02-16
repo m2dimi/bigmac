@@ -190,7 +190,7 @@
 		"price" : "1.73",
 		"color" : "Rouge",
         "thumb" : "ressources/character/thumb/sud_afrique_thumb.png",
-        "url_img" : "ressources/character/test.jpg",
+        "url_img" : "ressources/character/big/sud_afrique_big.png",
 		"perso" : "ressources/character/perso/perso_sud_afrique.png",
 		"flag" : "ressources/character/flag/afrique_du_sud.png"
     },
