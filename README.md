@@ -63,5 +63,5 @@ Le Big Mac est le sandwich emblématique de la chaîne de restauration rapide �
 
 <h4>Développement</h4>
 
-<p>Le projet a été developpé en HTML5, CSS3 et JavaScript. La structure du site a été mise en place en JavaScript avec le framework MVC appelé AngularJS. L'adaptation au différents écrans a été gérer avec le framework CSS Bootstrapp de Twitter.
+<p>Le projet a été développé en HTML5, CSS3 et JavaScript. La structure du site a été mise en place en JavaScript avec le framework MVC appelé AngularJS. L'adaptation au différents écrans a été gérer avec le framework CSS Bootstrapp de Twitter.
 </p>
