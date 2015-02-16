@@ -24,15 +24,41 @@ Le Big Mac est le sandwich emblématique de la chaîne de restauration rapide �
 
 <p>Enfin, la dernière étape serait de faire un point sur ces données selons les deux pays en montrant leurs différences de : 
 	<ul>
-		<li>- Couleurs</li>
-		<li>- Les calories</li>
-		<li>- Origines de la viande</li>
-		<li>- Le prix</li>
-		<li>- Le résumé de ces données</li>
+		<li>Couleurs</li>
+		<li>Les calories</li>
+		<li>Origines de la viande</li>
+		<li>Le prix</li>
+		<li>Le résumé de ces données</li>
 	</ul>
 </p>
 
-<p>Une fois arrivé à cette conclusion, l'utilisateur pourra recommencer le jeu comparant d'autres pays. 
+<p>Une fois arrivé à cette conclusion, l'utilisateur pourra recommencer le jeu comparant d'autres pays. </p>
+
+<h4>Data</h4>
+
+<p>Toutes les données ont été recueilli sur les sites officiels des Macdonald's à travers le monde. Après un travail sur ces données nous avons réduit pour le moment notre base de données à 20 pays à travers le monde qui sont les plus représentatif en terme de données. Mais cette base de données pourra être élargie à un plus grand nombre de pays par la suite. Les pays choisis pour la première version de notre site sont : 
+	<ul>
+		<li>Afrique du Sud</li>
+		<li>Angleterre</li>
+		<li>Argentine</li>
+		<li>Australie</li>
+		<li>Azerbajan</li>
+		<li>Brésil</li>
+		<li>Chili</li>
+		<li>Chine</li>
+		<li>Egypte</li>
+		<li>Emirates</li>
+		<li>France</li>
+		<li>Grèce</li>
+		<li>Inde</li>
+		<li>Japon</li>
+		<li>Maroc</li>
+		<li>Mexique</li>
+		<li>Roumanie</li>
+		<li>Russie</li>
+		<li>Suède</li>
+		<li>USA</li>		
+	</ul>
 </p>
 
 <h4>Développement</h4>
