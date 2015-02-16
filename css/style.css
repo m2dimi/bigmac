@@ -521,7 +521,15 @@ div.round canvas{
 .img_perso_compare{
     width: auto;
     height: 100px;
-
+}
+.btn_recommencer{
+    background: #A9D4CE;
+    box-shadow: 5px 5px 0px #C9C8C8;
+    color: #fff;
+    margin-top: 30px;
+    padding: 7px 0px 7px 0px;
+    display: none;
+    text-align: center;
 }
 
 /*//////END Page Compare/////////*/
