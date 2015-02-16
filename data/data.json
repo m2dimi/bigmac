@@ -17,14 +17,14 @@
     {
         "id" : "2",
 		"prenom" : "Ronaldinho le brésilien",
-        "country" : "Brésil",
+        "country" : "Bresil",
         "worktime": "120",
 		"calorie": "494",
 		"sodium" : "817",
 		"meatorigin" : "Inconnue",
 		"price" : "4.35",
 		"color" : "Rouge",
-        "thumb" : "ressources/character/thumb/bresile_thumb.png",
+        "thumb" : "ressources/character/thumb/bresil_thumb.png",
 	  	"perso" : "ressources/character/perso/perso_bresil.png",
         "url_img" : "ressources/character/big/bresil_big.png",
 		"flag" : "ressources/character/flag/bresil.png"
@@ -182,7 +182,7 @@
     {
         "id" : "13",
 		"prenom" : "Nelson le sud africain",
-        "country" : "Afrique du sud",
+        "country" : "Afrique-du-sud",
         "worktime": "49",
 		"calorie": "522",
 		"sodium" : "988",
@@ -241,7 +241,7 @@
     {
         "id" : "17",
 		"prenom" : "Nikos le grecque",
-        "country" : "Grèce",
+        "country" : "Grece",
         "worktime": "32",
 		"calorie": "508",
 		"sodium" : "2300",
@@ -271,7 +271,7 @@
     {
         "id" : "19",
 		"prenom" : "Almut le suèdois",
-        "country" : "Suède",
+        "country" : "Suede",
         "worktime": "15.75",
 		"calorie": "478",
 		"sodium" : "853",
