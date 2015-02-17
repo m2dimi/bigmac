@@ -49,7 +49,7 @@
                    <p class="font_courgette orange text-center">Lance la machine</p>
                     </div>
                     <div class="col-xs-4">
-                        <img class="img-responsive gif_popup" src="ressources/popup/camion.png" style="margin-top: 72%;"/>
+                        <img class="img-responsive gif_popup" src="ressources/popup/camion.png" style="margin-top: 75%;"/>
                         <p class="font_courgette orange">Vois combien de Big Mac tu peux acheter</p>
                     </div>
                 </div>
@@ -101,14 +101,14 @@
             ctx.beginPath();
             ctx.arc(100,100,85,0,2*Math.PI);
             ctx.lineWidth = 30;
-            ctx.strokeStyle = "#FDD784"
+            ctx.strokeStyle = "#FDD784";
             ctx.stroke();
 
             var ctx = $color[0].getContext('2d');
             ctx.beginPath();
             ctx.arc(100,100,85,-1/2*Math.PI,ratio*2*Math.PI - 1/2 * Math.PI);
             ctx.lineWidth = 30;
-            ctx.strokeStyle = "#C22E38"
+            ctx.strokeStyle = "#C22E38";
             ctx.stroke();
 
             $div.mousedown(function(event){
@@ -122,7 +122,7 @@
                     ctx.beginPath();
                     ctx.arc(100,100,85,-1/2*Math.PI,a*2*Math.PI -1/2*Math.PI);
                     ctx.lineWidth = 30;
-                    ctx.strokeStyle = "#C22E38"
+                    ctx.strokeStyle = "#C22E38";
                     ctx.stroke();
                     $input.val(Math.round(a * (max - min) + min));
                 })
@@ -130,6 +130,7 @@
                 event.preventDefault();
                 $div.unbind('mousemove');
             })
+
         })
     })(jQuery)
 
