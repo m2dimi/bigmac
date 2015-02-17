@@ -508,18 +508,16 @@ div.round canvas{
     margin: 10% 0;
 }
 .pagecompare #comparestart{
-    width: 130px;
-    height: 130px;
+    margin-top: 300px;
+    padding: 0 30px;
+    height: 30px;
     background: #DF5252;
     color: #fff;
     box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
     color: #fff;
-    padding: 7px 30px 7px 30px;
     position: absolute;
-    transform: rotate(-6deg);
-    -o-transform: rotate(-6deg);
-    -moz-transform: rotate(-6deg);
-    -webkit-transform: rotate(-6deg);
+    right: 0;
+    z-index: 1
 }
 
 .pagecompare .bg{
@@ -536,15 +534,13 @@ div.round canvas{
 }
 
 .pagecompare #comparestart p{
-    width: 100px;
-    margin: 27px -14px 40px -14px;
-    /*margin: 40px 8px;*/
-    font-family: "rustslabblackshadow";
+    font-family: 'helsinkiregular';
     text-align: center;
+    padding: 6px;
+    float: right;
 }
 .pagecompare #comparestart img{
-    margin-top: -80px;
-    margin-left: 25px;
+    margin-top: 6px;
 }
 .backgroundcompare div:nth-child(2){
     background: #FDDA80;
