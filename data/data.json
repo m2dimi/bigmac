@@ -235,7 +235,7 @@
 		"price" : "3.78",
 		"color" : "Rouge",
         "thumb" : "ressources/character/thumb/roumanie_thumb.png",
-        "url_img" : "ressources/character/test.jpg",
+        "url_img" : "ressources/character/big/roumanie_big.png",
 		"flag" : "ressources/character/flag/roumanie.png"
     },
     {
