@@ -644,6 +644,13 @@ width: 170px;
 
 @media (max-width: 767px) {
 
+    .counter
+    {
+        right : 0px;
+        bottom: 0px;
+        position: fixed;
+    }
+
     .font_30
     {
         font-size:15px;
@@ -652,7 +659,7 @@ width: 170px;
     .btn_valid
     {
         top: -184px;
-        left: 10%;
+        left: 16%;
     }
 
     .perso_choisi
