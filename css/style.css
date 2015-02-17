@@ -509,9 +509,9 @@ div.round canvas{
     bottom: 0;
 }
 /*//////Page Compare/////////*/
-.pagecompare section h1{
+/*.pagecompare section h1{
     margin: 10% 0;
-}
+}*/
 .pagecompare #comparestart{
     margin-top: 300px;
     padding: 0 30px;
@@ -577,6 +577,11 @@ div.round canvas{
     padding: 7px 0px 7px 0px;
     display: none;
     text-align: center;
+    transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
+
 }
 
 /*//////END Page Compare/////////*/
