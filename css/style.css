@@ -238,9 +238,9 @@ figure img:hover{
 #nbr_bigmac1
 {
     position: absolute;
-    bottom: 2%;
-    left: 58%;
-    font-size: 39px;
+    bottom: 1%;
+    left: 61%;
+    font-size: 37px;
     color: #000;
     z-index: 3;
 }
@@ -253,9 +253,9 @@ figure img:hover{
 #nbr_bigmac2
 {
     position: absolute;
-    bottom: 2%;
-    left: 27%;
-    font-size: 39px;
+    bottom: 1%;
+    left: 33%;
+    font-size: 37px;
     color: #000;
     z-index: 3;
 }
