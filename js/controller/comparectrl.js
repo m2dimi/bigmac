@@ -195,8 +195,8 @@
                 $scope.prenomperso2 = $filter('filter')(data, countrySelect2, true)[0].prenom;
 
                 
-                $scope.sel1 = $filter('filter')(data, countrySelect1, true)[0].sodium;
-                $scope.sel2 = $filter('filter')(data, countrySelect2, true)[0].sodium;
+                $scope.meat1 = $filter('filter')(data, countrySelect1, true)[0].meatorigin;
+                $scope.meat2 = $filter('filter')(data, countrySelect2, true)[0].meatorigin;
                 //timeline color 
                 $('#color circle').attr("fill", "#DF5252");
                 $scope.textcolor1 = $filter('filter')(data, countrySelect1, true)[0].color;
