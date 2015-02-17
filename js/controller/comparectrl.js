@@ -107,7 +107,7 @@
                     $('#page3compare #bottom-background>polygon').attr("fill", "#661722");
                     $('#page3compare #top-side-top-bot polygon').attr("fill", "#BE1532");
                     $('#page3compare #top-side-left-right polygon').attr("fill", "#A32332");
-                    $('#page3compare #bottom-front>polygon').attr("fill", "#A32332");
+                    $('#page3compare #bottom-front polygon').attr("fill", "#A32332");
                 }
                 if (color2=="Rouge") {
                     $('#page3compare2 #top-background>polygon').attr("fill", "#D77379");
