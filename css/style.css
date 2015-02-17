@@ -266,6 +266,18 @@ figure img:hover{
     top: 8%;
 }
 
+#timer
+{
+    position: absolute;
+    z-index: 3;
+    left: 44%;
+    top: 135%;
+    background: #000;
+    color: #BF3038;
+    padding: 3px;
+    width: 29px;
+}
+
 #nbr_bigmac2
 {
     position: absolute;
