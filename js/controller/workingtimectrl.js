@@ -2,7 +2,7 @@
 //Each page have his controller. We need to write the code in each controllers
 var worktimeselection1;
 var worktimeselection2;
-var nbr_time ="30";
+var nbr_time ="10";
 
  //controller temps travail
         app.controller('tempstravailCtrl', function($scope, $timeout, $log, $routeParams, dataFactory, $filter) {
@@ -23,7 +23,7 @@ var nbr_time ="30";
                 $scope.countryselection1 = $filter('filter')(data, countrySelect1, true)[0].perso;
                 $scope.prenomselection1 = $filter('filter')(data, countrySelect1, true)[0].prenom;
                 $scope.flag1 = $filter('filter')(data, countrySelect1, true)[0].flag_machine;
-                $scope.nbr_time = "30";
+                $scope.nbr_time = "10";
 
                 worktimeselection2 = $filter('filter')(data, countrySelect2, true)[0].worktime;
                 $scope.countryselection2 = $filter('filter')(data, countrySelect2, true)[0].perso;
@@ -39,8 +39,8 @@ var nbr_time ="30";
                 $("#interupt")[0].src = "ressources/machine/on.png";
                 refresh();
                 setInterval(timer, 1000);
-                setTimeout(result, 30000);
-                setTimeout(reload, 30000);
+                setTimeout(result, 10000);
+                setTimeout(reload, 10000);
             };
 
             function result()
@@ -67,7 +67,7 @@ var nbr_time ="30";
                 else
                 {
                     clearInterval();
-                    $scope.nbr_time = "30";
+                    $scope.nbr_time = "10";
                 }
             }
 
