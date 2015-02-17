@@ -559,13 +559,14 @@ width: 170px;
 }
 
 .pagecompare #comparestart p{
-    font-family: 'helsinkiregular';
+   font-family: 'helsinkiregular';
     text-align: center;
     padding: 6px;
-    float: right;
+    margin-top: 90px;
 }
 .pagecompare #comparestart img{
-    margin-top: 6px;
+    margin-top: -20px;
+    margin-left: 46px;
 }
 .backgroundcompare div:nth-child(2){
     background: #FDDA80;
