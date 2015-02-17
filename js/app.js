@@ -57,7 +57,7 @@ var app = angular.module('playground', ['ngRoute']);
 	                    templateUrl: 'template/temps-travail.html',
 	                    controller: 'tempstravailCtrl'
 	                    })
-                    .when('/about', {
+                    .when('/qui-sommes-nous', {
 	                    templateUrl: 'template/about.html',
 	                    controller: 'aboutCtrl'
 	                    })
