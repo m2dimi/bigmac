@@ -124,6 +124,10 @@ body{
     font-size:25px;
 }
 
+.font_20
+{
+    font-size:20px;
+}
 
 #map
 {
@@ -245,7 +249,7 @@ figure img:hover{
     position: absolute;
     bottom: 1%;
     left: 61%;
-    font-size: 37px;
+    font-size: 32px;
     color: #000;
     z-index: 3;
 }
@@ -266,8 +270,8 @@ figure img:hover{
 {
     position: absolute;
     bottom: 1%;
-    left: 32%;
-    font-size: 37px;
+    left: 33%;
+    font-size: 32px;
     color: #000;
     z-index: 3;
 }
