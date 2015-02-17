@@ -534,16 +534,18 @@ div.round canvas{
     margin: 10% 0;
 }*/
 .pagecompare #comparestart{
-    margin-top: 300px;
-    padding: 0 30px;
-    height: 30px;
-    background: #A9D4CE;
-    color: #fff;
-    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
-    color: #fff;
-    position: absolute;
-    right: 0;
-    z-index: 1
+   padding: 0 30px;
+height: 170px;
+background: #A9D4CE;
+color: #fff;
+box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+color: #fff;
+position: absolute;
+right: 44%;
+z-index: 1;
+top: -80px;
+border-radius: 880px;
+width: 170px;
 }
 
 .pagecompare .bg{
