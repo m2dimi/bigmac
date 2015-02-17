@@ -252,6 +252,7 @@
 	  	"flag_machine" : "ressources/machine/flag/flag_roumanie.png",
         "thumb" : "ressources/character/thumb/roumanie_thumb.png",
         "url_img" : "ressources/character/big/roumanie_big.png",
+	  	"perso" : "ressources/character/perso/perso_roumanie.png",
 		"flag" : "ressources/character/flag/roumanie.png"
     },
     {
@@ -264,7 +265,7 @@
 		"meatorigin" : "Europe",
 		"price" : "2.60",
 		"color" : "Rouge",
-	  "flag_machine" : "ressources/machine/flag/flag_grecs.png",
+	  	"flag_machine" : "ressources/machine/flag/flag_grecs.png",
         "thumb" : "ressources/character/thumb/grece_thumb.png",
         "url_img" : "ressources/character/big/grece_big.png",
 		"perso" : "ressources/character/perso/perso_grecs.png",
