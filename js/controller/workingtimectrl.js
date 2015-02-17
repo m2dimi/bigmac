@@ -45,6 +45,7 @@ var worktimeselection2;
                 $scope.totalbigmac1 =  Math.round(min/worktimeselection1)*0.5;
                 $scope.totalbigmac2 = Math.round(min/worktimeselection2)*0.5;
                 $timeout(function () {$scope.$apply();});
+                $("#btn_suivant_worktime").fadeIn();
             }
 
       });

@@ -114,7 +114,8 @@ body{
     position: absolute;
     z-index: 3;
     top: 197%;
-    left: 24%
+    left: 24%;
+    display: none;
 }
 
 .font_30
