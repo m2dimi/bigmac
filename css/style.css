@@ -192,8 +192,10 @@ figure img{
 figure img:hover{
 
 }
-
 #aboutlink{
+    margin-top: 10px;
+}
+#aboutlink a{
     font-family: 'helsinkiregular';
     color: #FFF;
     font-size: 15px;
