@@ -193,6 +193,12 @@ figure img:hover{
 
 }
 
+#aboutlink{
+    font-family: 'helsinkiregular';
+    color: #FFF;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
 
 #logo_big_indice
 {
