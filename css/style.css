@@ -282,7 +282,7 @@ figure img:hover{
 
 .perso_name
 {
-    font-size: 24px;
+    font-size: 32px;
     height: 52px;
 }
 
@@ -295,7 +295,7 @@ figure img:hover{
 .btn_valid
 {
     background: #A9D4CE;
-    box-shadow: 5px 5px 0px #C9C8C8;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
     color: #fff;
     padding: 7px 30px 7px 30px;
     position: absolute;
@@ -317,7 +317,7 @@ figure img:hover{
 .btn_anul
 {
     background: #E25B5A;
-    box-shadow: 5px 5px 0px #E1AC52;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
     color: #fff;
     padding: 10px;
     display: none;
