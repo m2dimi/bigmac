@@ -1324,7 +1324,7 @@
 				
 					<rect x="764.7" y="319" transform="matrix(-0.9692 -0.2462 0.2462 -0.9692 1529.0807 856.2784)" fill="none" width="106.7" height="27.1"/>
 				
-					<text transform="matrix(0.9692 0.2462 -0.2463 0.9692 780.4882 336.7019)" fill="#FFFFFF" font-family="'NexaRustSlab-BlackShadow01'" font-size="36.8835">{{cal1}}</text>
+					<text transform="matrix(0.9692 0.2462 -0.2463 0.9692 780.4882 336.7019)" fill="#FFFFFF" font-family="'helsinkiregular'" font-size="36.8835">{{cal1}}</text>
 			</g>
 			
 				<rect x="752" y="351.8" transform="matrix(-0.9825 0.1864 -0.1864 -0.9825 1641.8065 571.3134)" fill="none" width="84.1" height="22"/>
