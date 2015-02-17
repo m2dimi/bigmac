@@ -21,10 +21,12 @@ var worktimeselection2;
                 worktimeselection1 = $filter('filter')(data, countrySelect1, true)[0].worktime;
                 $scope.countryselection1 = $filter('filter')(data, countrySelect1, true)[0].perso;
                 $scope.prenomselection1 = $filter('filter')(data, countrySelect1, true)[0].prenom;
+                $scope.flag1 = $filter('filter')(data, countrySelect1, true)[0].flag_machine;
 
                 worktimeselection2 = $filter('filter')(data, countrySelect2, true)[0].worktime;
                 $scope.countryselection2 = $filter('filter')(data, countrySelect2, true)[0].perso;
                 $scope.prenomselection2 = $filter('filter')(data, countrySelect2, true)[0].prenom;
+                $scope.flag2 = $filter('filter')(data, countrySelect2, true)[0].flag_machine;
             })
 
             $scope.bigmac_calcul= function() {

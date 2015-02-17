@@ -275,6 +275,27 @@ figure img:hover{
     z-index: 3;
 }
 
+#img_flag1
+{
+    left: 34%;
+    top: -18%;
+
+}
+
+#img_flag2
+{
+    top: -18%;
+    right: 14%;
+
+}
+
+.img_flag
+{
+    width: 20%;
+    position: absolute;
+    z-index: -1;
+}
+
 .gif_popup
 {
     margin-top: 20px;
