@@ -316,10 +316,10 @@ figure img:hover{
     box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
     color: #fff;
     padding: 7px 30px 7px 30px;
-    transform: rotate(-6deg);
+    /*transform: rotate(-6deg);
     -o-transform: rotate(-6deg);
     -moz-transform: rotate(-6deg);
-    -webkit-transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);*/
 }
 
 .zone:hover
