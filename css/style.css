@@ -255,7 +255,8 @@ figure img:hover{
 
 #img2
 {
-    right: 0;
+    right: 17%;
+    top: 8%;
 }
 
 #nbr_bigmac2
@@ -270,7 +271,7 @@ figure img:hover{
 
 .img_perso_mach
 {
-    height: 26%;
+    height: 20%;
     position: absolute;
 }
 
@@ -306,6 +307,19 @@ figure img:hover{
     -moz-transform: rotate(-6deg);
     -webkit-transform: rotate(-6deg);
     display: none;
+}
+
+
+.btn_next
+{
+    background: #A9D4CE;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 7px 30px 7px 30px;
+    transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
 }
 
 .zone:hover
