@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'helsinkiregular';
+    src: url('../fonts/helsinki-webfont.eot');
+    src: url('../fonts/helsinki-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helsinki-webfont.woff') format('woff'),
+         url('../fonts/helsinki-webfont.ttf') format('truetype'),
+         url('../fonts/helsinki-webfont.svg#helsinkiregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
     font-family: "jaapokkisubtract";
@@ -150,7 +161,7 @@ font-family : jaapokkisubtract;
 
 .font_rustsla
 {
-    font-family: rustslabblackshadow;
+    font-family: 'helsinkiregular';
 }
 
 .font_courgette
@@ -510,7 +521,7 @@ div.round canvas{
     margin: 15% 0%;
 }
 .namepersocompare{
-     font-family: "rustslabblackshadow";
+     font-family: 'helsinkiregular';
      color: #DF5252;
      font-size: 1.4em;
     
