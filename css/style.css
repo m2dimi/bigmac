@@ -501,12 +501,18 @@ div.round canvas{
     margin: 10% 0;
 }
 .pagecompare #comparestart{
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
+    width: 130px;
+    height: 130px;
     background: #DF5252;
     color: #fff;
-    margin-top: -180px;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 7px 30px 7px 30px;
+    position: absolute;
+    transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
 }
 
 .pagecompare .bg{
