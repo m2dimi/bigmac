@@ -157,8 +157,8 @@
                 $scope.prenomperso2 = $filter('filter')(data, countrySelect2, true)[0].prenom;
 
                 
-                $scope.sel1 = $filter('filter')(data, countrySelect1, true)[0].sodium;
-                $scope.sel2 = $filter('filter')(data, countrySelect2, true)[0].sodium;
+                $scope.sel1 = $filter('filter')(data, countrySelect1, true)[0].sodium + ' mg';
+                $scope.sel2 = $filter('filter')(data, countrySelect2, true)[0].sodium + ' mg';
                 //timeline color 
                 $('#color circle').attr("fill", "#DF5252");
                 $scope.textcolor1 = $filter('filter')(data, countrySelect1, true)[0].color;
@@ -237,8 +237,8 @@
                 $scope.prenomperso2 = $filter('filter')(data, countrySelect2, true)[0].prenom;
 
                 
-                $scope.sel1 = $filter('filter')(data, countrySelect1, true)[0].sodium;
-                $scope.sel2 = $filter('filter')(data, countrySelect2, true)[0].sodium;
+                $scope.price1 = $filter('filter')(data, countrySelect1, true)[0].price + ' €';
+                $scope.price2 = $filter('filter')(data, countrySelect2, true)[0].price + ' €';
                 //timeline color 
                 $('#color circle').attr("fill", "#DF5252");
                 $scope.textcolor1 = $filter('filter')(data, countrySelect1, true)[0].color;

@@ -1129,7 +1129,7 @@
 			<g>
 				
 					<rect x="227.5" y="92.7" transform="matrix(0.9692 0.2462 -0.2462 0.9692 35.6906 -64.8837)" fill="none" width="99.6" height="35.2"/>
-				<text transform="matrix(0.9692 0.2462 -0.2463 0.9692 229.8345 95.0302)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'NexaRustSlab-BlackShadow01'" font-size="20">{{price1}} </tspan><tspan x="0" y="12.4" fill="#FFFFFF" font-family="'NexaRustSlab-BlackShadow01'" font-size="10.3202">euros</tspan></text>
+				<text transform="matrix(0.9692 0.2462 -0.2463 0.9692 229.8345 95.0302)"><tspan x="0" y="0" fill="#FFFFFF" font-family="'helsinkiregular'" font-size="20">{{price1}}</tspan></text>
 			</g>
 		</g>
 	</g>

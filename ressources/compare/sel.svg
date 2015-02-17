@@ -180,12 +180,12 @@
 			
 				<rect x="747.7" y="211.8" transform="matrix(-0.9692 -0.2462 0.2462 -0.9692 1634.5052 685.1481)" fill="none" width="224.8" height="57.1"/>
 			
-				<text transform="matrix(0.9692 0.2462 -0.2463 0.9692 744.5329 239.8081)" fill="#FFFFFF" font-family="'NexaRustSlab-BlackShadow01'" font-size="77.7321">{{sel1}} mg</text>
+				<text transform="matrix(0.9692 0.2462 -0.2463 0.9692 744.5329 239.8081)" fill="#FFFFFF" font-family="'helsinkiregular'" font-size="57.7321">{{sel1}}</text>
 		</g>
 		
 			<rect x="720.8" y="281.3" transform="matrix(-0.9825 0.1864 -0.1864 -0.9825 1661.1414 452.822)" fill="none" width="176.9" height="46.4"/>
 		
-			<text transform="matrix(0.9825 -0.1864 0.1864 0.9825 725.7287 337.4465)" fill="#FFFFFF" font-family="'NexaRustScriptL-0'" font-size="58.4964">de sel</text>
+			<text transform="matrix(0.9825 -0.1864 0.1864 0.9825 725.7287 337.4465)" fill="#FFFFFF" font-family="'Courgette'" font-size="58.4964">de sel</text>
 	</g>
 </g>
 </svg>
