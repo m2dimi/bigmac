@@ -254,6 +254,12 @@ figure img:hover{
     z-index: 3;
 }
 
+#img1
+{
+    top: 7%;
+    left: 17%;
+}
+
 #img2
 {
     right: 17%;
