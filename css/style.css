@@ -114,8 +114,9 @@ body{
     position: absolute;
     z-index: 3;
     top: 197%;
-    left: 24%;
+    left: 15%;
     display: none;
+    font-size: 22px;
 }
 
 .font_30
@@ -221,9 +222,7 @@ figure img:hover{
 }
 
 #horloge_gif {
-    /* margin: 20px; */
-    margin-top: 20px;
-    margin-bottom: 20px;
+
 }
 
 #img_camion1
@@ -270,10 +269,16 @@ figure img:hover{
 {
     position: absolute;
     bottom: 1%;
-    left: 33%;
+    left: 32%;
     font-size: 37px;
     color: #000;
     z-index: 3;
+}
+
+.gif_popup
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .img_perso_mach

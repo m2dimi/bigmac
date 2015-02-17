@@ -16,7 +16,7 @@
         <div class="col-xs-12 col-md-2">
                 <div class="fond_round"></div>
                 <input id="time" type="text" name="round" class="round" data-min="1" data-max="24" value="10"/>
-                <span id="text_hour" class="font_nexar">Heures</span>
+                <span id="text_hour" class="font_courgette">Heures</span>
                 <a id="btn_act"  ng-click="bigmac_calcul()"><img  id="interupt" class="img-responsive center-block" src="ressources/machine/off.png"/> </a>
                 <img id="poteau" class="img-responsive hidden-xs" src="ressources/machine/poteau.png">
                 <a id="btn_suivant_worktime" class="btn_next font_rustsla" href="#/comparatif/home/{{countryA}}/{{countryB}}"><strong>Suivant</strong></a>
@@ -36,23 +36,21 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="text-center font_courgette  font_30 orange">Selectionne une durée de travail, et lance les machines pour comparer suivant les pays, combien de Big Mac tu peux acheter*</div>
+                        <div class="text-center font_courgette">"La comparaison du salaire horaire avec le prix du Big Mac permet d’évaluer <br /> le pouvoir d’achat d’un pays"</div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-4">
-                        <img id="horloge_gif" class="img-responsive" src="ressources/popup/horloge.gif"/>
+                        <img id="horloge_gif" class="img-responsive gif_popup" src="ressources/popup/horloge.gif"/>
+                        <p class="font_courgette orange">Selectionne une durée <br />de travail</p>
                     </div>
                     <div class="col-xs-4">
-                        <img id="interupt_gif" class="img-responsive center-block" src="ressources/popup/interupt.gif" style="margin-top: 45%; width: 63%"/>
+                        <img id="interupt_gif" class="img-responsive center-block gif_popup" src="ressources/popup/interupt.gif" style="margin-top: 45%; width: 63%"/>
+                   <p class="font_courgette orange text-center">Lance la machine</p>
                     </div>
                     <div class="col-xs-4">
-                        <img class="img-responsive" src="ressources/popup/camion.png" style="margin-top: 65%;"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="text-center font_courgette">*« Ainsi tu pourras comparer, grâce à l’indice Big Mac le pouvoir d’achat de deux pays»</div>
+                        <img class="img-responsive gif_popup" src="ressources/popup/camion.png" style="margin-top: 72%;"/>
+                        <p class="font_courgette orange">Vois combien de Big Mac tu peux acheter</p>
                     </div>
                 </div>
                 <div class="row">
