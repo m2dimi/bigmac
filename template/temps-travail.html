@@ -3,7 +3,7 @@
         <a href="#/home"><img class="logo_mini" src="ressources/logo_min.png"></a>
     </div>
 </div>
-
+<div class="hidden-xs">
     <div class="row">
         <div class="col-xs-12 col-md-5">
                 <img id="img1" class="img-responsive pull_left img_perso_mach"  src="{{countryselection1}}" />
@@ -32,6 +32,44 @@
             <span id="nbr_bigmac2" class="font_rustsla">x{{totalbigmac2}}</span>
         </div>
     </div>
+</div>
+
+
+
+<div class="visible-xs">
+    <div class="row">
+        <div class="col-xs-6">
+            <img id="img1" class="img-responsive pull_left img_perso_mach"  src="{{countryselection1}}" />
+            <img id="img_flag1" class="img-responsive center-block img_flag"  src="{{flag1}}" />
+            <img id="img_machine1" class="img-responsive center-block img_machine"  src="ressources/machine/machine_repos.jpg" />
+            <img id="img_camion1" class="img-responsive"  src="ressources/machine/camion.png" />
+            <span id="nbr_bigmac1" class="font_rustsla">x{{totalbigmac1}}</span>
+            <!--<span>{{worktimeselection1}}</span>-->
+        </div>
+        <div class="col-xs-6">
+            <img id="img2" class="img-responsive pull-right img_perso_mach"  src="{{countryselection2}}" />
+            <img id="img_flag2" class="img-responsive center-block img_flag"  src="{{flag2}}" />
+            <img id="img_machine2" class="img-responsive center-block img_machine"  src="ressources/machine/machine_repos2.jpg" />
+            <img id="img_camion2" class="img-responsive"  src="ressources/machine/camion2.png" />
+            <span id="nbr_bigmac2" class="font_rustsla">x{{totalbigmac2}}</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="fond_round"></div>
+            <input id="time" type="text" name="round" class="round" data-min="1" data-max="24" value="10"/>
+            <span id="text_hour" class="font_courgette">Heures</span>
+        </div>
+        <div class="col-xs-12">
+            <a id="btn_act"  ng-click="bigmac_calcul()"><img  id="interupt" class="img-responsive center-block" src="ressources/machine/off.png"/> </a>
+            <div id="timer" class="text-center">{{nbr_time}}</div>
+            <a id="btn_suivant_worktime" class="btn_next font_rustsla" href="#/comparatif/home/{{countryA}}/{{countryB}}"><strong>Suivant</strong></a>
+        </div>
+    </div>
+</div>
+
+
+
 
 <div class="modal fade" id="start">
     <div class="modal-dialog">

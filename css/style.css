@@ -641,11 +641,51 @@ width: 170px;
 
 @media (max-width: 767px) {
 
+    #interupt
+    {
+        bottom: -120px;
+        top: 0px;
+    }
+
+    #nbr_bigmac1
+    {
+        bottom: -21%;
+        left: 23%;
+    }
+
+    #nbr_bigmac2
+    {
+        bottom: -21%;
+        left: 3%;
+    }
+
+
+
+    #text_hour
+    {
+        top: -98%;
+        left: 80%;
+    }
+
+    .fond_round
+    {
+        top: -394px;
+        left: 90px;
+    }
+
+    .round {
+        position: absolute;
+        z-index: 3;
+        top: -306px;
+        left: 50%;
+    }
+
     .counter
     {
         right : 0px;
         bottom: 0px;
         position: static;
+        text-align: center;
     }
 
     .font_30
