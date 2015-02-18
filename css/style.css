@@ -17,6 +17,16 @@ body{
     background-color: #FBC05C;
 }
 
+#team
+{
+    padding-top: 10px;
+}
+
+#team:hover
+{
+  color: #DF4444;
+}
+
 .body_perso
 {
     background : url("../ressources/site/fond_perso.png") repeat-y;
