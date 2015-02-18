@@ -645,6 +645,7 @@ width: 170px;
     {
         bottom: -120px;
         top: 0px;
+        margin-top: 90px;
     }
 
     #nbr_bigmac1
@@ -659,25 +660,28 @@ width: 170px;
         left: 3%;
     }
 
-
+    .btn_next {
+        font-size: 30px;
+    }
 
     #text_hour
     {
         top: -98%;
         left: 80%;
+        display: none;
     }
 
     .fond_round
     {
         top: -394px;
         left: 44%;
+        display: none;
     }
 
     .round {
-        position: absolute;
+        position: relative;
         z-index: 3;
-        top: -306px;
-        left: 50%;
+        margin-top: 90px;
     }
 
     .counter
