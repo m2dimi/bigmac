@@ -146,23 +146,23 @@
 	</g>
 </g>
 <rect x="856.7" y="55.4" fill="none" width="293.9" height="96.1"/>
-<text transform="matrix(1 0 0 1 1056.9613 84.1313)" fill="#DF5252" font-family="'Courgette-Regular'" font-size="34.8482">{{textcolor1}}</text>
+<text transform="matrix(1 0 0 1 1056.9613 84.1313)" fill="#DF5252" font-family="'Courgette'" font-size="34.8482">{{textcolor1}}</text>
 <rect x="1285.9" y="55.4" fill="none" width="298.4" height="96.1"/>
-<text transform="matrix(1 0 0 1 1285.8679 84.1313)" fill="#DF5252" font-family="'Courgette-Regular'" font-size="34.8482">{{textcolor2}}</text>
+<text transform="matrix(1 0 0 1 1285.8679 84.1313)" fill="#DF5252" font-family="'Courgette'" font-size="34.8482">{{textcolor2}}</text>
 <rect x="856.7" y="223.6" fill="none" width="293.9" height="96.1"/>
-<text transform="matrix(1 0 0 1 1038.124 252.2487)" fill="#DF5252" font-family="'Courgette-Regular'" font-size="34.8482">{{textcal1}}</text>
+<text transform="matrix(1 0 0 1 1038.124 252.2487)" fill="#DF5252" font-family="'Courgette'" font-size="34.8482">{{textcal1}}</text>
 <rect x="1285.9" y="223.6" fill="none" width="298.4" height="96.1"/>
-<text transform="matrix(1 0 0 1 1285.8679 252.2487)" fill="#DF5252" font-family="'Courgette-Regular'" font-size="34.8482">{{textcal2}}</text>
+<text transform="matrix(1 0 0 1 1285.8679 252.2487)" fill="#DF5252" font-family="'Courgette'" font-size="34.8482">{{textcal2}}</text>
 <rect x="856.7" y="388.7" fill="none" width="293.9" height="96.1"/>
-<text transform="matrix(1 0 0 1 1008.2812 417.3513)" fill="#DF5252" font-family="'Courgette-Regular'" font-size="34.8482">{{textsalt1}}</text>
+<text transform="matrix(1 0 0 1 1008.2812 417.3513)" fill="#DF5252" font-family="'Courgette'" font-size="34.8482">{{textsalt1}}</text>
 <rect x="1285.9" y="388.7" fill="none" width="298.4" height="96.1"/>
-<text transform="matrix(1 0 0 1 1285.8679 417.3513)" fill="#DF5252" font-family="'Courgette-Regular'" font-size="34.8482">{{textsalt2}}</text>
+<text transform="matrix(1 0 0 1 1285.8679 417.3513)" fill="#DF5252" font-family="'Courgette'" font-size="34.8482">{{textsalt2}}</text>
 <rect x="856.7" y="550.3" fill="none" width="293.9" height="96.1"/>
-<text transform="matrix(1 0 0 1 959.0821 578.9766)" fill="#DF5252" font-family="'Courgette-Regular'" font-size="34.8482">{{textmeat1}}</text>
+<text transform="matrix(1 0 0 1 959.0821 578.9766)" fill="#DF5252" font-family="'Courgette'" font-size="34.8482">{{textmeat1}}</text>
 <rect x="1285.9" y="550.3" fill="none" width="298.4" height="96.1"/>
-<text transform="matrix(1 0 0 1 1285.8679 578.9766)" fill="#DF5252" font-family="'Courgette-Regular'" font-size="34.8482">{{textmeat2}}</text>
+<text transform="matrix(1 0 0 1 1285.8679 578.9766)" fill="#DF5252" font-family="'Courgette'" font-size="34.8482">{{textmeat2}}</text>
 <rect x="856.7" y="718.9" fill="none" width="293.9" height="96.1"/>
-<text transform="matrix(1 0 0 1 978.9081 747.5845)" fill="#DF5252" font-family="'Courgette-Regular'" font-size="34.8482">{{textprice1}}</text>
+<text transform="matrix(1 0 0 1 978.9081 747.5845)" fill="#DF5252" font-family="'Courgette'" font-size="34.8482">{{textprice1}}</text>
 <rect x="1285.9" y="718.9" fill="none" width="298.4" height="96.1"/>
-<text transform="matrix(1 0 0 1 1285.8679 747.5845)" fill="#DF5252" font-family="'Courgette-Regular'" font-size="34.8482">{{textprice1}}</text>
+<text transform="matrix(1 0 0 1 1285.8679 747.5845)" fill="#DF5252" font-family="'Courgette'" font-size="34.8482">{{textprice1}}</text>
 </svg>
