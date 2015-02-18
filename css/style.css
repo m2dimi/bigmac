@@ -593,6 +593,10 @@ width: 170px;
     width: auto;
     height: 100px;
 }
+.img_perso_compare2{
+    width: auto;
+    height: 200px;
+}
 .btn_recommencer{
     background: #A9D4CE;
     box-shadow: 5px 5px 0px #C9C8C8;

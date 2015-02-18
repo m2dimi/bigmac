@@ -16,8 +16,8 @@
             dataFactory.GetDataCountry(function(data){
                 var countrySelect1 = $routeParams.countryA;
                 var countrySelect2 = $routeParams.countryB;
-                $scope.thumbperso1 = $filter('filter')(data, countrySelect1, true)[0].thumb;
-                $scope.thumbperso2 = $filter('filter')(data, countrySelect2, true)[0].thumb;
+                $scope.thumbperso1 = $filter('filter')(data, countrySelect1, true)[0].perso;
+                $scope.thumbperso2 = $filter('filter')(data, countrySelect2, true)[0].perso;
                 $scope.prenomperso1 = $filter('filter')(data, countrySelect1, true)[0].prenom;
                 $scope.prenomperso2 = $filter('filter')(data, countrySelect2, true)[0].prenom;
             })//END DATAFACTORY
