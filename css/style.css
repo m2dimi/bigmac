@@ -25,6 +25,11 @@ body{
     padding-bottom: 1px ;
 }
 
+.img_nous
+{
+    width: 70%;
+}
+
 .logo_mini
 {
     position: relative;
