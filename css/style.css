@@ -622,13 +622,10 @@ width: 170px;
 }
 
 .partage{
-    
-    width: 100%;
-    height: 200px;
+    margin-top: 110px;
 }
 .partage div{
-    float: left;
-    margin: 0 50px;
+   
 }
 /*//////END Page Compare/////////*/
 

@@ -265,147 +265,27 @@
         app.controller('comparatifResumeCtrl', function($scope, $log, $routeParams, dataFactory, $filter) {
         
             //Display the name of the selected countries
-            
-            $scope.countryA = $routeParams.countryA;
-            $scope.countryB = $routeParams.countryB;
+            var pays1 =  $routeParams.countryA;
+            var pays2 =  $routeParams.countryB;
 
-
-            dataFactory.GetDataCountry(function(data){
-                var countrySelect1 = $routeParams.countryA;
-                var countrySelect2 = $routeParams.countryB;
-                $scope.thumbperso1 = $filter('filter')(data, countrySelect1, true)[0].thumb;
-                $scope.thumbperso2 = $filter('filter')(data, countrySelect2, true)[0].thumb;
-
-                $scope.fullperso1 = $filter('filter')(data, countrySelect1, true)[0].url_img;
-                $scope.fullperso2 = $filter('filter')(data, countrySelect2, true)[0].url_img;
-
-                $scope.prenomperso1 = $filter('filter')(data, countrySelect1, true)[0].prenom;
-                $scope.prenomperso2 = $filter('filter')(data, countrySelect2, true)[0].prenom;
-
-                
-                $scope.sel1 = $filter('filter')(data, countrySelect1, true)[0].sodium;
-                $scope.sel2 = $filter('filter')(data, countrySelect2, true)[0].sodium;
-                //timeline color 
-                $('#color circle').attr("fill", "#DF5252");
-                $scope.textcolor1 = $filter('filter')(data, countrySelect1, true)[0].color;
-                $scope.textcolor2 = $filter('filter')(data, countrySelect2, true)[0].color;
-
-                $('#cal circle').attr("fill", "#DF5252");
-                $scope.textcal1 = $filter('filter')(data, countrySelect1, true)[0].calorie + ' cal';
-                $scope.textcal2 = $filter('filter')(data, countrySelect2, true)[0].calorie + ' cal';
-
-                $('#salt circle').attr("fill", "#DF5252");
-                $scope.textsalt1 = $filter('filter')(data, countrySelect1, true)[0].sodium + ' mg';
-                $scope.textsalt2 = $filter('filter')(data, countrySelect2, true)[0].sodium + ' mg';
-
-                $('#meat circle').attr("fill", "#DF5252");
-                $scope.textmeat1 = $filter('filter')(data, countrySelect1, true)[0].meatorigin;
-                $scope.textmeat2 = $filter('filter')(data, countrySelect2, true)[0].meatorigin;
-
-                 $('#price circle').attr("fill", "#DF5252");
-                $scope.textprice1 = $filter('filter')(data, countrySelect1, true)[0].price + ' euros';
-                $scope.textprice2 = $filter('filter')(data, countrySelect2, true)[0].price + ' euros';
-            })//END DATAFACTORY
-      });
-//controller compare
-        app.controller('comparatifCtrl', function($scope, $log, $routeParams, dataFactory, $filter) {
-        
-            //Display the name of the selected countries
-            $scope.model = {
-                dataurl1: $routeParams.countryA,
-                dataurl2: $routeParams.countryB
+            if (pays1 == 'Australie' || pays1 == 'Azerbajan' || pays1 == 'Argentine' || pays1 == 'Egypte' || pays1 == 'Afrique-du-sud' || pays1 == 'Inde' || pays1 == 'Angleterre') {
+                $scope.countryA = "l'" + pays1;
+            }else if(pays1 == "Bresil" || pays1 == 'Mexique' || pays1 == 'Japon' || pays1 == 'Maroc' || pays1 == 'Chili' )  {
+                $scope.countryA = "le " + pays1;
+            }else if(pays1 == 'France' || pays1 == 'Russie' || pays1 == 'Chine' || pays1 == 'Grece' || pays1 == 'Suede' ){
+                $scope.countryA = "la " + pays1;
+            }else if(pays1 == 'USA' || pays1 == 'Emirates'){
+                $scope.countryA = "les " + pays1;
             }
-            $scope.countryA = $routeParams.countryA;
-            $scope.countryB = $routeParams.countryB;
-
-            var tailleFenetre = window.innerHeight;
-            $('.body_perso').css('height', tailleFenetre);
-
-            dataFactory.GetDataCountry(function(data){
-                var countrySelect1 = $routeParams.countryA;
-                var countrySelect2 = $routeParams.countryB;
-                $scope.thumbperso1 = $filter('filter')(data, countrySelect1, true)[0].thumb;
-                $scope.thumbperso2 = $filter('filter')(data, countrySelect2, true)[0].thumb;
-                $scope.prenomperso1 = $filter('filter')(data, countrySelect1, true)[0].prenom;
-                $scope.prenomperso2 = $filter('filter')(data, countrySelect2, true)[0].prenom;
             
-                //don't display each page
-                $('#page1compare').hide();
-                $('#page2compare').hide();
-                $('#page3compare').hide();
-                $('#page4compare').hide();
-                $('#page5compare').hide();
-                $('#page6compare').hide();
-                $('#page7compare').hide();
-                $('#page1compare2').hide();
-                $('#page2compare2').hide();
-                $('#page3compare2').hide();
-                $('#page4compare2').hide();
-                $('#page5compare2').hide();
-                $('#page6compare2').hide();
-                $('#page7compare2').hide();
-                $('.comparetimeline').hide();
-                //END don't display each page
+            if (pays2 == 'Australie' || pays2 == 'Azerbajan' || pays2 == 'Argentine' || pays2 == 'Egypte' || pays2 == 'Afrique-du-sud' || pays2 == 'Inde' || pays2 == 'Angleterre') {
+                $scope.countryB = "l'" + pays2;
+            }else if(pays2 == "Bresil" || pays2 == 'Mexique' || pays2 == 'Japon' || pays2 == 'Maroc' || pays2 == 'Chili' )  {
+                $scope.countryB = "le " + pays2;
+            }else if(pays2 == 'France' || pays2 == 'Russie' || pays2 == 'Chine' || pays2 == 'Grece' || pays2 == 'Suede' ){
+                $scope.countryB = "la " + pays2;
+            }else if(pays2 == 'USA' || pays2 == 'Emirates'){
+                $scope.countryB = "les " + pays2;
+            }
 
-                $scope.goPage1 = function(){
-                    $('#homecompare').hide();
-                    $('#page1compare').show();
-                    $('#page1compare2').show();
-                    $('.comparetimeline').show();
-                }
-                $scope.goPage2 = function(){
-                    $('#page1compare').hide();
-                    $('#page1compare2').hide();
-                    $('#page2compare').show();
-                    $('#page2compare2').show();
-                    
-                    
-                   
-                }
-                $scope.goPage3 = function(){
-                    $('#page2compare').hide();
-                    $('#page2compare2').hide();
-                    $('#page3compare').show();
-                    $('#page3compare2').show();
-
-                    
-                }
-                $scope.goPage4 = function(){
-                    $('#page3compare').hide();
-                    $('#page3compare2').hide();
-                    $('#page4compare').show();
-                    $('#page4compare2').show();
-
-
-                    //timeline color 
-                    $('#salt circle').attr("fill", "#DF5252");
-                    $scope.textsalt1 = $filter('filter')(data, countrySelect1, true)[0].sodium + ' mg';
-                    $scope.textsalt2 = $filter('filter')(data, countrySelect2, true)[0].sodium + ' mg';
-                }
-                $scope.goPage5 = function(){
-                    $('#page4compare').hide();
-                    $('#page4compare2').hide();
-                    $('#page5compare').show();
-                    $('#page5compare2').show();
-
-                    //timeline color 
-                    $('#meat circle').attr("fill", "#DF5252");
-                    $scope.textsalt1 = $filter('filter')(data, countrySelect1, true)[0].meat_origin;
-                    $scope.textsalt2 = $filter('filter')(data, countrySelect2, true)[0].meat_origin;
-                }
-                $scope.goPage6 = function(){
-                    $('#page5compare').hide();
-                    $('#page5compare2').hide();
-                    $('#page6compare').show();
-                    $('#page6compare2').show();
-                }
-                $scope.goPage7 = function(){
-                    $('#page6compare').hide();
-                    $('#page7compare').show();
-                }
-                $scope.goPage8 = function(){
-                    $('#page7compare').hide();
-                    $('#page8compare').show();
-                }
-            })//END DATAFACTORY
       });
