@@ -164,5 +164,5 @@
 <rect x="856.7" y="718.9" fill="none" width="293.9" height="96.1"/>
 <text transform="matrix(1 0 0 1 978.9081 747.5845)" fill="#DF5252" font-family="'Courgette'" font-size="34.8482">{{textprice1}}</text>
 <rect x="1285.9" y="718.9" fill="none" width="298.4" height="96.1"/>
-<text transform="matrix(1 0 0 1 1285.8679 747.5845)" fill="#DF5252" font-family="'Courgette'" font-size="34.8482">{{textprice1}}</text>
+<text transform="matrix(1 0 0 1 1285.8679 747.5845)" fill="#DF5252" font-family="'Courgette'" font-size="34.8482">{{textprice2}}</text>
 </svg>
